@@ -1,0 +1,36 @@
+patch:
+  schema_list:
+    - schema: leosy
+
+  switcher:
+    caption: 〔方案選單〕
+    hotkeys:
+      - Control+grave
+      - Control+Shift+grave
+      - F4
+    save_options:
+      - full_shape
+      - ascii_punct
+      - original
+      - yuhao_charset_prioritizer_common
+      - yuhao_charset_prioritizer_ubiquitous
+      - cjk
+      - yuhao_charset_filter_common
+      - yuhao_charset_filter_tonggui
+      - yuhao_charset_filter_harmonic
+      - yuhao_chaifen.off
+      - yuhao_chaifen.lv2
+      - yuhao_chaifen.lv3
+    fold_options: true
+    abbreviate_options: true
+    option_list_separator: '／'
+
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Shift_L: noop
+      Shift_R: noop
+      Control_L: commit_code
+      Control_R: noop
+      Caps_Lock: clear
+      Eisu_toggle: clear

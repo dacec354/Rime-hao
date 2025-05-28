@@ -1,0 +1,27 @@
+# encoding: utf-8
+---
+name: "leosy.short"
+version: "20250528"
+sort: original
+columns:
+  - text
+  - code
+...
+
+#==== 无理码 ====#
+的	e
+一	i
+是	u
+不	r
+了	o
+在	w
+啊	kdw
+
+#==== 常规二级简码 ====#
+我	sw
+
+#==== 常规三级简码 ====#
+你	jfr
+吗	kde
+吧	kdr
+呀	kdu
