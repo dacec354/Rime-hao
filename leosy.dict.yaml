@@ -12,6 +12,8 @@ import_tables:
   - leo/leosy.short
   # 以下是單字全碼
   - leo/leosy.full
+  # 以下是快符
+  - leo/leo.fastsymbols
   # 以下是符號
   - leo/leo.symbols
 columns:
