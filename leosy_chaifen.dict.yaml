@@ -14,7 +14,7 @@
 # -《中華人民共和國國家標準 GB 18030--2022 信息技術 中文編碼字符集》中刊載的漢字。
 # - The Unicode Standard, Version 15.0 中刊載的漢字字形。
 
-# 官網首頁: <https://shurufa.app>
+# 官網首頁: <https://hertz-hwang.github.io/hao>
 # 官方QQ群: 1012245282
 
 ---
@@ -27883,7 +27883,7 @@ columns:
 𠁯	[口丨厶口,KdiFuBkrKdi,,CJK-B]
 𠁰	[彐ㅌ,KsuAlrAlr,,CJK-B]
 𠁱	[一口一水,LeKdiLeHsu,,CJK-B]
-𠁲	[丿井,SiNwLfo,,CJK-B]
+𠁲	[井,NwLfo,,CJK-B]
 𠁳	[山丰丰,MgiMvuMvu,,CJK-B]
 𠁴	[囗乂乂乂乂丨,ZeSoSoFu,,CJK-B]
 𠁵	[口丨〢,KdiFuVjeJdo,,CJK-B]
@@ -64174,7 +64174,7 @@ columns:
 𨸴	[阝千巾,LwKcoJfi,,CJK-B]
 𨸵	[阝宀一乙,LwGkeLeJr,,CJK-B]
 𨸶	[阝干丷,LwLvuJdo,,CJK-B]
-𨸷	[丿户乙,SiNwLsiJr,è,CJK-B]
+𨸷	[丿戶乙,SiNwLsiJr,è,CJK-B]
 𨸸	[阝凵,LwKsuDjr,,CJK-B]
 𨸹	[阝不一,LwKgiLe,,CJK-B]
 𨸺	[阝甲,LwYsu,yā,CJK-B]
@@ -64468,7 +64468,7 @@ columns:
 𨽚	[阝虍鬲,LwVheQmw,,CJK-B]
 𨽛	[阝丷豕辶阝,LwJdoDneLw,,CJK-B]
 𨽜	[阝虍田皿,LwVheZhePdi,,CJK-B]
-𨽝	[丿艹冂二丿,SiNwClrNw,,CJK-B]
+𨽝	[丿廿⺝丿,SiNwAkrNw,,CJK-B]
 𨽞	[阝廿口匕灬,LwAkrKdiCme,,CJK-B]
 𨽟	[阝虫貝辶,LwGjeZyeNdu,tuí,CJK-B]
 𨽠	[阝人貝,LwJziAuZye,,CJK-B]
@@ -92884,7 +92884,7 @@ columns:
 𱁁	[阝耳又耳又,LwHeBuBu,,CJK-G]
 𱁂	[阝丷豕人氺,LwJdoDneHsu,,CJK-G]
 𱁃	[丿㠯皿丿㠯十,SiNwHsuAkw,,CJK-G]
-𱁄	[丿丿皿,SiNwSiPdi,,CJK-G]
+𱁄	[丿皿丿,SiNwHsuNw,,CJK-G]
 𱁅	[八隹,JdoHqo,,CJK-G]
 𱁆	[隹{云变},HqoHw,,CJK-G]
 𱁇	[月隹,CuHqo,,CJK-G]
