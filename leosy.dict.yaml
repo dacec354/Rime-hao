@@ -8,7 +8,9 @@ name: "leosy"
 version: "20250528"
 sort: original
 import_tables:
-  # 以下是簡碼字詞
+  # 以下是固頂字
+  #- leo/leosy.fixed
+  # 以下是簡碼字
   - leo/leosy.short
   # 以下是單字全碼
   - leo/leosy.full
