@@ -165,7 +165,7 @@ translator:
 
 history:
   input: fw
-  size: 2
+  size: 1
   initial_quality: 1
 
 reverse_lookup:
