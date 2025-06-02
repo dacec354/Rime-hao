@@ -1,5 +1,6 @@
 .DS_Store
 /build
+/*.userdb
 /installation.yaml
 /user.yaml
 /squirrel.yaml
