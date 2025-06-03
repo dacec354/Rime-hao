@@ -31,6 +31,9 @@ switches:
     states: [全漢字, 常用字, 通規字, 陸標繁]
     #reset: 1
     # Control+Shift+O
+  - name: embeded_cands
+    states: [ 普通, 嵌入 ]
+    reset: 1
   - name: yuhao_single_char_only_for_full_code
     states: [字詞同出, 全碼出單]
     reset: 0
@@ -104,6 +107,7 @@ engine:
     - lua_filter@*yuhao.yuhao_charset_prioritizer_common
     - lua_filter@*yuhao.yuhao_charset_prioritizer_ubiquitous
     - uniquifier
+    - lua_filter@*yuhao.yuhao_embeded_cands
 
 traditionalize:
   tags: [abc, reverse_lookup]
@@ -288,6 +292,7 @@ key_binder:
     - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
+    - { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
     - {
         when: always,
         accept: "Control+Shift+M",
@@ -327,5 +332,8 @@ recognizer:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
     reverse_lookup: "^`([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
-    #number: "^[-+]?[0-9][,.:0-9]*[%]?$"
-    unicode: "/uni([0-9]+|[a-f]+)$"
+    number: "^[-+]?[0-9][,.:0-9]*[%]?$"
+    unicode: "^/uni(/[a-zA-Z0-9]*)*$"
+
+menu:
+  page_size: 3
