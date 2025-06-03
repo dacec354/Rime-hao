@@ -1,0 +1,32 @@
+# Rime schema settings
+# encoding: utf-8
+
+__include: leosy.schema:/
+
+schema:
+  schema_id: leosy_flu
+  name: '松烟(不上屏版)'
+  version: '20250603'
+  author:
+    - 作者 荒
+    - Rime方案 <https://shurufa.app>
+    - 官方QQ群 1012245282
+  description: |
+    前缀·松烟(不上屏版)
+
+__patch:
+  switches/@2/reset: 0
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba;/,.?:;!@$%^&*()-=+[]{}"'<>
+  initials: zyxwvutsrqponmlkjihgfedcba;/,.?:;!@$%^&*()-=+[]{}"'<>
+  delimiter: " "
+  auto_select: false
+
+translator:
+  dictionary: leosy_flu
+  prism: leosy_flu
+  enable_sentence: true
+
+punctuator:
+  import_preset: symbols
