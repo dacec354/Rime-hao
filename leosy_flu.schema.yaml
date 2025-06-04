@@ -16,17 +16,31 @@ schema:
 
 __patch:
   switches/@2/reset: 0
+  key_binder/bindings/+:
+    - { when: always, accept: " ", send: _ }
+    - { when: always, accept: Shift+Space, send: ' ' }
+
+engine:
+  translators:
+    - punct_translator
+    - history_translator@history
+    - reverse_lookup_translator
+    - script_translator
+    - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro  # 控制臺
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba;/,.?:;!@$%^&*()-=+[]{}"'<>
-  initials: zyxwvutsrqponmlkjihgfedcba;/,.?:;!@$%^&*()-=+[]{}"'<>
+  alphabet: zyxwvutsrqponmlkjihgfedcba9876543210;/,.?:;!@#$%^&*()-=+[]{}"'<>_
+  initials: zyxwvutsrqponmlkjihgfedcba9876543210;/,.?:;!@#$%^&*()-=+[]{}"'<>_
   delimiter: " "
   auto_select: false
 
 translator:
   dictionary: leosy_flu
   prism: leosy_flu
-  enable_sentence: true
+  #enable_sentence: true
+  preedit_format:
+    - xform/_//
+    - xform/[a-z]/\*/
 
 punctuator:
   import_preset: symbols

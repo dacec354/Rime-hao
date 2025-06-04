@@ -15,7 +15,7 @@ import_tables:
   # 以下是單字全碼
   - leo/leosy.full
   # 以下是快符
-  - leo/leo.fastsymbols
+  #- leo/leo.fastsymbols
   # 以下是符號
   - leo/leo.symbols
 columns:
@@ -34,6 +34,17 @@ encoder:
       formula: "AaBaCaZa"
 ...
 
+0	0
+1	1
+2	2
+3	3
+4	4
+5	5
+6	6
+7	7
+8	8
+9	9
+0	0
 ，	,
 。	.
 ？	?
@@ -41,6 +52,7 @@ encoder:
 ；	;
 ！	!
 @	@
+#	#
 ￥	$
 %	%
 ……	^
@@ -63,3 +75,24 @@ encoder:
 >	>
 《	<
 》	>
+
+：“	q_
+→	t_
+·	y_
+——	p_
+！	a_
+……	s_
+“	d_
+”	f_
+《	g_
+》	h_
+￥	j_
+？	k_
+・	l_
+【	z_
+】	x_
+（	c_
+）	v_
+	b_
+「	n_
+」	m_

@@ -6,6 +6,7 @@ sort: original
 columns:
   - text
   - code
+  - stem
 ...
 
 #==== 无理码 ====#
@@ -18,7 +19,7 @@ columns:
 当	sw
 中	ki
 啊	ji
-哈！	dw
+哈！	dw	#简单鹤群两键哈气
 哈？	qw
 哈	gw
 那	xi
@@ -26,6 +27,7 @@ columns:
 所	so
 只	si
 等	pi
+哦	kdw
 下	lfe
 地	psi
 左	aki
