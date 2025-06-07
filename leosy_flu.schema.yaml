@@ -5,7 +5,7 @@ __include: leosy.schema:/
 
 schema:
   schema_id: leosy_flu
-  name: '松烟(不上屏版)'
+  name: '好码・松烟(不上屏版)'
   version: '20250603'
   author:
     - 作者 荒

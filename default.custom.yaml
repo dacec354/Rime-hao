@@ -2,7 +2,9 @@ patch:
   schema_list:
     - schema: leosy      #桌面端：松烟方案
     - schema: dovepelia  #移动端：白鸠方案
-    - schema: leosy_flu  #整活：松烟(不上屏版)
+    #- schema: leosy_flu  #整活：松烟(不上屏版)
+    - schema: leopard    #初代四定：豹码
+    - schema: leoxi      #二代四定：淅码
 
   switcher:
     caption: 〔方案選單〕
