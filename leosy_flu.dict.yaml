@@ -9,15 +9,15 @@ version: "20250603"
 sort: original
 import_tables:
   # 以下是固頂字
-  #- leo/leosy.fixed
+  #- hao/leosy.fixed
   # 以下是簡碼字
-  - leo/leosy.short
+  - hao/leosy.short
   # 以下是單字全碼
-  - leo/leosy.full
+  - hao/leosy.full
   # 以下是快符
-  #- leo/leo.fastsymbols
+  #- hao/leo.fastsymbols
   # 以下是符號
-  - leo/leo.symbols
+  - hao/leo.symbols
 columns:
   - text
   - code

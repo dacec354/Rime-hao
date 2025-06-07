@@ -93,7 +93,7 @@ engine:
     - history_translator@history
     - reverse_lookup_translator
     - table_translator
-    - lua_translator@*amz_shijian
+    - lua_translator@*amz.shijian
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro  # 控制臺
   filters:
     - lua_filter@*yuhao.yuhao_autocompletion_filter
