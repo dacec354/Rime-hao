@@ -372,7 +372,7 @@ recognizer:
     unicode: "^/uni(/[a-zA-Z0-9]*)*$"
 
 menu:
-  page_size: 3
+  page_size: 5
 # style:
 #   horizontal: false
 #   inline_preedit: true
