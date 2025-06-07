@@ -44,7 +44,7 @@ switches:
       - yuhao_chaifen.lv2
       - yuhao_chaifen.lv3
     states: [無註解, 二重註解, 多重註解]
-    reset: 0
+    #reset: 0
   - name: yuhao_autocompletion_filter
     reset: 0
     states: [輸入預測, 精確匹配]
