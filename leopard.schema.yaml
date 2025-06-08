@@ -13,6 +13,7 @@ schema:
     四定，音托
   dependencies:
     - leo_pinyin
+    - stroke_dovepelia
     - leopard_chaifen
 
 switches:
@@ -63,7 +64,6 @@ switches:
   - name: full_shape
     states: ["半角", "全角"]
     reset: 0
-    # Shift + Space
   - name: ascii_punct
     states: [。，, ．，]
     reset: 0
@@ -85,12 +85,17 @@ engine:
     - matcher
     - affix_segmentor@zaoci # 用户造詞
     - abc_segmentor
+    - affix_segmentor@leo_pinyin_lookup
+    - affix_segmentor@stroke_dovepelia_lookup
+    - affix_segmentor@reverse_lookup
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - history_translator@history
-    - reverse_lookup_translator
+    #- reverse_lookup_translator
+    - script_translator@leo_pinyin_lookup
+    - table_translator@stroke_dovepelia_lookup
     - table_translator@fixed # 固定字頻
     - table_translator
     - table_translator@zaoci  # 用户造詞
@@ -104,6 +109,7 @@ engine:
     - lua_filter@*yuhao.yuhao_charset_filter_harmonic
     - simplifier@traditionalize
     - simplifier@simplify
+    - reverse_lookup_filter@reverse_lookup
     - lua_filter@*yuhao.yuhao_chaifen_filter
     - lua_filter@*yuhao.yuhao_postpone_full_code
     - lua_filter@*yuhao.yuhao_charset_prioritizer_common
@@ -111,7 +117,7 @@ engine:
     - uniquifier
 
 traditionalize:
-  tags: [abc, reverse_lookup]
+  tags: [abc, leo_pinyin_lookup, stroke_dovepelia_lookup]
   option_name: traditionalization
   opencc_config: s2t.json
   tips: all
@@ -120,7 +126,7 @@ traditionalize:
     - xform/$/〕/
 
 simplify:
-  tags: [abc, reverse_lookup]
+  tags: [abc, leo_pinyin_lookup, stroke_dovepelia_lookup]
   option_name: simplification
   opencc_config: t2s.json
   tips: all
@@ -188,14 +194,37 @@ history:
   initial_quality: 999999
 
 reverse_lookup:
+  tag: reverse_lookup
+  dictionary: leopard
+  prefix: "`"    # 反查引导符「`」
+  # suffix:   # 反查关闭符，暂不定义
+  tips: 【反查：拼音+笔画(qweas)】
+  closing_tips: 【反查关闭】
+  tags: [ leo_pinyin_lookup, stroke_dovepelia_lookup ]
+  extra_tags:
+    - leo_pinyin_lookup
+    - stroke_dovepelia_lookup
+
+leo_pinyin_lookup:
+  tag: leo_pinyin_lookup
   dictionary: leo_pinyin
-  prefix: "`"
-  tips: 〔全拼簡拼反查〕
-  closing_tips: 〔反查关闭〕
+  enable_user_dict: false
+  prefix: '`P'
+  tips: 【拼音反查】
+  closing_tips: 【反查关闭】
+  initial_quality: 0.2
+
+stroke_dovepelia_lookup:
+  tag: stroke_dovepelia_lookup
+  dictionary: stroke_dovepelia
+  enable_user_dict: false
+  prefix: '`B'
+  tips: 【五笔画反查】
+  closing_tips: 【反查关闭】
+  initial_quality: 0.5
   preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
+    - 'xform/^([qweas]+)$/$1\t（\U$1\E）/'
+    - xlit/QWEAS/一丨丿丶乙/
 
 # 自定義宏
 yuhao_macro:
@@ -366,6 +395,8 @@ recognizer:
   patterns:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
     reverse_lookup: "^`([a-z]+?)*$"
+    leo_pinyin_lookup: "^`P([a-z]+'?)*$"
+    stroke_dovepelia_lookup: "^`B([a-z]+'?)*$"
     zaoci: "^[a-z]*`[a-z`]*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     #number: "^[-+]?[0-9][,.:0-9]*[%]?$"
