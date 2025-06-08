@@ -26,7 +26,7 @@ local index_indicators = {"¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "
 
 -- 首選/非首選格式定義
 -- Seq: 候選序號; Code: 編碼; 候選: 候選文本; Comment: 候選提示
-local first_format = "${Code}${候選}${Comment}${Seq}"
+local first_format = "${候選}${Comment}${Seq}"
 local next_format = "${候選}${Comment}${Seq}"
 local separator = " "
 

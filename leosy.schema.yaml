@@ -151,8 +151,8 @@ yuhao_chaifen:
     phrase: 0
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba;/
-  initials: zyxwvutsrqponmlkjihgfedcba;/
+  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
+  initials: zyxwvutsrqponmlkjihgfedcba;'/
   delimiter: "`"
   # max_code_length: 0
   auto_select: true
@@ -173,9 +173,9 @@ translator:
     - "xform/^~/ /"
 
 history:
-  input: fw
+  input: "'"
   size: 1
-  initial_quality: 1
+  initial_quality: 0
 
 reverse_lookup:
   tag: reverse_lookup
