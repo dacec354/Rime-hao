@@ -11,9 +11,10 @@ schema:
     - 官方QQ群 1012245282
   description: |
     四定，音托
+    "`键 反查：拼音+笔画(hspnz)"
   dependencies:
     - leo_pinyin
-    - stroke_dovepelia
+    - leo_stroke
     - leopard_chaifen
 
 switches:
@@ -86,7 +87,7 @@ engine:
     - affix_segmentor@zaoci # 用户造詞
     - abc_segmentor
     - affix_segmentor@leo_pinyin_lookup
-    - affix_segmentor@stroke_dovepelia_lookup
+    - affix_segmentor@leo_stroke_lookup
     - affix_segmentor@reverse_lookup
     - punct_segmentor
     - fallback_segmentor
@@ -95,7 +96,7 @@ engine:
     - history_translator@history
     #- reverse_lookup_translator
     - script_translator@leo_pinyin_lookup
-    - table_translator@stroke_dovepelia_lookup
+    - table_translator@leo_stroke_lookup
     - table_translator@fixed # 固定字頻
     - table_translator
     - table_translator@zaoci  # 用户造詞
@@ -117,7 +118,7 @@ engine:
     - uniquifier
 
 traditionalize:
-  tags: [abc, leo_pinyin_lookup, stroke_dovepelia_lookup]
+  tags: [abc, leo_pinyin_lookup, leo_stroke_lookup]
   option_name: traditionalization
   opencc_config: s2t.json
   tips: all
@@ -126,7 +127,7 @@ traditionalize:
     - xform/$/〕/
 
 simplify:
-  tags: [abc, leo_pinyin_lookup, stroke_dovepelia_lookup]
+  tags: [abc, leo_pinyin_lookup, leo_stroke_lookup]
   option_name: simplification
   opencc_config: t2s.json
   tips: all
@@ -198,12 +199,12 @@ reverse_lookup:
   dictionary: leopard
   prefix: "`"    # 反查引导符「`」
   # suffix:   # 反查关闭符，暂不定义
-  tips: 【反查：拼音+笔画(qweas)】
+  tips: 【反查：拼音+笔画(hspnz)】
   closing_tips: 【反查关闭】
-  tags: [ leo_pinyin_lookup, stroke_dovepelia_lookup ]
+  tags: [ leo_pinyin_lookup, leo_stroke_lookup ]
   extra_tags:
     - leo_pinyin_lookup
-    - stroke_dovepelia_lookup
+    - leo_stroke_lookup
 
 leo_pinyin_lookup:
   tag: leo_pinyin_lookup
@@ -214,17 +215,20 @@ leo_pinyin_lookup:
   closing_tips: 【反查关闭】
   initial_quality: 0.2
 
-stroke_dovepelia_lookup:
-  tag: stroke_dovepelia_lookup
+leo_stroke_lookup:
+  tag: leo_stroke_lookup
   dictionary: stroke_dovepelia
+  prism: leo_stroke
   enable_user_dict: false
   prefix: '`B'
   tips: 【五笔画反查】
   closing_tips: 【反查关闭】
   initial_quality: 0.5
   preedit_format:
-    - 'xform/^([qweas]+)$/$1\t（\U$1\E）/'
-    - xlit/QWEAS/一丨丿丶乙/
+    - 'xform/^([hspnz]+)$/$1\t（\U$1\E）/'
+    - xlit/HSPNZ/一丨丿丶乙/
+  comment_format:
+    - xlit/qweas/hspnz/
 
 # 自定義宏
 yuhao_macro:
@@ -396,7 +400,7 @@ recognizer:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
     reverse_lookup: "^`([a-z]+?)*$"
     leo_pinyin_lookup: "^`P([a-z]+'?)*$"
-    stroke_dovepelia_lookup: "^`B([a-z]+'?)*$"
+    leo_stroke_lookup: "^`B([a-z]+'?)*$"
     zaoci: "^[a-z]*`[a-z`]*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     #number: "^[-+]?[0-9][,.:0-9]*[%]?$"

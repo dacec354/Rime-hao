@@ -50,6 +50,16 @@ translator:
   enable_completion: true
   disable_user_dict_for_patterns:
     - "^.{1, 5}$"
+  preedit_format:
+    - xlit/q/1/
+    - xlit/w/2/
+    - xlit/e/3/
+    - xlit/a/4/
+    - xlit/s/5/
+    - xlit/d/6/
+    - xlit/z/7/
+    - xlit/x/8/
+    - xlit/c/9/
 
 speller:
   alphabet: "qweasdzxc"
@@ -60,6 +70,18 @@ reverse_lookup:
   dictionary: stroke_dovepelia
   prefix: "`"
   tips: 〔笔画〕
+  preedit_format:
+    - xlit/qweas/一丨丿丶乙/
+  comment_format:
+    - xlit/q/1/
+    - xlit/w/2/
+    - xlit/e/3/
+    - xlit/a/4/
+    - xlit/s/5/
+    - xlit/d/6/
+    - xlit/z/7/
+    - xlit/x/8/
+    - xlit/c/9/
 
 recognizer:
   import_preset: default
