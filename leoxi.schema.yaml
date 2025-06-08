@@ -404,7 +404,7 @@ recognizer:
     zaoci: "^[a-z]*`[a-z`]*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     #number: "^[-+]?[0-9][,.:0-9]*[%]?$"
-    unicode: "^/uni(/[a-zA-Z0-9]*)*$"
+    unicode: "^/(uni|w)(/[a-zA-Z0-9]*)*$"
 
 menu:
   page_size: 5
