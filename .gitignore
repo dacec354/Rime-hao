@@ -1,6 +1,7 @@
 .DS_Store
 /build
 /*.userdb
+/default.custom.yaml
 /installation.yaml
 /user.yaml
 /squirrel.yaml

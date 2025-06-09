@@ -2,10 +2,10 @@
 config_version: 0.40
 
 schema_list:
-  - schema: leosy
-  - schema: dovepelia
-  - schema: leopard
   - schema: leoxi
+  - schema: dovepelia
+  #- schema: leopard
+  - schema: leosy
 switcher:
   abbreviate_options: true
   caption: "〔方案選單〕"
