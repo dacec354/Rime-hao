@@ -9,8 +9,20 @@ columns:
   - stem
 ...
 
-#==== 简词 ====#
-松烟	hao
+#==== 半无理简词 ====#
+松烟	hao	#方案码
+还有	kau	#末码简
+谢谢	ffi	#末码简
+看看	kkw	#无理
+吃饭	kto	#无理
+一种	lmu	#末码简
+种种	mmr	#无理
+与其	lmw	#末码简
+甚至	mkr	#末码简
+以来	vkco	#末码简
+隐隐	llfu	#末码简
+
+#==== 常规简词 ====#
 如果	gz;
 不是	kv;
 哪个	ka;
@@ -36,47 +48,30 @@ columns:
 应该	ff;
 当然	fc;
 可以	sv;
-静静	mm;
+我想	st;
+尴尬	mm;
 妈妈	gg;
 燃烧	cc;
 哈哈	kk;
 想想	tt;
 天天	ll;
-垃圾	pp;
+等等	pp;
 慢慢	hh;
-继续	tt;;i
-价值	jj;;e
-渐渐	hh;;o
-葡萄	cc;;r
 刚刚	dd;
 左右	aa;
-尴尬	mm;;e
-默默	mm;;u
-眼睛	dd;;u
-等等	pp;;o
-谢谢	ff;;o
-隐隐	ll;;u
-看看	kk;;w
 气氛	yy;
-往往	ff;;w
-种种	mm;;;
-叔叔	ff;;u
 哥哥	ss;
 适当	hf;
 好像	gj;
 不想	kt;
 不能	kb;
 不同	kd;
-还有	ka;;u
 不错	kq;
-吃饭	kt;;u
 虽然	kc;
 本身	tk;
 一般	lm;
 一个	la;
 一切	lf;
-一种	lm;;u
-与其	lm;;o
 增强	pn;
 经常	tn;
 达到	yk;
@@ -88,7 +83,6 @@ columns:
 对面	bs;
 对方	bh;
 对错	bq;
-以来	vc;;o
 这里	xj;
 这样	xt;
 这么	xs;
@@ -98,5 +92,20 @@ columns:
 可能	sb;
 可行	sf;
 其实	mg;
-甚至	mk;;u
 原来	zc;
+服务	cm;
+有关	aj;
+方案	hg;
+
+#==== 常规词 ====#
+继续	tktka
+价值	jjadl
+渐渐	hshsa
+葡萄	clcls
+默默	mamal
+眼睛	dkdkm
+往往	fhfhn
+叔叔	fjfjl
+垃圾	pspsw
+妹妹	glglo
+静静	mvmvo
