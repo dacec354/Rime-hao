@@ -17,15 +17,17 @@ schema:
 __patch:
   switches/@2/reset: 0
   key_binder/bindings/+:
-    - { when: always, accept: " ", send: _ }
-    - { when: always, accept: Shift+Space, send: ' ' }
+    - { when: has_menu, accept: " ", send: _ }
+    - { when: has_menu, accept: Shift+Space, send: ' ' }
 
 engine:
   translators:
     - punct_translator
     - history_translator@history
-    - reverse_lookup_translator
+    - script_translator@leo_pinyin_lookup
+    - table_translator@leo_stroke_lookup
     - script_translator
+    - lua_translator@*amz.shijian
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro  # 控制臺
 
 speller:
@@ -40,7 +42,7 @@ translator:
   #enable_sentence: true
   preedit_format:
     - xform/_//
-    - xform/[a-z]/\*/
+    #- xform/[a-z]/\*/
 
 punctuator:
   import_preset: symbols
