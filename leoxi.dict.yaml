@@ -6,12 +6,14 @@
 ---
 name: "leoxi"
 version: "20250125"
-sort: original
+sort: by_weight
 import_tables:
   # 以下是固頂字
   #- hao/leoxi.fixed
   # 以下是簡碼字
   - hao/leoxi.short
+  # 以下是簡碼詞
+  - hao/leoxi.quicks
   # 以下是單字全碼
   - hao/leoxi.full
   # 以下是快符

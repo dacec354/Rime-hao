@@ -12,6 +12,8 @@ import_tables:
   #- hao/leopard.fixed
   # 以下是簡碼字
   - hao/leopard.short
+  # 以下是簡碼詞
+  - hao/leopard.quicks
   # 以下是單字全碼
   - hao/leopard.full
   # 以下是快符
