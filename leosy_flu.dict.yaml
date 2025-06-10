@@ -12,10 +12,13 @@ import_tables:
   #- hao/leosy.fixed
   # 以下是簡碼字
   - hao/leosy.short
+  # 以下是簡碼詞
+  - hao/leosy.quicks
+  - hao/leosy.flu
   # 以下是單字全碼
   - hao/leosy.full
   # 以下是快符
-  #- hao/leo.fastsymbols
+  - hao/leo.fastsymbols
   # 以下是符號
   - hao/leo.symbols
 columns:
