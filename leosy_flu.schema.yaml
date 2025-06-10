@@ -6,7 +6,7 @@ __include: leosy.schema:/
 schema:
   schema_id: leosy_flu
   name: '好码・松烟(不上屏版)'
-  version: '20250603'
+  version: '20250609'
   author:
     - 作者 荒
     - Rime方案 <https://shurufa.app>
@@ -16,6 +16,11 @@ schema:
 
 __patch:
   switches/@2/reset: 0
+  switches/@last/+:
+    name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️", "🈶️" ]
+  engine/filters/@after 1: simplifier@emoji_suggestion
   key_binder/bindings/+:
     - { when: has_menu, accept: " ", send: _ }
     - { when: has_menu, accept: Shift+Space, send: ' ' }
@@ -43,6 +48,12 @@ translator:
   preedit_format:
     - xform/_//
     #- xform/[a-z]/\*/
+
+emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: none
+    inherit_comment: false
 
 punctuator:
   import_preset: symbols
