@@ -52,6 +52,13 @@ columns:
 不必	khi
 变成	jki
 方便	hjo
+事实	lgi
+规则	jse
+即使	fjo
+偷懒	jhr
+蝴蝶	ggr
+输入	azi
+显示	vsw
 
 #==== 高频简词 ====#
 如果	gz;
@@ -85,7 +92,7 @@ columns:
 想想	tt;
 天天	ll;
 等等	pp;
-慢慢	hh;
+方法	hh;
 刚刚	dd;
 左右	aa;
 气氛	yy;
@@ -240,15 +247,20 @@ columns:
 变得	jf;
 如此	gd;
 常规	nj;
+提醒	ks;
+想法	th;
+利用	ma;
+编辑	ta;
 为什么	njs;
-的时候	dvj;
 你们好	jjg;
+输入法	azh;
 太强了	ynd;
 太强了	tql;	#无理
 钛镪钌	qqq;
 鈦鏹釕	ttt;
 只要	kd;;e
 告诉	mf;;r
+慢慢	hh;;u
 
 #==== 常规简词 ====#
 #  首字双编，次字首根取全
@@ -297,7 +309,6 @@ columns:
 睡觉	dhki
 这就	xdnr
 那就	xdkr
-不同	kdgi	#AaBaAbBz
 也有	kaku	#AaBaBbBc
 前面	jscw
 容易	gvfw
@@ -321,25 +332,20 @@ columns:
 还要	kdne
 还是	kvnu
 于是	lvau
-不怕	khge
 不懂	khgo
-不错	kqgo
 无比	gvke
 不少	kfgi
 更加	fssi
 更少	ffsi
 一直	lake
-不够	ktge
 长期	dmku
 短期	hmku
-不与	klge
 一定	lgku
 确实	fgfi
 确定	fgfu
 一切	lfke
 一样	ltlo
 正常	lfdi
-不跟	kfge
 一起	lamo
 一些	ldvo
 一般	lmlu
@@ -366,6 +372,7 @@ columns:
 与其	mgjo
 少量	fvso
 似乎	jsvw
+你们	jjfr
 
 #==== 全码词 ====#
 几个	aanfu
@@ -374,6 +381,5 @@ columns:
 一点	lfjkc
 无法	ghspb
 此时	dvvjf
-你们	jjfql
 她们	gjkql
 平时	lvjjf
