@@ -59,6 +59,11 @@ columns:
 蝴蝶	ggr
 输入	azi
 显示	vsw
+表示	msw
+凛冽	gge
+告诉	mfr
+处理	mgo
+设置	fae
 
 #==== 高频简词 ====#
 如果	gz;
@@ -251,6 +256,8 @@ columns:
 想法	th;
 利用	ma;
 编辑	ta;
+帮助	ms;
+朋友	ca;
 为什么	njs;
 你们好	jjg;
 输入法	azh;
@@ -259,8 +266,6 @@ columns:
 钛镪钌	qqq;
 鈦鏹釕	ttt;
 只要	kd;;e
-告诉	mf;;r
-慢慢	hh;;u
 
 #==== 常规简词 ====#
 #  首字双编，次字首根取全
@@ -373,6 +378,8 @@ columns:
 少量	fvso
 似乎	jsvw
 你们	jjfr
+饕餮	kcli
+存在	aafu
 
 #==== 全码词 ====#
 几个	aanfu
