@@ -64,6 +64,7 @@ columns:
 告诉	mfr
 处理	mgo
 设置	fae
+根本	tte
 
 #==== 高频简词 ====#
 如果	gz;
@@ -258,6 +259,7 @@ columns:
 编辑	ta;
 帮助	ms;
 朋友	ca;
+第一	pl;
 为什么	njs;
 你们好	jjg;
 输入法	azh;
@@ -380,6 +382,8 @@ columns:
 你们	jjfr
 饕餮	kcli
 存在	aafu
+数据	kkgr
+证明	fvlu
 
 #==== 全码词 ====#
 几个	aanfu

@@ -25,6 +25,9 @@ switches:
     states: [原始排序, 常用字優先, 極常用字優先]
     #reset: 0
     # Control+Shift+M
+  - name: embeded_cands
+    states: [ 普通, 嵌入 ]
+    reset: 1
   - options:
       - cjk
       - yuhao_charset_filter_common
@@ -113,6 +116,7 @@ engine:
     - lua_filter@*yuhao.yuhao_charset_prioritizer_common
     - lua_filter@*yuhao.yuhao_charset_prioritizer_ubiquitous
     - uniquifier
+    - lua_filter@*hao.embeded_cands
 
 traditionalize:
   tags: [abc, leo_pinyin_lookup, leo_stroke_lookup]
@@ -168,7 +172,8 @@ translator:
   enable_encoder: false
   encode_commit_history: false
   preedit_format:
-    - xform/[a-z]/\※/
+    #- xform/[a-z]/\※/
+    #- xform/[a-z]/·/
   comment_format:
     - "xform/^~/ /"
 
@@ -323,7 +328,7 @@ key_binder:
     - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    #- { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
+    - { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
     - {
         when: always,
         accept: "Control+Shift+M",
