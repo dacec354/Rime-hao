@@ -165,7 +165,6 @@ fki	教
 jve	化
 bki	通
 klu	感
-mfr	处
 fmo	解
 kse	接
 zku	反
