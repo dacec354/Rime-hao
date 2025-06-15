@@ -65,6 +65,10 @@ columns:
 处理	mgo
 设置	fae
 根本	tte
+或者	ffo
+风景	avr
+景色	vfr
+景区	vpo
 
 #==== 高频简词 ====#
 如果	gz;
@@ -197,7 +201,7 @@ columns:
 才能	ab;
 直接	ak;
 真正	al;
-过于	jl;
+并非	jl;
 光明	yv;
 尽管	mp;
 属于	ml;
@@ -245,7 +249,7 @@ columns:
 黑暗	mv;
 然而	cg;
 名字	xg;
-却将	ps;
+增加	ps;
 却把	pk;
 声音	ls;
 非常	ln;
@@ -260,6 +264,17 @@ columns:
 帮助	ms;
 朋友	ca;
 第一	pl;
+水平	hl;
+希望	sn;
+高级	dt;
+学校	ht;
+环境	gp;
+优秀	jm;
+承担	xk;
+女子	gq;
+男子	zq;
+表达	my;
+期望	mn;
 为什么	njs;
 你们好	jjg;
 输入法	azh;
@@ -384,6 +399,7 @@ columns:
 存在	aafu
 数据	kkgr
 证明	fvlu
+却将	psbo
 
 #==== 全码词 ====#
 几个	aanfu

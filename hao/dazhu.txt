@@ -28,8 +28,11 @@ ae	，
 sw	当
 ki	中
 ji	啊
+kgw	吧
+kge	呢
 dw	哈！
 cle	Ciallo～(∠・ω< )⌒★
+kgr	叭
 qw	哈？
 gw	哈
 xi	那
@@ -48,7 +51,7 @@ gmo	交
 mfw	展
 mdw	告
 hdw	快
-ffo	色
+
 cpe	领
 ttr	林
 fne	往
@@ -61,9 +64,9 @@ hke	满
 xfi	跟
 vdo	影
 chw	落
+kdfe	吗？
+kdfw	呢？
 gkyi	实
-fjfe	码
-kdmw	呢？
 jdzu	单
 jdsu	半
 yi	大
@@ -100,12 +103,13 @@ ni	常
 fu	认
 tr	金
 lo	非
+vr	晚
 xnu	这
 aku	有
 cjo	来
 jfr	你
-kde	吗？
-kdr	吧
+kde	吗
+kdr	呗
 kdu	呀
 psr	去
 kve	到
@@ -243,6 +247,10 @@ hde	怕
 qjo	错
 tye	够
 svu	醒
+ffr	色
+vge	晕
+vdr	冕
+hsw	汩
 fhvo	得
 kdjo	只
 mtjo	其
@@ -329,6 +337,7 @@ ksdr	击
 kamu	精
 bkki	台
 jtse	功
+fjfe	码
 dkjo	具
 jvaw	华
 fkji	府
@@ -352,6 +361,11 @@ vkgr	究
 shlr	装
 djse	刚
 jdcr	并
+kdfr	邑
+vgae	晖
+vdfr	晾
+alhu	隶
+alhu	逯
 hao	松烟
 ffu	说话
 kkw	看看
@@ -407,6 +421,10 @@ mfr	告诉
 mgo	处理
 fae	设置
 tte	根本
+ffo	或者
+avr	风景
+vfr	景色
+vpo	景区
 gz;	如果
 jv;	但是
 ka;	哪个
@@ -537,7 +555,7 @@ av;	有时
 ab;	才能
 ak;	直接
 al;	真正
-jl;	过于
+jl;	并非
 yv;	光明
 mp;	尽管
 ml;	属于
@@ -585,7 +603,7 @@ ck;	来到
 mv;	黑暗
 cg;	然而
 xg;	名字
-ps;	却将
+ps;	增加
 pk;	却把
 ls;	声音
 ln;	非常
@@ -600,6 +618,17 @@ ta;	编辑
 ms;	帮助
 ca;	朋友
 pl;	第一
+hl;	水平
+sn;	希望
+dt;	高级
+ht;	学校
+gp;	环境
+jm;	优秀
+xk;	承担
+gq;	女子
+zq;	男子
+my;	表达
+mn;	期望
 njs;	为什么
 jjg;	你们好
 azh;	输入法
@@ -721,6 +750,7 @@ kcli	饕餮
 aafu	存在
 kkgr	数据
 fvlu	证明
+psbo	却将
 aanfu	几个
 aanu	几人
 sjmcv	面前
