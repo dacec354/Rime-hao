@@ -28,8 +28,8 @@ ae	，
 sw	当
 ki	中
 ji	啊
-kgw	吧
-kge	呢
+kgw	哦
+kge	吧
 dw	哈！
 cle	Ciallo～(∠・ω< )⌒★
 kgr	叭
@@ -41,7 +41,7 @@ so	所
 si	只
 pi	等
 fq;	说：“
-kdw	哦
+kdw	呢
 lfe	下
 psi	地
 aki	左
@@ -424,6 +424,7 @@ ffo	或者
 avr	风景
 vfr	景色
 vpo	景区
+sfu	翻译
 gz;	如果
 jv;	但是
 ka;	哪个
