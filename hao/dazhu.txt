@@ -46,19 +46,15 @@ lfe	下
 psi	地
 aki	左
 flu	应
-fho	该
-gmo	交
 mfw	展
 mdw	告
 hdw	快
-
 cpe	领
 ttr	林
 fne	往
 jsu	亲
 fdo	争
 cjw	花
-tke	组
 hso	流
 hke	满
 xfi	跟
@@ -127,6 +123,9 @@ tki	经
 gki	现
 dji	同
 jde	前
+fho	该
+gmo	交
+tke	组
 ako	右
 gke	军
 zyi	因
