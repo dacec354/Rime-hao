@@ -116,8 +116,8 @@ engine:
     - lua_filter@*yuhao.yuhao_postpone_full_code
     - lua_filter@*yuhao.yuhao_charset_prioritizer_common
     - lua_filter@*yuhao.yuhao_charset_prioritizer_ubiquitous
-    - uniquifier
     - lua_filter@*hao.embeded_cands
+    - uniquifier
 
 traditionalize:
   tags: [abc, leo_pinyin_lookup, leo_stroke_lookup]
@@ -285,6 +285,8 @@ yuhao_macro:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
     dot:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+    cand:
+      - { type: switch, name: embeded_cands, states: [☐普通, ☑嵌入] }
     dist:
       - type: eval
         expr: >
