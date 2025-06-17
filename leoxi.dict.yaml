@@ -6,7 +6,7 @@
 ---
 name: "leoxi"
 version: "20250125"
-sort: original
+sort: by_weight
 import_tables:
   # 以下是固頂字
   #- hao/leoxi.fixed
