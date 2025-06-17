@@ -1,5 +1,6 @@
 .DS_Store
 /build
+/sync
 /*.userdb
 /default.custom.yaml
 /installation.yaml
