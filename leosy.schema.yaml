@@ -156,8 +156,8 @@ yuhao_chaifen:
     phrase: 0
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
-  initials: zyxwvutsrqponmlkjihgfedcba;'/
+  alphabet: zyxwvutsrqponmlkjihgfedcba;'/0123456789
+  initials: zyxwvutsrqponmlkjihgfedcba;'/0123456789
   delimiter: "`"
   # max_code_length: 0
   auto_select: true
@@ -360,8 +360,8 @@ key_binder:
         toggle: yuhao_autocompletion_filter,
       } # 輸入預測
     #- { when: has_menu, accept: semicolon, send: 2 } # 分号次选
-    - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
-    - { when: has_menu, accept: Tab, send: 2 } # 製表符次选
+    - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
+    - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
 

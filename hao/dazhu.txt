@@ -4,7 +4,7 @@ y;	·
 p;	——
 a;	！
 s;	……
-d;	・
+d;	、
 f;	“
 g;	”
 h;	「
@@ -247,6 +247,8 @@ qjo	错
 tye	够
 svu	醒
 ffr	色
+fai	读
+cpi	脚
 vge	晕
 vdr	冕
 hsw	汩
