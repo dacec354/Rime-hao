@@ -16919,7 +16919,7 @@
 翺	clle
 翽	lufe
 翿	mpne
-耉	riqf
+耉	rcp
 耊	rcyf
 耎	uxi
 耓	fuek
@@ -29692,7 +29692,7 @@
 𠙮	rpoe
 𠙯	xdnp
 𠙰	ufvo
-𠙱	rcp
+𠙱	rcpo
 𠙲	ppfh
 𠙳	mhhp
 𠙴	zvpk
@@ -114747,7 +114747,7 @@
 翺	clle
 翽	lufe
 翿	mpne
-耉	riqf
+耉	rcpi
 耊	rcyf
 耎	uxio
 耓	fuek
