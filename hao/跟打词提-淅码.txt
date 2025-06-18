@@ -59342,7 +59342,7 @@
 𧪷	mmoz
 𧪸	mbgz
 𧪹	mejt
-𧪺	msyk
+𧪺	mtjb
 𧪻	myyq
 𧪼	miic
 𧪽	mfoj
@@ -59398,7 +59398,7 @@
 𧫯	nhgm
 𧫰	mgf
 𧫱	magl
-𧫲	mfjz
+𧫲	mfjb
 𧫳	mudo
 𧫴	mwiz
 𧫵	mvsw
@@ -75309,7 +75309,7 @@
 𫦾	wooa
 𫦿	hdaa
 𫧀	sbmf
-𫧁	sjvk
+𫧁	sjvn
 𫧂	liso
 𫧃	sbsp
 𫧄	smvx
@@ -80609,7 +80609,7 @@
 𬼕	dmyi
 𬼖	efhf
 𬼗	npvp
-𬼘	lhsp
+𬼘	jlnp
 𬼙	llln
 𬼚	hhp
 𬼛	djgj
@@ -81648,7 +81648,7 @@
 𭌥	ijtj
 𭌦	ilht
 𭌧	iwhu
-𭌨	itil
+𭌨	ntlz
 𭌩	iaar
 𭌪	rngr
 𭌫	imwx
@@ -82296,7 +82296,7 @@
 𭖯	ofdx
 𭖰	dteh
 𭖱	dmqm
-𭖲	kmmd
+𭖲	jeed
 𭖳	dmfy
 𭖴	dymx
 𭖵	dshh
@@ -83155,7 +83155,7 @@
 𭤌	yfir
 𭤍	fder
 𭤎	jrov
-𭤏	kksr
+𭤏	jsor
 𭤐	qxry
 𭤑	urbr
 𭤒	ggvr
@@ -90204,7 +90204,7 @@
 𰚃	hqio
 𱣇	aoqf
 𱭢	yfpv
-𱣠	atzo
+𱣠	atfh
 𲇋	tuak
 𰗔	yajo
 𰖛	jgbo
@@ -157170,7 +157170,7 @@
 𧪷	mmoz
 𧪸	mbgz
 𧪹	mejt
-𧪺	msyk
+𧪺	mtjb
 𧪻	myyq
 𧪼	miic
 𧪽	mfoj
@@ -157226,7 +157226,7 @@
 𧫯	nhgm
 𧫰	mgfl
 𧫱	magl
-𧫲	mfjz
+𧫲	mfjb
 𧫳	mudo
 𧫴	mwiz
 𧫵	mvsw
@@ -173137,7 +173137,7 @@
 𫦾	wooa
 𫦿	hdaa
 𫧀	sbmf
-𫧁	sjvk
+𫧁	sjvn
 𫧂	liso
 𫧃	sbsp
 𫧄	smvx
@@ -178437,7 +178437,7 @@
 𬼕	dmyi
 𬼖	efhf
 𬼗	npvp
-𬼘	lhsp
+𬼘	jlnp
 𬼙	llln
 𬼚	hhpv
 𬼛	djgj
@@ -179476,7 +179476,7 @@
 𭌥	ijtj
 𭌦	ilht
 𭌧	iwhu
-𭌨	itil
+𭌨	ntlz
 𭌩	iaar
 𭌪	rngr
 𭌫	imwx
@@ -180124,7 +180124,7 @@
 𭖯	ofdx
 𭖰	dteh
 𭖱	dmqm
-𭖲	kmmd
+𭖲	jeed
 𭖳	dmfy
 𭖴	dymx
 𭖵	dshh
@@ -180983,7 +180983,7 @@
 𭤌	yfir
 𭤍	fder
 𭤎	jrov
-𭤏	kksr
+𭤏	jsor
 𭤐	qxry
 𭤑	urbr
 𭤒	ggvr
@@ -188032,7 +188032,7 @@
 𰚃	hqio
 𱣇	aoqf
 𱭢	yfpv
-𱣠	atzo
+𱣠	atfh
 𲇋	tuak
 𰗔	yajo
 𰖛	jgbo
