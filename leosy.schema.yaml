@@ -163,7 +163,7 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/0123456789
   initials: zyxwvutsrqponmlkjihgfedcba;'/0123456789
   delimiter: "`"
-  max_code_length: 5
+  #max_code_length: 5
   auto_select: true
   auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
   algebra:
