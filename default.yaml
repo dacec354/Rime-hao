@@ -19,6 +19,7 @@ switcher:
     - full_shape
     - ascii_punct
     - embeded_cands
+    - leosy_auto_commit
     - yuhao_autocompletion_filter
     - original
     - yuhao_charset_prioritizer_common

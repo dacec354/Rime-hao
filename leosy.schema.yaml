@@ -25,6 +25,9 @@ switches:
     states: [原始排序, 常用字優先, 極常用字優先]
     #reset: 0
     # Control+Shift+M
+  - name: leosy_auto_commit
+    #reset: 1
+    states: [关闭自动上屏, 自动上屏开启]
   #- name: embeded_cands
   #  states: [ 普通, 嵌入 ]
     #reset: 1
@@ -78,6 +81,7 @@ engine:
     - ascii_composer
     - recognizer
     - lua_processor@*yuhao.yuhao_chaifen_processor
+    - lua_processor@*hao.auto_commit
     - key_binder
     - speller
     - punctuator
@@ -159,8 +163,9 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/0123456789
   initials: zyxwvutsrqponmlkjihgfedcba;'/0123456789
   delimiter: "`"
-  # max_code_length: 0
+  max_code_length: 5
   auto_select: true
+  auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
   algebra:
 
 translator:
@@ -285,6 +290,8 @@ yuhao_macro:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
     dot:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+    commit:
+      - { type: switch, name: leosy_auto_commit, states: [☐关闭自动上屏, ☑开启自动上屏] }
     #cand:
     #  - { type: switch, name: embeded_cands, states: [☐普通, ☑嵌入] }
     dist:
