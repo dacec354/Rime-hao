@@ -17673,7 +17673,7 @@ akczz	翸
 fggzu	翺
 dklzu	翽
 ldxjz	翿
-fkkdi	耉
+fksxk	耉
 fkkr	耊
 gydi	耎
 sklfi	耓
@@ -41939,7 +41939,7 @@ cdai	𣎂
 cndo	𣎃
 chlle	𣎄
 cvsne	𣎅
-nkcnr	𣎆
+ai	𣎆
 cvdkw	𣎇
 czkgi	𣎈
 akckx	𣎉
@@ -45465,7 +45465,7 @@ hspsv	𤅔
 hsplj	𤅕
 hscda	𤅖
 hsadu	𤅗
-hsato	𤅘
+hsnkc	𤅘
 hslzh	𤅙
 hsjds	𤅚
 hsjsh	𤅛
@@ -53786,7 +53786,7 @@ zcyfo	𦇹
 yfhlt	𦇺
 jaabu	𦇻
 yflxg	𦇼
-yfato	𦇽
+yfnkc	𦇽
 yfyfd	𦇾
 yfdll	𦇿
 jaalf	𦈀
@@ -55502,7 +55502,7 @@ cchjf	𦢸
 ctcyd	𦢹
 cahcm	𦢺
 aafau	𦢻
-nkczy	𦢼
+nkcks	𦢼
 gkmka	𦢽
 cmvjg	𦢾
 cmhkd	𦢿
@@ -68052,7 +68052,7 @@ ajdcc	𩧟
 ajmam	𩧠
 dkdha	𩧡
 ajaaj	𩧢
-ajato	𩧣
+ajnkk	𩧣
 ajfnf	𩧤
 ajavp	𩧥
 fyavj	𩧦

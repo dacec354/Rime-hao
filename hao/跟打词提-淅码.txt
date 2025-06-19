@@ -41185,7 +41185,7 @@
 𣎃	mxyf
 𣎄	mnf
 𣎅	mjsx
-𣎆	ximo
+𣎆	oroo
 𣎇	mjgy
 𣎈	msci
 𣎉	gmup
@@ -44711,7 +44711,7 @@
 𤅕	hzml
 𤅖	hwlw
 𤅗	home
-𤅘	hoid
+𤅘	hxim
 𤅙	hror
 𤅚	hwzr
 𤅛	hwcq
@@ -53032,7 +53032,7 @@
 𦇺	hodm
 𦇻	kssw
 𦇼	hfkj
-𦇽	hoid
+𦇽	hxim
 𦇾	harm
 𦇿	hzaa
 𦈀	kssu
@@ -54748,7 +54748,7 @@
 𦢹	miyx
 𦢺	myvy
 𦢻	ssgs
-𦢼	ximi
+𦢼	ximp
 𦢽	ezis
 𦢾	mdhk
 𦢿	mdvi
@@ -67298,7 +67298,7 @@
 𩧠	gzsl
 𩧡	ggvg
 𩧢	gggb
-𩧣	goid
+𩧣	gxip
 𩧤	gdlk
 𩧥	ggq
 𩧦	xskg
@@ -75309,7 +75309,7 @@
 𫦾	wooa
 𫦿	hdaa
 𫧀	sbmf
-𫧁	sjvn
+𫧁	sjvk
 𫧂	liso
 𫧃	sbsp
 𫧄	smvx
@@ -139013,7 +139013,7 @@
 𣎃	mxyf
 𣎄	mnff
 𣎅	mjsx
-𣎆	ximo
+𣎆	oroo
 𣎇	mjgy
 𣎈	msci
 𣎉	gmup
@@ -142539,7 +142539,7 @@
 𤅕	hzml
 𤅖	hwlw
 𤅗	home
-𤅘	hoid
+𤅘	hxim
 𤅙	hror
 𤅚	hwzr
 𤅛	hwcq
@@ -150860,7 +150860,7 @@
 𦇺	hodm
 𦇻	kssw
 𦇼	hfkj
-𦇽	hoid
+𦇽	hxim
 𦇾	harm
 𦇿	hzaa
 𦈀	kssu
@@ -152576,7 +152576,7 @@
 𦢹	miyx
 𦢺	myvy
 𦢻	ssgs
-𦢼	ximi
+𦢼	ximp
 𦢽	ezis
 𦢾	mdhk
 𦢿	mdvi
@@ -165126,7 +165126,7 @@
 𩧠	gzsl
 𩧡	ggvg
 𩧢	gggb
-𩧣	goid
+𩧣	gxip
 𩧤	gdlk
 𩧥	ggqb
 𩧦	xskg
@@ -173137,7 +173137,7 @@
 𫦾	wooa
 𫦿	hdaa
 𫧀	sbmf
-𫧁	sjvn
+𫧁	sjvk
 𫧂	liso
 𫧃	sbsp
 𫧄	smvx
