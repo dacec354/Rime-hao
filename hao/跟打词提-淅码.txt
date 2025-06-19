@@ -35755,7 +35755,7 @@
 𡹃	dbaj
 𡹄	dfwu
 𡹅	fwd
-𡹆	dmqt
+𡹆	dbq
 𡹇	daaj
 𡹈	dfsl
 𡹉	dlbh
@@ -83833,7 +83833,7 @@
 𭮲	saqi
 𭮳	kjbq
 𭮴	osfq
-𭮵	dbq
+𭮵	dbqi
 𭮶	mmiw
 𭮷	kqio
 𭮸	yaqi
@@ -133583,7 +133583,7 @@
 𡹃	dbaj
 𡹄	dfwu
 𡹅	fwds
-𡹆	dmqt
+𡹆	dbqt
 𡹇	daaj
 𡹈	dfsl
 𡹉	dlbh
