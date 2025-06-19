@@ -23,9 +23,10 @@ local kRejected = 0 -- 拒: 不作響應, 由操作系統做默認處理
 local kAccepted = 1 -- 收: 由rime響應該按鍵
 local kNoop     = 2 -- 無: 請下一個processor繼續看
 
-local function init(env)
-    env.engine.context:set_option("leosy_auto_commit", true)
-end
+--取消默认值设置
+--local function init(env)
+--    env.engine.context:set_option("leosy_auto_commit", true)
+--end
 
 local function func(key_event, env)
     local context = env.engine.context

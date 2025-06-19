@@ -18,6 +18,10 @@ schema:
     - leosy_chaifen
 
 switches:
+  - name: leosy_auto_commit
+    #reset: 0
+    abbrev: [松, 烟]
+    states: [☐关闭自动上屏, ☑开启自动上屏]
   - options:
       - original
       - yuhao_charset_prioritizer_common
@@ -25,12 +29,6 @@ switches:
     states: [原始排序, 常用字優先, 極常用字優先]
     #reset: 0
     # Control+Shift+M
-  - name: leosy_auto_commit
-    #reset: 1
-    states: [关闭自动上屏, 自动上屏开启]
-  #- name: embeded_cands
-  #  states: [ 普通, 嵌入 ]
-    #reset: 1
   - options:
       - cjk
       - yuhao_charset_filter_common
@@ -120,7 +118,6 @@ engine:
     - lua_filter@*yuhao.yuhao_postpone_full_code
     - lua_filter@*yuhao.yuhao_charset_prioritizer_common
     - lua_filter@*yuhao.yuhao_charset_prioritizer_ubiquitous
-    #- lua_filter@*hao.embeded_cands
     - uniquifier
 
 traditionalize:
@@ -292,8 +289,6 @@ yuhao_macro:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
     commit:
       - { type: switch, name: leosy_auto_commit, states: [☐关闭自动上屏, ☑开启自动上屏] }
-    #cand:
-    #  - { type: switch, name: embeded_cands, states: [☐普通, ☑嵌入] }
     dist:
       - type: eval
         expr: >
@@ -338,7 +333,6 @@ key_binder:
     - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    #- { when: always, accept: "Control+Shift+E", toggle: embeded_cands }
     - {
         when: always,
         accept: "Control+Shift+M",
