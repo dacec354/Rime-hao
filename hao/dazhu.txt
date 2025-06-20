@@ -38283,6 +38283,7 @@ fhszh	𢔲
 fhbng	𢔳
 fhqkl	𢔴
 fhlgd	𢔵
+fhlmd	𢔵
 fhxjf	𢔶
 fhlgg	𢔷
 fhqmw	𢔸
@@ -52336,6 +52337,7 @@ pjfhf	𥱌
 pqanr	𥱍
 paxps	𥱎
 plgdj	𥱏
+plmdj	𥱏
 pkjgo	𥱐
 ptlbk	𥱑
 phjau	𥱒
@@ -60095,14 +60097,15 @@ dlmgu	𧪴
 kcdu	𧪵
 dhaqi	𧪶
 mtdkf	𧪷
-dlgdj	𧪸
+dalps	𧪸
 dgsne	𧪹
+dcddk	𧪺
 dcdlf	𧪺
 djjsi	𧪻
 dkzye	𧪼
 dlsvo	𧪽
 dqsyf	𧪾
-dlgdj	𧪿
+dlmdj	𧪿
 dgayr	𧫀
 dpkyr	𧫁
 dqqi	𧫂

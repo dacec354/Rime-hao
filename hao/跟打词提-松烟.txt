@@ -38263,6 +38263,7 @@ Ciallo～(∠・ω< )⌒★	cle
 𢔳	fhbng
 𢔴	fhqkl
 𢔵	fhlgd
+𢔵	fhlmd
 𢔶	fhxjf
 𢔷	fhlgg
 𢔸	fhqmw
@@ -52316,6 +52317,7 @@ Ciallo～(∠・ω< )⌒★	cle
 𥱍	pqanr
 𥱎	paxps
 𥱏	plgdj
+𥱏	plmdj
 𥱐	pkjgo
 𥱑	ptlbk
 𥱒	phjau
@@ -60075,14 +60077,15 @@ Ciallo～(∠・ω< )⌒★	cle
 𧪵	kcdu
 𧪶	dhaqi
 𧪷	mtdkf
-𧪸	dlgdj
+𧪸	dalps
 𧪹	dgsne
+𧪺	dcddk
 𧪺	dcdlf
 𧪻	djjsi
 𧪼	dkzye
 𧪽	dlsvo
 𧪾	dqsyf
-𧪿	dlgdj
+𧪿	dlmdj
 𧫀	dgayr
 𧫁	dpkyr
 𧫂	dqqi

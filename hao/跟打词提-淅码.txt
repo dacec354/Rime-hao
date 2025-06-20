@@ -37528,6 +37528,7 @@
 𢔳	jwoj
 𢔴	jjit
 𢔵	jbg
+𢔵	jbz
 𢔶	jslw
 𢔷	jlig
 𢔸	jpwk
@@ -51581,6 +51582,7 @@
 𥱍	zjpo
 𥱎	zxpb
 𥱏	zbgz
+𥱏	zbzz
 𥱐	zidn
 𥱑	zian
 𥱒	zhns
@@ -59340,14 +59342,15 @@
 𧪵	bmef
 𧪶	mngy
 𧪷	mmoz
-𧪸	mbgz
+𧪸	mxfb
 𧪹	mejt
 𧪺	mtjb
+𧪺	mtzf
 𧪻	myyq
 𧪼	miic
 𧪽	mfoj
 𧪾	mych
-𧪿	mbgz
+𧪿	mbzz
 𧫀	mcso
 𧫁	mbio
 𧫂	mjyd
@@ -71890,7 +71893,7 @@
 𪰆	jnvf
 𪰇	jrks
 𪰈	jrah
-𪰉	jbz
+𪰉	jbzk
 𪰊	jldf
 𪰋	jryo
 𪰌	joup
@@ -135356,6 +135359,7 @@
 𢔳	jwoj
 𢔴	jjit
 𢔵	jbgz
+𢔵	jbzz
 𢔶	jslw
 𢔷	jlig
 𢔸	jpwk
@@ -149409,6 +149413,7 @@
 𥱍	zjpo
 𥱎	zxpb
 𥱏	zbgz
+𥱏	zbzz
 𥱐	zidn
 𥱑	zian
 𥱒	zhns
@@ -157168,14 +157173,15 @@
 𧪵	bmef
 𧪶	mngy
 𧪷	mmoz
-𧪸	mbgz
+𧪸	mxfb
 𧪹	mejt
 𧪺	mtjb
+𧪺	mtzf
 𧪻	myyq
 𧪼	miic
 𧪽	mfoj
 𧪾	mych
-𧪿	mbgz
+𧪿	mbzz
 𧫀	mcso
 𧫁	mbio
 𧫂	mjyd
