@@ -157,8 +157,8 @@ yuhao_chaifen:
     phrase: 0
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba;'/0123456789
-  initials: zyxwvutsrqponmlkjihgfedcba;'/0123456789
+  alphabet: zyxwvutsrqponmlkjihgfedcba;'/  #0123456789，开启auto_commit后，可恢复数字键选重
+  initials: zyxwvutsrqponmlkjihgfedcba;'/  #0123456789，开启auto_commit后，可恢复数字键选重
   delimiter: "`"
   #max_code_length: 5
   auto_select: true
