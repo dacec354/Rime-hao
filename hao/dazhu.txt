@@ -250,6 +250,7 @@ svu	醒
 ffr	色
 fai	读
 cpi	脚
+tku	缀
 vge	晕
 vdr	冕
 hsw	汩
