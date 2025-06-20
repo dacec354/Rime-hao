@@ -11780,7 +11780,7 @@
 夡	xxm
 夣	pyex
 夦	mvpx
-夨	pxio
+夨	fpo
 夰	xkg
 夲	xgl
 夳	xrl
@@ -20762,7 +20762,7 @@
 驪	gfmc
 驫	gggb
 骩	fdpj
-骪	fpo
+骪	fpoe
 骫	ftko
 骬	ffg
 骮	fnd
@@ -45581,7 +45581,7 @@
 𤒽	ywe
 𤒾	ywcy
 𤒿	xiby
-𤓀	ysyk
+𤓀	ytij
 𤓁	yat
 𤓂	ywhu
 𤓃	yzaj
@@ -109611,7 +109611,7 @@
 夡	xxmi
 夣	pyex
 夦	mvpx
-夨	pxio
+夨	fpoe
 夰	xkgk
 夲	xglk
 夳	xrlf
@@ -143412,7 +143412,7 @@
 𤒽	ywev
 𤒾	ywcy
 𤒿	xiby
-𤓀	ysyk
+𤓀	ytij
 𤓁	yatw
 𤓂	ywhu
 𤓃	yzaj
