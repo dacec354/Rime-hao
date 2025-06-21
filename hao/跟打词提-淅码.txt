@@ -32561,7 +32561,7 @@
 𡆲	uxc
 𡆳	udup
 𡆴	upbm
-𡆵	upp
+𡆵	ukfk
 𡆶	uuep
 𡆷	uifh
 𡆸	ufdp
@@ -32647,8 +32647,8 @@
 𡈈	uhdn
 𡈉	uwgi
 𡈊	ugbo
-𡈋	fikp
-𡈌	uwu
+𡈋	giuk
+𡈌	uwzz
 𡈍	ssss
 𡈎	utz
 𡈏	ufmg
@@ -32678,7 +32678,7 @@
 𡈧	fiuw
 𡈨	urru
 𡈩	uydn
-𡈪	ujru
+𡈪	udr
 𡈫	unih
 𡈬	ukgl
 𡈭	ulm
@@ -38769,7 +38769,7 @@
 𢨎	giii
 𢨏	xpjc
 𢨐	rnm
-𢨑	udr
+𢨑	udrl
 𢨒	ydie
 𢨓	rsri
 𢨔	oieo
@@ -60770,7 +60770,7 @@
 𨁉	uuaj
 𨁊	udtp
 𨁋	ueif
-𨁌	uppt
+𨁌	upp
 𨁍	uscp
 𨁎	uicb
 𨁏	ugno
@@ -60895,7 +60895,7 @@
 𨃈	uxvd
 𨃉	ujbl
 𨃊	udiy
-𨃋	uwuu
+𨃋	uwu
 𨃌	upbl
 𨃍	uzle
 𨃎	ukwb
@@ -130392,7 +130392,7 @@
 𡆲	uxcp
 𡆳	udup
 𡆴	upbm
-𡆵	uppp
+𡆵	ukfk
 𡆶	uuep
 𡆷	uifh
 𡆸	ufdp
@@ -130478,8 +130478,8 @@
 𡈈	uhdn
 𡈉	uwgi
 𡈊	ugbo
-𡈋	fikp
-𡈌	uwuz
+𡈋	giuk
+𡈌	uwzz
 𡈍	ssss
 𡈎	utzo
 𡈏	ufmg
@@ -130509,7 +130509,7 @@
 𡈧	fiuw
 𡈨	urru
 𡈩	uydn
-𡈪	ujru
+𡈪	udrb
 𡈫	unih
 𡈬	ukgl
 𡈭	ulml
