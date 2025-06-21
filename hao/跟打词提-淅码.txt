@@ -28777,7 +28777,7 @@
 𠋙	kxsk
 𠋚	kxvm
 𠋛	kkrm
-𠋜	kyr
+𠋜	koqi
 𠋝	kgoc
 𠋞	kjhe
 𠋟	kwsi
@@ -29054,7 +29054,7 @@
 𠏯	kebp
 𠏰	kcfy
 𠏱	kbsi
-𠏲	kyrj
+𠏲	kyr
 𠏳	hdks
 𠏴	kgek
 𠏵	kpft
@@ -30935,7 +30935,7 @@
 𠭐	mwc
 𠭑	wxzj
 𠭒	jrwi
-𠭓	lyw
+𠭓	lofw
 𠭔	cuow
 𠭕	lssw
 𠭖	tqwi
@@ -33134,7 +33134,7 @@
 𡏳	xisb
 𡏴	urbm
 𡏵	ufbm
-𡏶	byic
+𡏶	bofi
 𡏷	bsnl
 𡏸	ybfb
 𡏹	tbvb
@@ -48932,7 +48932,7 @@
 𥇨	qygy
 𥇩	gwfp
 𥇪	gdmf
-𥇫	gyhg
+𥇫	gofh
 𥇬	gsaj
 𥇭	geiq
 𥇮	sskg
@@ -55151,7 +55151,7 @@
 𦩋	ldmf
 𦩌	lfsl
 𦩍	lzbi
-𦩎	lywh
+𦩎	lyw
 𦩏	lvhf
 𦩐	llew
 𦩑	lass
@@ -55482,7 +55482,7 @@
 𦮗	wusm
 𦮘	wvwh
 𦮙	wwwh
-𦮚	wynd
+𦮚	wopd
 𦮛	whro
 𦮜	wepf
 𦮝	wnxc
@@ -126608,7 +126608,7 @@
 𠋙	kxsk
 𠋚	kxvm
 𠋛	kkrm
-𠋜	kyri
+𠋜	koqi
 𠋝	kgoc
 𠋞	kjhe
 𠋟	kwsi
@@ -128766,7 +128766,7 @@
 𠭐	mwcl
 𠭑	wxzj
 𠭒	jrwi
-𠭓	lywi
+𠭓	lofw
 𠭔	cuow
 𠭕	lssw
 𠭖	tqwi
@@ -130965,7 +130965,7 @@
 𡏳	xisb
 𡏴	urbm
 𡏵	ufbm
-𡏶	byic
+𡏶	bofi
 𡏷	bsnl
 𡏸	ybfb
 𡏹	tbvb
@@ -146763,7 +146763,7 @@
 𥇨	qygy
 𥇩	gwfp
 𥇪	gdmf
-𥇫	gyhg
+𥇫	gofh
 𥇬	gsaj
 𥇭	geiq
 𥇮	sskg
@@ -153313,7 +153313,7 @@
 𦮗	wusm
 𦮘	wvwh
 𦮙	wwwh
-𦮚	wynd
+𦮚	wopd
 𦮛	whro
 𦮜	wepf
 𦮝	wnxc
