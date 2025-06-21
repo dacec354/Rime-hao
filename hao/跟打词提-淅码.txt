@@ -53750,7 +53750,7 @@
 𦓍	rjrr
 𦓎	ukgk
 𦓏	duak
-𦓐	cytk
+𦓐	czkk
 𦓑	udp
 𦓒	yuak
 𦓓	fuak
@@ -75201,7 +75201,7 @@
 𫥏	lary
 𫥐	ljfl
 𫥑	lukg
-𫥒	ldyx
+𫥒	ldzx
 𫥓	ltmk
 𫥔	lyaj
 𫥕	ltnm
@@ -89582,7 +89582,7 @@
 ⺲	ytkf
 ⺳	evyo
 ⺴	eahp
-⺵	ytkk
+⺵	zkks
 ⺶	idoc
 ⺷	idof
 ⺸	idkk
@@ -151581,7 +151581,7 @@
 𦓍	rjrr
 𦓎	ukgk
 𦓏	duak
-𦓐	cytk
+𦓐	czkk
 𦓑	udpj
 𦓒	yuak
 𦓓	fuak
@@ -173032,7 +173032,7 @@
 𫥏	lary
 𫥐	ljfl
 𫥑	lukg
-𫥒	ldyx
+𫥒	ldzx
 𫥓	ltmk
 𫥔	lyaj
 𫥕	ltnm
@@ -187413,7 +187413,7 @@
 ⺲	ytkf
 ⺳	evyo
 ⺴	eahp
-⺵	ytkk
+⺵	zkks
 ⺶	idoc
 ⺷	idof
 ⺸	idkk
