@@ -27129,7 +27129,7 @@ dkjzi	䛽
 dmyfo	䛾
 dqmw	䛿
 dvndi	䜀
-dppyd	䜁
+dppnr	䜁
 ddyak	䜂
 dhpsu	䜃
 dmhmd	䜄
@@ -31343,8 +31343,8 @@ cklkd	𠧰
 fjnxi	𠧱
 fjdto	𠧲
 fjkhs	𠧳
-fjnxi	𠧴
-fjnyd	𠧵
+fjzax	𠧴
+fjfyd	𠧵
 fjgjh	𠧶
 fjnxi	𠧷
 fjzhs	𠧸
@@ -34077,7 +34077,7 @@ snaps	𡒰
 jsdsp	𡒱
 pskps	𡒲
 psfvh	𡒳
-sndps	𡒴
+smaps	𡒴
 psgcn	𡒵
 pstna	𡒶
 psfsz	𡒷
@@ -34469,7 +34469,7 @@ ydlto	𡘼
 tltyd	𡘽
 shlyd	𡘾
 sjzyr	𡘿
-xcxyd	𡙀
+xclxn	𡙀
 ydaaa	𡙁
 yddzh	𡙂
 ydyng	𡙃
@@ -38585,7 +38585,7 @@ jtkhd	𢙢
 dhhdu	𢙣
 fjlfh	𢙤
 sfhdu	𢙥
-snhdu	𢙦
+jzshd	𢙦
 hdfpl	𢙧
 hdafq	𢙨
 hdsko	𢙩
@@ -41379,7 +41379,7 @@ vlso	𣅐
 jdvo	𣅑
 vsfkw	𣅒
 vgle	𣅓
-vxydi	𣅔
+vlxnr	𣅔
 vdyw	𣅕
 vne	𣅖
 vmfo	𣅗
@@ -55656,7 +55656,7 @@ kkkr	𦥏
 bkktm	𦥐
 jzi	𦥑
 fzxdj	𦥒
-snfo	𦥓
+jzso	𦥓
 jzfu	𦥔
 jzfxi	𦥕
 dmjzi	𦥖
@@ -56710,7 +56710,7 @@ clmfc	𦵱
 clagb	𦵲
 clspt	𦵳
 clxkt	𦵴
-clfnx	𦵵
+clfzx	𦵵
 cljat	𦵶
 cllgd	𦵷
 clhcm	𦵸
@@ -57334,7 +57334,7 @@ clvjy	𦿡
 clglc	𦿢
 cldcl	𦿣
 cljlc	𦿤
-clfnc	𦿥
+clfzc	𦿥
 cldav	𦿦
 cldks	𦿧
 clmdz	𦿨
@@ -59522,7 +59522,7 @@ ydhxy	𧡵
 vjxyr	𧡶
 xycay	𧡷
 zxyr	𧡸
-fjnxx	𧡹
+fjzax	𧡹
 fkvxy	𧡺
 zlfxy	𧡻
 qhcxy	𧡼
@@ -69845,7 +69845,7 @@ nssbl	𪃠
 hsajb	𪃡
 akdtb	𪃢
 mvnvb	𪃣
-pspxb	𪃤
+psplb	𪃤
 tldbl	𪃥
 dkfsb	𪃦
 dkfsb	𪃧
@@ -72103,7 +72103,7 @@ gkqqc	𪧝
 gkhkd	𪧞
 gkhsa	𪧟
 gkhss	𪧠
-akdxj	𪧡
+akdlj	𪧡
 gkpjy	𪧢
 gkcmh	𪧣
 gkkhf	𪧤
@@ -74415,7 +74415,7 @@ yyfo	𫋼
 yfai	𫋽
 yyjxi	𫋾
 ythfi	𫋿
-yadxi	𫌁
+yadle	𫌁
 ymgle	𫌂
 ydsli	𫌃
 ybysm	𫌄
@@ -75146,7 +75146,7 @@ jdfbw	𫗺
 jdffc	𫗻
 msvpp	𫗼
 msvag	𫗽
-msvax	𫗾
+msval	𫗾
 msvjd	𫗿
 msvbw	𫘀
 msvmz	𫘁
@@ -75824,7 +75824,7 @@ jvppd	𫣉
 jdlbu	𫣋
 jtxbk	𫣌
 ajscu	𫣍
-jgxjd	𫣎
+jgdjd	𫣎
 jhgu	𫣏
 jjkyr	𫣐
 jqdlw	𫣑
@@ -75849,7 +75849,7 @@ jfvjf	𫣣
 jcqr	𫣤
 jcjjf	𫣥
 jcdlf	𫣦
-jaaxi	𫣧
+jaale	𫣧
 jdssh	𫣨
 jjtkf	𫣩
 jlfsi	𫣪
@@ -75897,7 +75897,7 @@ jvand	𫤓
 jccbl	𫤔
 jvasj	𫤕
 jmlhf	𫤖
-xvlr	𫤗
+xclr	𫤗
 salr	𫤘
 zlgvk	𫤙
 ygcbk	𫤚
@@ -79054,7 +79054,7 @@ kabks	𬖘
 kazlk	𬖙
 kagtl	𬖚
 kajcm	𬖛
-xkcbk	𬖜
+kaxcb	𬖜
 kavlv	𬖝
 kaqhd	𬖟
 kagyd	𬖠
@@ -80689,7 +80689,7 @@ nhar	𬱁
 hdsar	𬱂
 xkkar	𬱃
 vknha	𬱄
-xdar	𬱅
+dhxar	𬱅
 sklar	𬱆
 jdvpa	𬱇
 zkbar	𬱈
@@ -81269,7 +81269,7 @@ anle	𬺲
 lvje	𬺳
 xlle	𬺴
 smxi	𬺵
-jtffu	𬺶
+	𬺶
 lfxi	𬺷
 jdxi	𬺸
 alle	𬺹
@@ -81338,7 +81338,7 @@ mfzpn	𬻷
 kdfvf	𬻸
 afzhd	𬻹
 ndmw	𬻺
-xngu	𬻻
+ngxi	𬻻
 pgbpy	𬻼
 ngxyd	𬻽
 jvpsn	𬻾
@@ -81396,7 +81396,7 @@ hssjr	𬼱
 vjkjr	𬼲
 hajr	𬼳
 dnajf	𬼴
-ydxkl	𬼵
+ydklx	𬼵
 dmle	𬼶
 dmnr	𬼷
 jdfu	𬼸
@@ -81923,7 +81923,7 @@ gjzsl	𭅁
 zhajs	𭅂
 jvxns	𭅃
 slbu	𭅄
-slxbu	𭅅
+slbxi	𭅅
 sllfo	𭅆
 slfkd	𭅇
 sljjf	𭅈
@@ -82026,7 +82026,7 @@ bdi	𭆨
 bafps	𭆩
 fvfbu	𭆪
 djbab	𭆫
-qhpbu	𭆬
+npbu	𭆬
 bvxnr	𭆭
 fmbu	𭆮
 jdgzb	𭆯
@@ -82198,7 +82198,7 @@ xklkd	𭉔
 kdblg	𭉕
 mfgkv	𭉖
 kdtlk	𭉗
-kfxkl	𭉘
+kfklx	𭉘
 kdjck	𭉙
 kdpbh	𭉚
 kdkvj	𭉛
@@ -83401,7 +83401,7 @@ fhmka	𭜊
 zxhdu	𭜋
 hdlvj	𭜌
 sbhdu	𭜍
-xzhdu	𭜎
+zxhdu	𭜎
 hdavk	𭜏
 hdqu	𭜐
 akhdu	𭜑
@@ -83436,7 +83436,7 @@ hdsxo	𭜭
 jdjhd	𭜮
 ghhhd	𭜯
 gkmhd	𭜰
-hdxhf	𭜱
+hdhxi	𭜱
 hdags	𭜲
 lffhd	𭜳
 hdvvv	𭜴
@@ -83724,7 +83724,7 @@ kslmf	𭡍
 ksvvv	𭡎
 kskci	𭡏
 ksdjn	𭡐
-ksxkv	𭡑
+kskxv	𭡑
 kslan	𭡒
 kskhf	𭡓
 ksfzf	𭡔
@@ -83991,7 +83991,7 @@ vjanw	𭥙
 jhsu	𭥚
 vqxi	𭥛
 mfnvo	𭥜
-xdvo	𭥝
+djxvo	𭥝
 vasi	𭥞
 xbvxi	𭥟
 vblr	𭥠
@@ -84343,7 +84343,7 @@ zhtty	𭪹
 tlcam	𭪺
 zhtaf	𭪻
 mgsat	𭪼
-tlxkd	𭪽
+tlkxd	𭪽
 tllle	𭪾
 dvnsu	𭪿
 tlgsm	𭫀
@@ -85351,7 +85351,7 @@ mto	𭺪
 mto	𭺫
 mtvvo	𭺬
 mtgto	𭺭
-ndxkm	𭺮
+ndxmt	𭺮
 mtjcn	𭺯
 mlmto	𭺰
 mgjfu	𭺱
@@ -85379,7 +85379,7 @@ zhfyr	𭻆
 zhskr	𭻇
 psbys	𭻈
 kfkzh	𭻉
-zhfxa	𭻊
+zhfxg	𭻊
 xsvsi	𭻋
 dhzhe	𭻌
 lszhe	𭻍
@@ -85563,20 +85563,20 @@ dlpdi	𭽾
 slkpd	𭽿
 fkpdi	𭾀
 fhpdi	𭾁
-jdjpd	𭾂
+tnpdi	𭾂
 ksvkp	𭾃
 ksfkp	𭾄
 gkxlp	𭾅
-qhksc	𭾆
+nkspd	𭾆
 mvnvp	𭾇
 psbdp	𭾈
 mggpd	𭾉
 fmmpd	𭾊
-qhkzp	𭾋
+nkzpd	𭾋
 psksp	𭾌
 yskpd	𭾍
 yfxpd	𭾎
-qhspd	𭾏
+nspdi	𭾏
 lfmpd	𭾐
 qhhpd	𭾑
 qfpdi	𭾒
@@ -85631,7 +85631,7 @@ dkbgj	𭿂
 clkgd	𭿃
 dkmjx	𭿄
 dkmny	𭿅
-dkcxl	𭿆
+dkcsl	𭿆
 dkmgj	𭿇
 dksdu	𭿈
 dkffh	𭿉
@@ -86146,7 +86146,7 @@ kamr	𮇆
 kavo	𮇇
 kajgm	𮇈
 kahfo	𮇉
-xklfj	𮇊
+kaxlf	𮇊
 kafbk	𮇋
 kadyd	𮇌
 kaklg	𮇍
@@ -86526,11 +86526,11 @@ tmhcu	𮍈
 djaas	𮍉
 cjtxy	𮍊
 clvyc	𮍋
-fxxpg	𮍌
-qhbu	𮍍
+nw	𮍌
+nbu	𮍍
 lsqhe	𮍎
 kqhe	𮍏
-kqhe	𮍐
+knw	𮍐
 qhhkd	𮍑
 ngkqh	𮍒
 qhvzu	𮍓
@@ -86631,17 +86631,17 @@ cljyr	𮎱
 cldxi	𮎲
 clklx	𮎳
 clgvo	𮎴
-clxng	𮎵
+clngx	𮎵
 clfkc	𮎶
-clhxz	𮎷
+clhzx	𮎷
 clgkc	𮎸
 akkps	𮎹
 clkgu	𮎺
 clpsd	𮎻
 clpqh	𮎼
-clxqh	𮎽
+clqxi	𮎽
 clhly	𮎾
-clxlj	𮎿
+clljx	𮎿
 clmmw	𮏀
 clzht	𮏁
 cllcf	𮏂
@@ -87151,7 +87151,7 @@ yzkkd	𮖾
 dhcbk	𮖿
 dhmgh	𮗀
 dhylb	𮗁
-dhxys	𮗂
+dhyxi	𮗂
 dhxan	𮗃
 dhhhf	𮗄
 dhgsp	𮗅
@@ -87173,7 +87173,7 @@ kdskk	𮗔
 kshbu	𮗕
 vjajk	𮗖
 gksks	𮗗
-qhkzk	𮗘
+nkzks	𮗘
 xykci	𮗙
 akhks	𮗚
 cldak	𮗛
@@ -88664,7 +88664,7 @@ fzcjg	𮮹
 jvmjl	𮮺
 jvvnz	𮮻
 jvmjv	𮮼
-dxaau	𮮽
+daaxi	𮮽
 fmvke	𮮾
 fmjfo	𮮿
 fmdlw	𮯀
@@ -88750,7 +88750,7 @@ dydyw	𰀱
 kgjr	𰀲
 xmr	𰀳
 gyjr	𰀴
-xsmgi	𰀵
+smxi	𰀵
 ndjr	𰀶
 mgaxi	𰀷
 kkw	𰀸
@@ -88776,7 +88776,7 @@ xjjsi	𰁌
 jgbjr	𰁍
 tmppj	𰁎
 xssne	𰁏
-xfvnf	𰁐
+fjvnx	𰁐
 hqkxi	𰁑
 dmdmw	𰁒
 ksbfd	𰁓
@@ -90458,7 +90458,7 @@ vbw	𰖢
 vje	𱍸
 vje	𱡺
 vto	𱢂
-xdo	𰭼
+dxi	𰭼
 xfu	𰛄
 xme	𲃛
 xmo	𲃢
@@ -91016,7 +91016,7 @@ xalr	𱎀
 xbbu	𰸇
 xdar	𰸰
 xdcu	𰸕
-xdhw	𰀾
+dhxi	𰀾
 xfnr	𰸃
 xfye	𲃖
 xgme	𰸆
@@ -91028,7 +91028,7 @@ xjbo	𲃜
 xjfi	𱡢
 xjho	𱬽
 xjvo	𱡣
-xkgi	𱎁
+kgxi	𱎁
 xksu	𰓉
 xlle	𲊦
 xlto	𱎇
@@ -91124,7 +91124,7 @@ ahtkc	𰭔
 ahvpj	𱻇
 ahvvk	𱺸
 ahvxl	𰻵
-ahxll	𰻾
+ahlxl	𰻾
 ahyhx	鿡
 ahyvk	𱻆
 ahzcy	𲂷
@@ -91251,7 +91251,7 @@ akkjj	𱕭
 akkjl	𱍨
 akksj	𱊴
 akksl	𱍥
-akkxi	𱍓
+akksn	𱍓
 akmcv	𱬯
 akscm	𰝸
 aksfa	𱽓
@@ -91508,7 +91508,7 @@ bynsi	𱇧
 byzxi	𱇦
 caahd	𰯕
 caxbu	𰯓
-caxdn	𰯒
+cadxi	𰯒
 cayto	𰯞
 cbssj	𰯊
 ccakd	𰮷
@@ -92814,7 +92814,7 @@ fkvhv	𱻯
 fkvlx	𲄆
 fkvxx	𲃼
 fkxjl	𱻬
-fkxka	𱻫
+fkkax	𱻫
 fkyjf	𱝊
 fkynp	𱝆
 fkzal	𰻽
@@ -94084,7 +94084,7 @@ hspqv	𰝗
 hspvi	𱨙
 hspzc	𱩸
 hspzv	𱩹
-hsqap	𱨩
+hsppp	𱨩
 hsqau	𰛛
 hsqdl	𱧚
 hsqfy	𰛩
@@ -94170,7 +94170,7 @@ hsxgj	𱦹
 hsxhe	𰜮
 hsxkz	𱨗
 hsxpt	𱧂
-hsxyy	𱧄
+hsyxx	𱧄
 hsyas	𰝁
 hsycu	𱦚
 hsycv	𰝎
@@ -98132,7 +98132,7 @@ xdknd	𲃵
 xdlfi	𰸥
 xdlgh	𰸤
 xdpsu	𲃰
-xdzkf	𱡮
+dzxkf	𱡮
 xfahd	𰸣
 xfbbu	𲃲
 xffvo	𰸒
@@ -98196,7 +98196,7 @@ xnflw	𱎋
 xnndu	𱎌
 xnndu	𲅋
 xnplr	𲄖
-xntau	𲉖
+nxtau	𲉖
 xpflg	𰸲
 xpgye	𲃾
 xphdu	𱞆
@@ -98205,12 +98205,12 @@ xpmxi	𲄇
 xqdlw	𲃶
 xqffl	𲃯
 xqhdu	𲃧
-xskai	𰪨
+slkxi	𰪨
 xsksm	𰸦
 xsndu	𲃦
 xsnjf	𰸸
-xsnjf	𲉙
-xsnsk	𲉐
+snxjf	𲉙
+snxsk	𲉐
 xstlr	𲃞
 xtdkw	𱎈
 xtfyw	𰸫
@@ -98581,6 +98581,6 @@ zyznw	𰷅
 zzvje	𰭞
 lvjkx	㍻
 tlscp	㍿
-vchbk	㍾
-vvmkd	㍼
+vchkd	㍾
+vvkkd	㍼
 ydldi	㍽
