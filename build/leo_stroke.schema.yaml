@@ -1,0 +1,51 @@
+__build_info:
+  rime_version: 1.13.1
+  timestamps:
+    default: 1750952304
+    default.custom: 1750952187
+    leo_stroke.custom: 0
+    leo_stroke.schema: 1750903198
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+menu:
+  page_size: 5
+schema:
+  dependencies:
+    - stroke_dovepelia
+  name: "好码笔画"
+  schema_id: leo_stroke
+  version: beta
+speller:
+  algebra:
+    - "xlit/qweas/hspnz/"
+  alphabet: hspnz
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: ["中文", "西文"]
+translator:
+  dictionary: stroke_dovepelia
+  enable_completion: true
+  enable_encoder: false
+  enable_sentence: false
+  enable_user_dict: false
+  encode_commit_history: false
+  prism: leo_stroke
+  strict_spelling: true

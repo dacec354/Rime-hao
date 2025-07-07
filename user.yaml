@@ -1,0 +1,11 @@
+var:
+  last_build_time: 1751635285
+  option:
+    cjk: true
+    full_shape: false
+    original: true
+    traditionalization: false
+    yuhao_charset_filter_common: false
+    yuhao_charset_filter_harmonic: false
+    yuhao_charset_filter_tonggui: false
+    yuhao_postpone_full_code: true
