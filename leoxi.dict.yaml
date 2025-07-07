@@ -16,6 +16,8 @@ import_tables:
   - hao/leoxi.quicks
   # 以下是單字全碼
   - hao/leoxi.full
+  # 以下是字根快打
+  - hao/leoxi.roots
   # 以下是快符
   - hao/leo.fastsymbols
   # 以下是符號

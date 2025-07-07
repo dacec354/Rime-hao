@@ -1,0 +1,93 @@
+name: Sync External Release
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      target_repo:
+        description: "Target repo (e.g., auther/his-repo)"
+        default: "hertz-hwang/wf-hao"
+      target_branch:
+        description: "Target branch to force push (e.g., main)"
+        default: "main"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Current Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 强制推送需要完整历史
+
+      - name: Get Latest Release Asset
+        id: get_release
+        run: |
+          # 获取最新 release 中 hao 开头的第一个压缩包
+          ASSET_URL=$(curl -s "https://api.github.com/repos/${{ github.event.inputs.target_repo }}/releases/latest" | \
+            jq -r '.assets[] | select(.name | startswith("hao")) | .browser_download_url' | head -1)
+          
+          if [ -z "$ASSET_URL" ]; then
+            echo "未找到 hao 开头的压缩包"
+            exit 1
+          fi
+          
+          echo "下载链接: $ASSET_URL"
+          echo "ASSET_URL=$ASSET_URL" >> $GITHUB_OUTPUT
+    
+      - name: Download and Extract Asset
+        run: |
+          # 创建临时目录
+          mkdir -p extracted_content
+          
+          # 下载压缩包
+          curl -L -o release_asset "${{ steps.get_release.outputs.ASSET_URL }}"
+          
+          # 解压到临时目录
+          if [[ "${{ steps.get_release.outputs.ASSET_URL }}" == *.zip ]]; then
+            unzip -q release_asset -d extracted_content
+          else
+            tar -xzf release_asset -C extracted_content
+          fi
+          
+          # 检查是否只有一层外层文件夹
+          cd extracted_content
+          if [ $(ls -A | wc -l) -eq 1 ] && [ -d "$(ls -A)" ]; then
+            ORIGINAL_DIR="$(ls -A)"
+            NEW_DIR="${ORIGINAL_DIR}_temp"
+            mv "${ORIGINAL_DIR}" "${NEW_DIR}" 
+            mv "${NEW_DIR}"/* .
+            rm -rf "${NEW_DIR}"
+            cd ..
+          else
+            cd ..
+          fi
+
+          echo "解压完成，当前目录结构:"
+          ls -la
+      
+      - name: Prepare Force Push
+        run: |
+          # 配置 Git 用户
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+          # 1. 删除所有非隐藏文件和文件夹（保留 .git）
+          echo "正在清理目标目录（保留隐藏文件）..."
+          find . -maxdepth 1 ! -name ".*" ! -name "." ! -name "extracted_content" -exec rm -rf {} +
+          
+          # 2. 移动 extracted_content 的内容到当前目录
+          echo "正在移动新文件..."
+          shopt -s dotglob
+          mv extracted_content/* . 2>/dev/null || true
+          rm -rf extracted_content release_asset
+          
+          # 3. 提交变更
+          git add .
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "没有检测到文件变更"
+            exit 0
+          fi
+          git commit -m "自动同步上游 release: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push --force origin HEAD:main

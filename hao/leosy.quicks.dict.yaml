@@ -20,6 +20,7 @@ columns:
 甚至	mkr
 上来	fco
 自然	fce
+电脑	vcr
 方案	hgr
 爱情	hhu
 力量	svo
@@ -71,6 +72,25 @@ columns:
 景区	vpo
 翻译	sfu
 之间	fqo
+星期	vmu
+农历	gze
+启动	lhe
+中国	kzr
+美国	tzr
+法国	hzr
+德国	fzr
+韩国	azr
+暂停	aji
+纪录	tau
+公民	jhi
+撤回	kzi
+撤离	kjw
+游客	hgw
+接口	kki
+目标	dtw
+覆盖	dti
+弥补	nyr
+提供	kjo
 
 #==== 高频简词 ====#
 如果	gz;
@@ -158,8 +178,7 @@ columns:
 只是	kv;
 哪里	kj;
 感觉	kh;
-哪一	kl;
-这一	xl;
+重启	kl;
 时候	vj;
 得到	fk;
 遇到	zk;
@@ -280,6 +299,17 @@ columns:
 基本	mt;
 合作	cj;
 发展	gm;
+游戏	hb;
+传输	ja;
+调整	fn;
+银行	qd;
+索赔	as;
+国际	zl;
+脑机	ct;
+控制	km;
+增长	pd;
+答案	pg;
+忐忑	fl;
 为什么	njs;
 你们好	jjg;
 输入法	azh;
@@ -287,7 +317,12 @@ columns:
 太强了	tql;
 钛镪钌	qqq;
 鈦鏹釕	ttt;
-只要	kd;;e
+向日葵	svc;
+特朗普	mnj;
+马斯克	fms;
+俄罗斯	jam;
+乌克兰	caj;
+意大利	sym;
 
 #==== 常规简词 ====#
 #  首字双编，次字首根取全
@@ -349,7 +384,7 @@ columns:
 足够	xtye
 立刻	jhse
 看到	kkde
-或者	ffko
+战争	ffko
 或许	ffkw
 不懂	khgo
 不少	kfgi
@@ -395,15 +430,7 @@ columns:
 数据	kkgr
 证明	fvlu
 却将	psbo
-
-#==== 全码词 ====#
-几个	aanfu
-几人	aanu
-面前	sjmcv
-一点	lfjkc
-此时	dvvjf
-她们	gjkql
-平时	lvjjf
+连接	akne
 
 #==== 自用无理码 ====#
 上传词提 好拆	jfju

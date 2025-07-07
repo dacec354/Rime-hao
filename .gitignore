@@ -1,0 +1,13 @@
+.DS_Store
+/build
+/sync
+/*.userdb
+/default.custom.yaml
+/installation.yaml
+/user.yaml
+/squirrel.yaml
+/weasel.yaml
+/weasel.custom.yaml
+/leosy.custom.yaml
+/leopard.txt
+/leoxi.txt

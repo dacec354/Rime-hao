@@ -19,7 +19,7 @@ schema:
 
 switches:
   - name: leosy_auto_commit
-    #reset: 0
+    reset: 1
     abbrev: [松, 烟]
     states: [☐关闭自动上屏, ☑开启自动上屏]
   - options:
@@ -287,6 +287,8 @@ yuhao_macro:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
     dot:
       - { type: switch, name: ascii_punct, states: [☐中文標點, ☑西文標點] }
+    auto:
+      - { type: switch, name: leosy_auto_commit, states: [☐关闭自动上屏, ☑开启自动上屏] }
     commit:
       - { type: switch, name: leosy_auto_commit, states: [☐关闭自动上屏, ☑开启自动上屏] }
     dist:

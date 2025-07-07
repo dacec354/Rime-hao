@@ -55,13 +55,18 @@ local function func(key_event, env)
         context:push_input(current_char)
         
         -- 获取当前正在翻译的部分
-        local segment = context.composition:toSegmentation():back()
+        local composition = context.composition
+        if not composition or composition:empty() then
+            return kNoop
+        end
+        
+        local segment = composition:back()
         if not segment then
             return kNoop
         end
         
         -- 获取首选候选
-        local first_candidate = segment:get_candidate_at(0)
+        local first_candidate = segment:get_selected_candidate()
         if not first_candidate then
             return kNoop
         end
@@ -78,13 +83,18 @@ local function func(key_event, env)
         context:push_input(current_char)
         
         -- 获取当前正在翻译的部分
-        local segment = context.composition:toSegmentation():back()
+        local composition = context.composition
+        if not composition or composition:empty() then
+            return kNoop
+        end
+        
+        local segment = composition:back()
         if not segment then
             return kNoop
         end
         
         -- 获取首选候选
-        local first_candidate = segment:get_candidate_at(0)
+        local first_candidate = segment:get_selected_candidate()
         if not first_candidate then
             return kNoop
         end
