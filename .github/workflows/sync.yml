@@ -1,4 +1,4 @@
-name: Sync External Release (Manual - Keep Inner Folders)
+name: Sync External Release
 
 on:
   schedule:
