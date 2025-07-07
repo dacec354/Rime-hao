@@ -72,19 +72,17 @@ jobs:
           # 配置 Git 用户
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          # 检查是否是 Git 仓库
-          if [ ! -d ".git" ]; then
-            echo "错误：当前目录不是 Git 仓库！"
-            exit 1
-          fi
+
           # 1. 删除所有非隐藏文件和文件夹（保留 .git）
           echo "正在清理目标目录（保留隐藏文件）..."
-          find . -mindepth 1 ! -name '.*' ! -name '.git' -exec rm -rf {} + 2>/dev/null || true
+          shopt -s dotglob
+          rm -rf !(.git|.gitignore|.|..) 2>/dev/null || true
+          
           # 2. 移动 extracted_content 的内容到当前目录
           echo "正在移动新文件..."
-          shopt -s dotglob
           mv extracted_content/* . 2>/dev/null || true
           rm -rf extracted_content release_asset
+          
           # 3. 提交变更
           git add .
           if [ -z "$(git status --porcelain)" ]; then
