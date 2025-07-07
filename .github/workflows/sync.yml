@@ -54,6 +54,7 @@ jobs:
           # 检查是否只有一层外层文件夹
           cd extracted_content
           if [ $(ls | wc -l) -eq 1 ] && [ -d "$(ls)" ]; then
+            mv "$(ls)" "$(ls)1" 
             mv "$(ls)"/* .
             rm -rf "$(ls)"
             cd ..
