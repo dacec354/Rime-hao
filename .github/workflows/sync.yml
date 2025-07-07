@@ -75,11 +75,11 @@ jobs:
 
           # 1. 删除所有非隐藏文件和文件夹（保留 .git）
           echo "正在清理目标目录（保留隐藏文件）..."
-          shopt -s dotglob
-          rm -rf !(.git|.gitignore|.|..) 2>/dev/null || true
+          find . -maxdepth 1 ! -name ".*" ! -name "." -exec rm -rf {} +
           
           # 2. 移动 extracted_content 的内容到当前目录
           echo "正在移动新文件..."
+          shopt -s dotglob
           mv extracted_content/* . 2>/dev/null || true
           rm -rf extracted_content release_asset
           
