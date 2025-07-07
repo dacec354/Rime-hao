@@ -69,25 +69,22 @@ jobs:
       
       - name: Prepare Force Push
         run: |
-          # 移动解压内容到仓库根目录（排除 .git 文件夹）
-          shopt -s dotglob
-          mv extracted_content/* .
-          rm -rf extracted_content release_asset
-          
-          # 保留 .git 文件夹和其他需要保留的内容
+          # 配置 Git 用户
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          
-          # 添加所有更改（排除需要保留的文件夹）
+          # 1. 删除所有非隐藏文件和文件夹（保留 .git 等隐藏文件）
+          echo "正在清理目标目录（保留隐藏文件）..."
+          find . -mindepth 1 ! -name '.*' -exec rm -rf {} + 2>/dev/null || true
+          # 2. 移动 extracted_content 的内容到当前目录
+          echo "正在移动新文件..."
+          shopt -s dotglob  # 包含隐藏文件（如果需要）
+          mv extracted_content/* . 2>/dev/null || true
+          rm -rf extracted_content release_asset
+          # 3. 提交变更
           git add .
-          
-          # 检查是否有实际更改
           if [ -z "$(git status --porcelain)" ]; then
             echo "没有检测到文件变更"
             exit 0
           fi
-          
           git commit -m "自动同步上游 release: $(date +'%Y-%m-%d %H:%M:%S')"
-          
-          # 强制推送到目标分支
           git push --force origin HEAD:${{ github.event.inputs.target_branch }}
