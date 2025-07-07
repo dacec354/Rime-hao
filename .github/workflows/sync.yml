@@ -56,7 +56,7 @@ jobs:
           if [ $(ls | wc -l) -eq 1 ] && [ -d "$(ls)" ]; then
             ORIGINAL_DIR="$(ls)"
             NEW_DIR="${ORIGINAL_DIR}1"
-            mv ORIGINAL_DIR ORIGINAL_DIR 
+            mv "${ORIGINAL_DIR}" "${NEW_DIR}" 
             mv "${NEW_DIR}"/* .
             rm -rf "${NEW_DIR}"
             cd ..
