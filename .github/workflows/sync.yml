@@ -1,0 +1,51 @@
+name: Sync External Release (Manual - Keep Inner Folders)
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_url:
+        description: "Release ZIP/TAR.GZ URL (e.g., https://github.com/owner/repo/releases/download/v1.0.0/asset.zip)"
+        required: true
+      target_branch:
+        description: "Target branch to force push (e.g., main)"
+        default: "main"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Current Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 强制推送需要完整历史
+
+      - name: Download and Extract Release (Skip Outer Folder, Keep Inner Structure)
+        run: |
+          # 下载压缩包
+          curl -LO "${{ github.event.inputs.release_url }}"
+          # 创建临时目录
+          mkdir -p temp-extract
+          # 解压到临时目录（跳过最外层文件夹）
+          if [[ "${{ github.event.inputs.release_url }}" == *.zip ]]; then
+            unzip -q *.zip -d temp-extract
+            # 获取最外层文件夹名（假设只有一个顶级文件夹）
+            OUTER_DIR=$(ls -d temp-extract/*/ | head -n 1)
+            # 将内层文件移动到 external-release（跳过最外层）
+            mkdir -p external-release
+            mv "$OUTER_DIR"* external-release/
+          elif [[ "${{ github.event.inputs.release_url }}" == *.tar.gz ]]; then
+            tar -xzf *.tar.gz --strip-components=1 -C external-release
+          fi
+          # 清理临时文件
+          rm -rf temp-extract *.zip *.tar.gz
+
+      - name: Overwrite and Force Push
+        run: |
+          # 清空当前仓库（保留 .git）
+          git rm -rf . --quiet
+          git clean -fxd --quiet
+          # 复制文件（保留内层文件夹结构）
+          cp -r external-release/* .
+          git add -A
+          git commit -m "Sync external release from ${{ github.event.inputs.release_url }} (inner folders kept)"
+          git push --force origin "${{ github.event.inputs.target_branch }}"
