@@ -53,9 +53,9 @@ jobs:
           
           # 检查是否只有一层外层文件夹
           cd extracted_content
-          if [ $(ls | wc -l) -eq 1 ] && [ -d "$(ls)" ]; then
-            ORIGINAL_DIR="$(ls)"
-            NEW_DIR="${ORIGINAL_DIR}1"
+          if [ $(ls -A | wc -l) -eq 1 ] && [ -d "$(ls -A)" ]; then
+            ORIGINAL_DIR="$(ls -A)"
+            NEW_DIR="${ORIGINAL_DIR}_temp"
             mv "${ORIGINAL_DIR}" "${NEW_DIR}" 
             mv "${NEW_DIR}"/* .
             rm -rf "${NEW_DIR}"
