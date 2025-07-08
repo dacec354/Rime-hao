@@ -181,7 +181,7 @@ translator:
     - "xform/^~/ /"
 
 history:
-  input: "'"
+  input: "z"
   size: 1
   initial_quality: 0
 
@@ -362,8 +362,8 @@ key_binder:
         accept: "Control+Shift+Y",
         toggle: yuhao_autocompletion_filter,
       } # 輸入預測
-    #- { when: has_menu, accept: semicolon, send: 2 } # 分号次选
-    - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
+    - { when: has_menu, accept: semicolon, send: 2 } # 分号次选
+    # - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
@@ -401,4 +401,4 @@ recognizer:
     unicode: "^/(uni|w)(/[a-zA-Z0-9]*)*$"
 
 menu:
-  page_size: 5
+  page_size: 9
