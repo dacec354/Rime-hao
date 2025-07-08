@@ -25,13 +25,18 @@ jobs:
         id: get_release
         run: |
           # 获取最新 release 中 hao 开头的第一个压缩包
-          ASSET_URL=$(curl -s "https://api.github.com/repos/${{ github.event.inputs.target_repo }}/releases/latest" | \
+          ASSET_URL=$(curl -s "https://api.github.com/repos/${{ github.event.inputs.target_repo || 'hertz-hwang/wf-hao' }}/releases/latest" | \
             jq -r '.assets[] | select(.name | startswith("hao")) | .browser_download_url' | head -1)
           
           if [ -z "$ASSET_URL" ]; then
             echo "未找到 hao 开头的压缩包"
             exit 1
           fi
+
+          # 获取压缩包的名称，并给后续步骤使用
+          ASSET_NAME=$(basename "$ASSET_URL")
+          echo "找到最新的 release 资产: $ASSET_NAME"
+          echo "ASSET_NAME=$ASSET_NAME" >> $GITHUB_OUTPUT
           
           echo "下载链接: $ASSET_URL"
           echo "ASSET_URL=$ASSET_URL" >> $GITHUB_OUTPUT
@@ -89,5 +94,5 @@ jobs:
             echo "没有检测到文件变更"
             exit 0
           fi
-          git commit -m "自动同步上游 release: $(date +'%Y-%m-%d %H:%M:%S')"
-          git push --force origin HEAD:main
+          git commit -m "Sync ${{ steps.get_release.outputs.ASSET_NAME }}"
+          git push --force origin HEAD:"${{ github.event.inputs.target_branch || 'main' }}"
