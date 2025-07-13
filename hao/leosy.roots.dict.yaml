@@ -106,6 +106,7 @@ columns:
 耒	/rsko
 骨	/rndi
 ⾻	/rndi
+	/rndi
 冎	/rndi
 	/rndi
 欠	/rdlw
@@ -154,6 +155,7 @@ columns:
 	/rgyr
 	/rgyr
 	/rgyr
+{𡳿上}	/rgyr
 飞	/rkdo
 貝	/rzye
 羊	/rto
@@ -176,7 +178,7 @@ columns:
 日	/rvo
 ⺜	/rvo
 𫩏	/rvo
-⿆	/rmfi
+麥	/rmfi
 乙	/rjr
 𠃉	/rjr
 龙	/rhgu
@@ -201,6 +203,7 @@ columns:
 𠕁	/rfhr
 及	/rsyw
 	/rsyw
+𤴓	/rjgu
 疋	/rjgu
 ⺪	/rjgu
 刀	/rvje
@@ -257,6 +260,7 @@ columns:
 	/rcu
 	/rcu
 	/rcu
+	/rcu
 言	/rdu
 士	/rldo
 米	/rkai
@@ -303,7 +307,6 @@ columns:
 	/ryr
 𧘇	/ryr
 僉	/rvhr
-㐅	/rso
 乂	/rso
 	/rso
 小	/rflr
@@ -378,8 +381,8 @@ columns:
 辰	/rhgi
 走	/rao
 西	/rdhw
-襾	/rdhw
 覀	/rdhw
+襾	/rdhw
 石	/rfje
 母	/rdke
 氏	/rcmw

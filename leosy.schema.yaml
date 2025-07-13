@@ -26,7 +26,7 @@ switches:
       - original
       - yuhao_charset_prioritizer_common
       - yuhao_charset_prioritizer_ubiquitous
-    states: [原始排序, 常用字優先, 極常用字優先]
+    states: [原始排序, 常用字优先, 极常用字优先]
     #reset: 0
     # Control+Shift+M
   - options:
@@ -34,33 +34,36 @@ switches:
       - yuhao_charset_filter_common
       - yuhao_charset_filter_tonggui
       - yuhao_charset_filter_harmonic
-    states: [全漢字, 常用字, 通規字, 陸標繁]
+    states: [全汉字, 常用字, 通规字, 陆标繁]
     #reset: 1
     # Control+Shift+O
   - name: yuhao_single_char_only_for_full_code
-    states: [字詞同出, 全碼出單]
+    states: [字词同出, 全码出单]
     #reset: 0
     # Control+Shift+D
   - name: yuhao_postpone_full_code
     #reset: 0
-    states: [原始排序, 全碼後置]
+    states: [原始排序, 全码后置]
     # Control+Shift+H
   - options:
       - yuhao_chaifen.off
       - yuhao_chaifen.lv2
       - yuhao_chaifen.lv3
-    states: [無註解, 二重註解, 多重註解]
+    states: [无注解, 二重注解, 多重注解]
     #reset: 0
-  - name: yuhao_autocompletion_filter
-    #reset: 0
-    states: [輸入預測, 精確匹配]
+  - options:
+      - all_aultocompletion
+      - yuhao_autocompletion_one_code_filter
+      - yuhao_autocompletion_filter
+    states: [编码提示, 简末提示, 精确匹配]
+    #reset: 1
     # Control+Shift+Y
   - name: traditionalization
     states: [简保持, 简转繁]
     #reset: 0
     # Control+Shift+F
   - name: simplification
-    states: [繁保持, 繁轉簡]
+    states: [繁保持, 繁转简]
     #reset: 0
     # Control+Shift+J
   - name: ascii_mode
@@ -107,6 +110,7 @@ engine:
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro  # 控制臺
   filters:
     - lua_filter@*yuhao.yuhao_autocompletion_filter
+    - lua_filter@*yuhao.yuhao_autocompletion_one_code_filter
     - lua_filter@*yuhao.yuhao_single_char_only_for_full_code
     - lua_filter@*yuhao.yuhao_charset_filter_common
     - lua_filter@*yuhao.yuhao_charset_filter_tonggui
@@ -160,10 +164,12 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/  #0123456789，开启auto_commit后，可恢复数字键选重
   initials: zyxwvutsrqponmlkjihgfedcba;'/  #0123456789，开启auto_commit后，可恢复数字键选重
   delimiter: "`"
-  #max_code_length: 5
+  max_code_length: 5
   auto_select: true
-  auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
-  algebra:
+  auto_clear: max_length  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  auto_select_pattern: ^;\w+|^\w+;
+  # algebra:
+  #   - xform/^([a-z]{1,5})[a-z]*$/$1/
 
 translator:
   dictionary: leosy
@@ -182,7 +188,7 @@ translator:
 
 history:
   input: "'"
-  size: 1
+  size: 3
   initial_quality: 0
 
 reverse_lookup:
@@ -274,6 +280,17 @@ yuhao_macro:
               yuhao_charset_filter_tonggui,
             ],
           states: [☐☐全漢字, ☐☑常用字前置, ☑☐常用字, ☑☑通規字],
+        }
+    comp:
+      - {
+          type: radio,
+          names:
+            [
+              all_aultocompletion,
+              yuhao_autocompletion_one_code_filter,
+              yuhao_autocompletion_filter,
+            ],
+          states: [☑☑编码提示, ☐☑简末码提示, ☐☐无提示],
         }
     trad:
       - { type: switch, name: traditionalization, states: [☐不轉換, ☑簡轉繁] }
