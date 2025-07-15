@@ -51,13 +51,13 @@ switches:
       - yuhao_chaifen.lv3
     states: [无注解, 二重注解, 多重注解]
     #reset: 0
-  - options:
-      - all_aultocompletion
-      - yuhao_autocompletion_one_code_filter
-      - yuhao_autocompletion_filter
-    states: [编码提示, 简末提示, 精确匹配]
-    #reset: 1
-    # Control+Shift+Y
+  #- options:
+  #    - all_aultocompletion
+  #    #- yuhao_autocompletion_one_code_filter
+  #    - yuhao_autocompletion_filter
+  #  states: [编码提示, 精确匹配] #[编码提示, 简末提示, 精确匹配]
+  #  reset: 0
+  #  # Control+Shift+Y
   - name: traditionalization
     states: [简保持, 简转繁]
     #reset: 0
@@ -109,8 +109,8 @@ engine:
     - table_translator
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro  # 控制臺
   filters:
-    - lua_filter@*yuhao.yuhao_autocompletion_filter
-    - lua_filter@*yuhao.yuhao_autocompletion_one_code_filter
+    #- lua_filter@*yuhao.yuhao_autocompletion_filter
+    #- lua_filter@*yuhao.yuhao_autocompletion_one_code_filter
     - lua_filter@*yuhao.yuhao_single_char_only_for_full_code
     - lua_filter@*yuhao.yuhao_charset_filter_common
     - lua_filter@*yuhao.yuhao_charset_filter_tonggui
@@ -164,10 +164,10 @@ speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/  #0123456789，开启auto_commit后，可恢复数字键选重
   initials: zyxwvutsrqponmlkjihgfedcba;'/  #0123456789，开启auto_commit后，可恢复数字键选重
   delimiter: "`"
-  max_code_length: 5
   auto_select: true
-  auto_clear: max_length  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
-  auto_select_pattern: ^;\w+|^\w+;
+  auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  # max_code_length: 5
+  # auto_select_pattern: ^;\w+|^\w+;
   # algebra:
   #   - xform/^([a-z]{1,5})[a-z]*$/$1/
 
@@ -281,17 +281,17 @@ yuhao_macro:
             ],
           states: [☐☐全漢字, ☐☑常用字前置, ☑☐常用字, ☑☑通規字],
         }
-    comp:
-      - {
-          type: radio,
-          names:
-            [
-              all_aultocompletion,
-              yuhao_autocompletion_one_code_filter,
-              yuhao_autocompletion_filter,
-            ],
-          states: [☑☑编码提示, ☐☑简末码提示, ☐☐无提示],
-        }
+    #comp:
+    #  - {
+    #      type: radio,
+    #      names:
+    #        [
+    #          all_aultocompletion,
+    #          #yuhao_autocompletion_one_code_filter,
+    #          yuhao_autocompletion_filter,
+    #        ],
+    #      states: [☑编码提示, ☐无提示], #[☑☑编码提示, ☐☑简末码提示, ☐☐无提示],
+    #    }
     trad:
       - { type: switch, name: traditionalization, states: [☐不轉換, ☑簡轉繁] }
     simp:
@@ -374,11 +374,11 @@ key_binder:
         accept: "Control+Shift+H",
         toggle: yuhao_postpone_full_code,
       } # 全碼後置
-    - {
-        when: always,
-        accept: "Control+Shift+Y",
-        toggle: yuhao_autocompletion_filter,
-      } # 輸入預測
+    #- {
+    #    when: always,
+    #    accept: "Control+Shift+Y",
+    #    toggle: yuhao_autocompletion_filter,
+    #  } # 輸入預測
     #- { when: has_menu, accept: semicolon, send: 2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
