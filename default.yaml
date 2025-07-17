@@ -2,10 +2,8 @@
 config_version: 0.40
 
 schema_list:
-  - schema: leoxi
-  - schema: dovepelia
-  #- schema: leopard
-  - schema: leosy
+  - schema: hao_xi
+  - schema: hao_sy
 switcher:
   abbreviate_options: true
   caption: "〔方案選單〕"
@@ -17,27 +15,14 @@ switcher:
   option_list_separator: "／"
   save_options:
     - full_shape
-    - ascii_punct
-    - embeded_cands
-    - leosy_auto_commit
-    - all_aultocompletion
-    - yuhao_autocompletion_one_code_filter
-    - yuhao_autocompletion_filter
-    - original
-    - yuhao_charset_prioritizer_common
-    - yuhao_charset_prioritizer_ubiquitous
-    - cjk
-    - yuhao_charset_filter_common
-    - yuhao_charset_filter_tonggui
-    - yuhao_charset_filter_harmonic
-    - yuhao_single_char_only_for_full_code
-    - yuhao_postpone_full_code
-    - yuhao_chaifen.off
-    - yuhao_chaifen.lv1
-    - yuhao_chaifen.lv2
-    - yuhao_chaifen.lv3
     - traditionalization
     - simplification
+    - lazy_clock
+    - preedit_lazy_clock
+    - hao_spelling.off
+    - hao_spelling.lv1
+    - hao_spelling.lv2
+    - hao_spelling.lv3
 
 key_binder:
   bindings:

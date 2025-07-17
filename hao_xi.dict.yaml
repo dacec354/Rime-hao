@@ -1,0 +1,40 @@
+# encoding: utf-8
+#
+# 好码·豹码
+# 版本: 20250602
+#
+---
+name: "hao_xi"
+version: "20250125"
+sort: by_weight
+import_tables:
+  # 以下是固頂字
+  #- hao/hao.xi.fixed
+  # 以下是簡碼字
+  - hao/hao.xi.short
+  # 以下是簡碼詞
+  #- hao/hao.xi.quicks
+  # 以下是單字全碼
+  - hao/hao.xi.full
+  # 以下是字根快打
+  - hao/hao.xi.roots
+  # 以下是快符
+  - hao/hao.fastsymbols
+  # 以下是符號
+  - hao/hao.symbols
+columns:
+  - text
+  - code
+encoder:
+  exclude_patterns:
+    - "^[a-z]$" # 一简
+    - "[^a-z]"
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 20]
+      formula: "AaBaCaZa"
+...
+

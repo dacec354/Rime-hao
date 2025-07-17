@@ -173,7 +173,7 @@ class SpeedTester:
             
             end_row = self._get_current_row_count()
             total_chars = self._get_chars_between_rows(self.start_row, end_row)
-            duration = (datetime.now() - self.start_time).total_seconds()
+            duration = self._get_time_range_between_rows(self.start_row, end_row)
             
             speed = total_chars / duration * 60 if duration > 0 else 0
             self.last_speed = f"{speed:.1f}字/分钟"
@@ -187,7 +187,7 @@ class SpeedTester:
             
             current_row = self._get_current_row_count()
             total_chars = self._get_chars_between_rows(self.start_row, current_row)
-            duration = (datetime.now() - self.start_time).total_seconds()
+            duration = self._get_time_range_between_rows(self.start_row, current_row)
             return total_chars / duration * 60 if duration > 0 else 0
 
     def _get_current_row_count(self):
@@ -224,6 +224,35 @@ class SpeedTester:
             print(f"字数统计错误: {e}")
         
         return total
+
+    def _get_time_range_between_rows(self, start, end):
+        """
+        返回csv中[start, end)区间的首尾行的时间戳差（秒）。
+        如果区间为空或只有一行，返回1，避免除零。
+        """
+        if start >= end:
+            return 1
+        timestamps = []
+        try:
+            with safe_file_access(CSV_FILE, 'r') as f:
+                reader = csv.reader(f)
+                next(reader)
+                for i, row in enumerate(reader):
+                    if i < start:
+                        continue
+                    if i >= end:
+                        break
+                    if row and len(row) >= 1:
+                        try:
+                            timestamps.append(datetime.fromisoformat(row[0]))
+                        except Exception:
+                            continue
+        except Exception as e:
+            print(f"时间戳统计错误: {e}")
+        if len(timestamps) < 2:
+            return 1
+        duration = (timestamps[-1] - timestamps[0]).total_seconds()
+        return duration if duration > 0 else 1
 
 
 # ========== 历史记录窗口 ==========
@@ -348,7 +377,7 @@ class DailyWindow(tk.Toplevel):
 class Application(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("字数统计工具 by hyuan")
+        self.title("好码字数统计")
         self.geometry("400x300")
         self.signal_file = SIGNAL_FILE
         self.withdraw()

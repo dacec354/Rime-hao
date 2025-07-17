@@ -1,0 +1,13 @@
+# encoding: utf-8
+---
+name: "hao.xi.quicks"
+version: "20250528"
+sort: original
+columns:
+  - text
+  - code
+  - stem
+...
+
+#==== 简词 ====#
+的话	d
