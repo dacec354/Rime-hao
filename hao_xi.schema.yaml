@@ -30,11 +30,11 @@ switches:
     #reset: 0
   - name: lazy_clock
     abbrev: [无, 時]
-    states: [ 开启候选时间, 关闭候选时间 ]
+    states: [ 关闭候选时间, 开启候选时间 ]
     reset: 0
   - name: preedit_lazy_clock
     abbrev: [无, 時]
-    states: [ 开启编辑区时间, 关闭编辑区时间 ]
+    states: [ 关闭编辑区时间, 开启编辑区时间 ]
     reset: 0
   - name: traditionalization
     states: [简保持, 简转繁]
@@ -310,6 +310,7 @@ punctuator:
     "}": "」"
     "/": "/"
     "|": "|"
+  digit_separators: ",."
 
 key_binder:
   bindings:

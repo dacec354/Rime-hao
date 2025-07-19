@@ -12936,7 +12936,7 @@ iieo	戔
 zfii	戙
 iigi	戜
 iieo	戝
-kieo	戞
+wieo	戞
 aie	戠
 hsgi	戦
 sfii	戧
@@ -66446,7 +66446,7 @@ pogh	𩙭
 pown	𩙮
 pobx	𩙯
 poia	𩙰
-dppk	𩙱
+ilki	𩙱
 ldpk	𩙲
 tndp	𩙳
 mldp	𩙴
@@ -116447,7 +116447,7 @@ iieo	戔
 zfii	戙
 iigi	戜
 iieo	戝
-kieo	戞
+wieo	戞
 aieo	戠
 hsgi	戦
 sfii	戧
@@ -169957,7 +169957,7 @@ pogh	𩙭
 pown	𩙮
 pobx	𩙯
 poia	𩙰
-dppk	𩙱
+ilki	𩙱
 ldpk	𩙲
 tndp	𩙳
 mldp	𩙴

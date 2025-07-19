@@ -216,7 +216,7 @@ function map(table, func)
     'hao_spelling.lv2',
     'hao_spelling.lv3'
   }
-  options.default = 4
+  options.default = 1
   
   local processor = rime.make_option_cycler(options,
     'hao/spelling/cycle_key',

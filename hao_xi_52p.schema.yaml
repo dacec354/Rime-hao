@@ -1,0 +1,94 @@
+# Rime schema settings
+# encoding: utf-8
+
+__include: hao_xi.schema.yaml:/
+
+schema:
+  schema_id: hao_xi_52p
+  name: 好码・淅码动态五二顶
+  version: "0.1.0"
+  author:
+    - 深白
+  description: |
+    五二顶：二简不打空格，四码打空格，一简分号上屏
+    动态二重二简：二简的第二个候选是根据你使用的频率变化的，使用 ;+编码 这种方式输入的字能增加频率
+
+engine:
+  processors:
+    - lua_processor@*hao.hao_switch*proc@hao
+    - ascii_composer
+    - lua_processor@*lutai.key_binder
+    - key_binder
+    - lua_processor@*lutai.popping
+    - recognizer
+    - lua_processor@*hao.hao_spelling*processor
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+    - lua_processor@*hao.hao_wordscounter
+  translators:
+    - punct_translator
+    - lua_translator@*hao.hao_shijian
+    - lua_translator@*hao.hao_number
+    - history_translator@history
+    - script_translator@hao_pinyin_lookup
+    - table_translator@hao_stroke_lookup
+    - script_translator
+    - lua_translator@*hao.hao_os*os_env_translator
+    - lua_translator@*hao.hao_switch*tr@hao
+  filters:
+    - simplifier@traditionalize
+    - simplifier@simplify
+    - reverse_lookup_filter@reverse_lookup
+    - lua_filter@*hao.hao_spelling*filter
+    - lua_filter@*hao.hao_postpone_fullcode
+    - lua_filter@*hao.hao_os*lazy_clock_filter
+    - lua_filter@*hao.hao_os*preedit_lazy_clock_filter
+    - lua_filter@*snow.fix
+    - lua_filter@*lutai.postpone
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
+  initials: zyxwvutsrqponmlkjihgfedcba;'/
+  delimiter: " "
+  max_code_length: 5
+  popping:
+    - match: "[qwertyuiopasdfghjklzxcvbnm]{4}"
+      accept: "[^ 2345789]"
+      prefix: 2
+  algebra:
+    - derive/^;(..).*$/$1
+
+translator:
+  dictionary: hao_xi_52p
+  prism: hao_xi_52p
+  enable_sentence: false
+  enable_user_dict: true
+  enable_completion: false
+
+key_binder:
+  bindings:
+    #- match: "^[qwertyuiopasdfghjklzxcvbnm]{2}$" # 解决句末单字「2」码上屏方式，也可直接用空格
+    #  accept: "/"
+    #  send_sequence: " "
+    - match: "^[qwertyuiopasdfghjklzxcvbnm]{3}$" # 解决句末两字「2+1」码上屏方式
+      accept: ";"
+      send_sequence: "{Home}{Right}{Right}{space}{space}"
+    - match: "^[qwertyuiopasdfghjklzxcvbnm]{4}$" # 解决句末两字「2+2」码上屏方式
+      accept: ";"
+      send_sequence: "{Home}{Right}{Right}{space}{space}"
+    - match: "^[qwertyuiopasdfghjklzxcvbnm]{1, 2}$"
+      accept: ";"
+      send_sequence: "2"
+    - { when: composing, accept: space, send: Escape }
+    - { when: has_menu, accept: space, send: space }
+    - { when: always, accept: "Control+Shift+J", toggle: simplification }
+    - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
+    - { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
+    - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
+    - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
+    - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
+    - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁

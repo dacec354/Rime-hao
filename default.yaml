@@ -3,6 +3,7 @@ config_version: 0.40
 
 schema_list:
   - schema: hao_xi
+  - schema: hao_xi_52p
   - schema: hao_sy
 switcher:
   abbreviate_options: true
