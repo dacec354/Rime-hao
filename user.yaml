@@ -1,5 +1,5 @@
 var:
-  last_build_time: 1752486317
+  last_build_time: 1752931859
   option:
     cjk: true
     full_shape: false
@@ -9,3 +9,7 @@ var:
     yuhao_charset_filter_harmonic: false
     yuhao_charset_filter_tonggui: false
     yuhao_postpone_full_code: true
+  previously_selected_schema: hao_xi
+  schema_access_time:
+    hao_xi: 1752932267
+    hao_xi_52p: 1752932256

@@ -99,8 +99,8 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
-  initials: zyxwvutsrqponmlkjihgfedcba;'/
+  alphabet: zyxwvutsrqponmlkjihgfedcba;/
+  initials: zyxwvutsrqponmlkjihgfedcba;/
   delimiter: "`"
   max_code_length: 4
   auto_select: true
@@ -256,8 +256,8 @@ simplify:
     - xform/$/〕/
 
 history:
-  input: "'"
-  size: 3
+  input: "z"
+  size: 1
   initial_quality: 0
 
 reverse_lookup:
@@ -309,7 +309,7 @@ punctuator:
     "{": "「"
     "}": "」"
     "/": "/"
-    "|": "|"
+    "|": "·"
   digit_separators: ",."
 
 key_binder:
@@ -319,7 +319,7 @@ key_binder:
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
     - { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
-    - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
+    # - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
