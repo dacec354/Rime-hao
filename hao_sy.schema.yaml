@@ -1,0 +1,319 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: hao_sy
+  name: '好码・松烟(前缀码)'
+  version: '20250520'
+  author:
+    - 作者 荒
+    - 官方QQ群 1012245282
+  description: |
+    前缀码·松烟
+    "`键 反查：拼音+笔画(hspnz)"
+  dependencies:
+    - hao_pinyin
+    - hao_stroke
+    - hao_sy_chaifen
+
+switches:
+  - name: hao_autocommit
+    reset: 1
+    abbrev: [松, 烟]
+    states: [☐选重上屏, ☑自动上屏]
+  - options:
+      - hao_spelling.off
+      - hao_spelling.lv1
+      - hao_spelling.lv2
+      - hao_spelling.lv3
+    states: [无注解, 一重注解, 二重注解, 多重注解]
+    #reset: 0
+  - name: lazy_clock
+    abbrev: [无, 時]
+    states: [ 开启候选时间, 关闭候选时间 ]
+    reset: 0
+  - name: preedit_lazy_clock
+    abbrev: [无, 時]
+    states: [ 开启编辑区时间, 关闭编辑区时间 ]
+    reset: 0
+  - name: traditionalization
+    states: [简保持, 简转繁]
+    #reset: 0
+    # Control+Shift+F
+  - name: simplification
+    states: [繁保持, 繁转简]
+    #reset: 0
+    # Control+Shift+J
+  - name: ascii_mode
+    states: [中文, 西文]
+    reset: 0
+  - name: full_shape
+    states: ["半角", "全角"]
+    reset: 0
+  - name: ascii_punct
+    states: [。，, ．，]
+    reset: 0
+
+engine:
+  processors:
+    - lua_processor@*hao.hao_switch*proc@hao
+    - ascii_composer
+    - recognizer
+    - lua_processor@*hao.hao_spelling*processor
+    - lua_processor@*hao.hao_autocommit
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - affix_segmentor@hao_pinyin_lookup
+    - affix_segmentor@hao_stroke_lookup
+    - affix_segmentor@reverse_lookup
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - lua_translator@*hao.hao_shijian
+    - lua_translator@*hao.hao_number
+    - history_translator@history
+    - script_translator@hao_pinyin_lookup
+    - table_translator@hao_stroke_lookup
+    - table_translator
+    - lua_translator@*hao.hao_os*os_env_translator
+    - lua_translator@*hao.hao_switch*tr@hao
+  filters:
+    - simplifier@traditionalize
+    - simplifier@simplify
+    - reverse_lookup_filter@reverse_lookup
+    - lua_filter@*hao.hao_spelling*filter
+    - lua_filter@*hao.hao_os*lazy_clock_filter
+    - lua_filter@*hao.hao_os*preedit_lazy_clock_filter
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
+  initials: zyxwvutsrqponmlkjihgfedcba;'/
+  delimiter: "`"
+  auto_select: true
+  auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  # max_code_length: 5
+  # auto_select_pattern: ^;\w+|^\w+;
+  # algebra:
+  #   - xform/^([a-z]{1,5})[a-z]*$/$1/
+
+translator:
+  dictionary: hao_sy
+  prism: hao_sy
+  db_class: tabledb
+  enable_completion: true
+  enable_sentence: false
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  initial_quality: 1000000
+  preedit_format:
+    #- xform/[a-z]/\※/
+    #- xform/[a-z]/·/
+  comment_format:
+    - "xform/^~/ /"
+
+hao:
+  code: hao_sy
+  tags: [ abc ]
+  #postpone_fullcode:
+  #  max_index: 4  # 最大后置位置，默认为 4
+  spelling:
+    schema: hao_sy_chaifen
+    cycle_key: "Shift+Control+C"
+    switch_key: "Control+c"
+    phrase: 0
+  birthday:
+    solar:
+      淅码: "0429,淅码诞生"
+      松烟: "0520,松烟诞生"
+    lunar:
+      春节: "0101,农历春节"
+  funckeys:
+    macro: [0x2f] # 當輸入串以 "/" 開頭時, 認爲是宏調用
+  macros:
+    hao:
+      - { type: tip, name: ❖松烟配置中心 }
+      - { type: switch, name: hao_autocommit, states: [☐选重上屏, ☑自动上屏] }
+      - {
+          type: radio,
+          names:
+            [
+              hao_spelling.off,
+              hao_spelling.lv1,
+              hao_spelling.lv2,
+              hao_spelling.lv3,
+            ],
+          states: [☐☐☐注解, ☑☐☐注解, ☐☑☐注解, ☐☐☑注解],
+        }
+      - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
+      - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
+      - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
+      - { type: switch, name: simplification, states: [☐繁保持, ☑繁转简] }
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
+    date:
+      - { type: eval, name: ☀日期, expr: return os.date("%Y-%m-%d") }
+      - { type: eval, name: ⛅年月日, expr: return os.date("%Y年%m月%d日") }
+    time:
+      - { type: eval, name: ⌚时间, expr: return os.date("%H:%M:%S") }
+      - { type: eval, name: Ⓣ时间, expr: return os.date("%Y%m%d%H%M") }
+      - { type: eval, name: Ⓢ时间戳, expr: return tostring(os.time()) }
+    auto:
+      - { type: switch, name: hao_autocommit, states: [☐选重上屏, ☑自动上屏] }
+    div:
+      - {
+          type: radio,
+          names:
+            [
+              hao_spelling.off,
+              hao_spelling.lv1,
+              hao_spelling.lv2,
+              hao_spelling.lv3,
+            ],
+          states: [☐☐☐注解, ☑☐☐注解, ☐☑☐注解, ☐☐☑注解],
+        }
+    trad:
+      - { type: switch, name: traditionalization, states: [☐不转换, ☑简转繁] }
+    simp:
+      - { type: switch, name: simplification, states: [☐不转换, ☑繁转简] }
+    full:
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+    half:
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+    punc:
+      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
+    dot:
+      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
+    lazy:
+      - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
+    dist:
+      - type: eval
+        expr: >
+          return function(args)
+            return string.format("librime: [%s]", rime_api.get_rime_version())
+          end
+      - type: eval
+        expr: >
+          return function(args)
+            return string.format("distribution: [%s](%s/%s)",
+              rime_api.get_distribution_name(),
+              rime_api.get_distribution_code_name(),
+              rime_api.get_distribution_version())
+          end
+    uni:
+      - type: eval
+        hijack: true
+        expr: return require("hao.hao_core").unicode()
+    w:
+      - type: eval
+        hijack: true
+        expr: return require("hao.hao_core").unicode()
+
+traditionalize:
+  tags: [abc, hao_pinyin_lookup, hao_stroke_lookup]
+  option_name: traditionalization
+  opencc_config: s2t.json
+  tips: all
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+
+simplify:
+  tags: [abc, hao_pinyin_lookup, hao_stroke_lookup]
+  option_name: simplification
+  opencc_config: t2s.json
+  tips: all
+  comment_format:
+    - xform/^/〔/
+    - xform/$/〕/
+
+history:
+  input: "'"
+  size: 3
+  initial_quality: 0
+
+reverse_lookup:
+  tag: reverse_lookup
+  dictionary: hao_sy
+  prefix: "`"    # 反查引导符「`」
+  # suffix:   # 反查关闭符，暂不定义
+  tips: 【反查：拼音+笔画(hspnz)】
+  closing_tips: 【反查关闭】
+  tags: [ hao_pinyin_lookup, hao_stroke_lookup ]
+  extra_tags:
+    - hao_pinyin_lookup
+    - hao_stroke_lookup
+
+hao_pinyin_lookup:
+  tag: hao_pinyin_lookup
+  dictionary: hao_pinyin
+  enable_user_dict: false
+  prefix: '`P'
+  tips: 【拼音反查】
+  closing_tips: 【反查关闭】
+  initial_quality: 0.2
+
+hao_stroke_lookup:
+  tag: hao_stroke_lookup
+  dictionary: hao_stroke
+  prism: hao_stroke
+  enable_user_dict: false
+  prefix: '`B'
+  tips: 【五笔画反查】
+  closing_tips: 【反查关闭】
+  initial_quality: 0.5
+  preedit_format:
+    - 'xform/^([hspnz]+)$/$1\t（\U$1\E）/'
+    - xlit/HSPNZ/一丨丿丶乙/
+  comment_format:
+    - xlit/qweas/hspnz/
+
+punctuator:
+  import_preset: symbols
+  half_shape:
+    "`": "`"
+    "#": "#"
+    "%": "%"
+    "*": "*"
+    "\\": "、"
+    "[": "【"
+    "]": "】"
+    "{": "「"
+    "}": "」"
+    "/": "/"
+    "|": "|"
+
+key_binder:
+  bindings:
+    - { when: always, accept: "Control+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+J", toggle: simplification }
+    - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
+    - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
+    - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
+    - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
+    - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
+
+recognizer:
+  import_preset: default
+  patterns:
+    uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
+    reverse_lookup: "^`([a-z]+?)*$"
+    hao_pinyin_lookup: "^`P([a-z]+'?)*$"
+    hao_stroke_lookup: "^`B([a-z]+'?)*$"
+    punct: "^/([0-9]0?|[A-Za-z]+)?$"
+    hao_os: '^/env\w+'
+    unicode: "^/(uni|w)(/[a-zA-Z0-9]*)*$"
+
+menu:
+  page_size: 5

@@ -34275,7 +34275,7 @@
 𡡥	shea
 𡡦	stv
 𡡧	seij
-𡡨	szkv
+𡡨	szjv
 𡡩	sefs
 𡡪	szq
 𡡫	sysy
@@ -34311,7 +34311,7 @@
 𡢉	suua
 𡢊	syic
 𡢋	slll
-𡢌	szkv
+𡢌	szmv
 𡢍	slhi
 𡢎	zad
 𡢏	mssw
@@ -50859,7 +50859,7 @@
 𥥟	zfno
 𥥠	zrow
 𥥡	zxvy
-𥥢	zgko
+𥥢	zrk
 𥥣	ztfh
 𥥤	zxgj
 𥥥	zfio
@@ -50895,7 +50895,7 @@
 𥦄	zjry
 𥦅	zpbt
 𥦆	zpqi
-𥦇	zrk
+𥦇	zrkj
 𥦈	zuho
 𥦉	zzkg
 𥦊	zssb
@@ -83348,7 +83348,7 @@
 𭗽	jfxi
 𭗾	jozv
 𭗿	jqmo
-𭘀	lllj
+𭘀	lcnn
 𭘁	najj
 𭘂	pnvf
 𭘃	nfdh
@@ -103506,7 +103506,7 @@
 》	x
 （	c
 ）	v
-﻿	b
+：	b
 『	n
 』	m
 的	dsoe
@@ -137786,7 +137786,7 @@
 𡡥	shea
 𡡦	stvk
 𡡧	seij
-𡡨	szkv
+𡡨	szjv
 𡡩	sefs
 𡡪	szqn
 𡡫	sysy
@@ -137822,7 +137822,7 @@
 𡢉	suua
 𡢊	syic
 𡢋	slll
-𡢌	szkv
+𡢌	szmv
 𡢍	slhi
 𡢎	zads
 𡢏	mssw
@@ -154370,7 +154370,7 @@
 𥥟	zfno
 𥥠	zrow
 𥥡	zxvy
-𥥢	zgko
+𥥢	zrkn
 𥥣	ztfh
 𥥤	zxgj
 𥥥	zfio
@@ -186859,7 +186859,7 @@
 𭗽	jfxi
 𭗾	jozv
 𭗿	jqmo
-𭘀	lllj
+𭘀	lcnn
 𭘁	najj
 𭘂	pnvf
 𭘃	nfdh

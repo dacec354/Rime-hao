@@ -1,0 +1,98 @@
+# Rime schema settings
+# encoding: utf-8
+
+__include: hao_sy.schema:/
+
+schema:
+  schema_id: hao_sy_flu
+  name: '好码・松烟(不上屏版)'
+  version: '20250609'
+  author:
+    - 作者 荒
+    - 官方QQ群 1012245282
+  description: |
+    前缀·松烟(不上屏版)
+
+__patch:
+  switches/@0/reset: 0
+  switches/@1/reset: 0
+  switches/@2/reset: 0
+  switches/@3/reset: 0
+  switches/@4/reset: 0
+  switches/@5/reset: 0
+  switches/@last/+:
+    name: emoji_suggestion
+    reset: 1
+    states: [ "🈚️", "🈶️" ]
+  engine/filters/@after 1: simplifier@emoji_suggestion
+
+engine:
+  translators:
+    - punct_translator
+    - lua_translator@*hao.hao_shijian
+    - lua_translator@*hao.hao_number
+    - history_translator@history
+    - script_translator@hao_pinyin_lookup
+    - table_translator@hao_stroke_lookup
+    - script_translator
+    - lua_translator@*hao.hao_os*os_env_translator
+    - lua_translator@*hao.hao_switch*tr@hao
+
+speller:
+  alphabet: ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba9876543210;/,.?:;!@#$%^&*()-=+[]{}"'<>_
+  initials: ZYXWVUTSRQPONMLKJIHGFEDCBAzyxwvutsrqponmlkjihgfedcba9876543210;/,.?:;!@#$%^&*()-=+[]{}"'<>_
+  delimiter: " "
+  auto_select: false
+
+translator:
+  dictionary: hao_sy_flu
+  prism: hao_sy_flu
+  #enable_sentence: true
+  preedit_format:
+    - xform/_//
+    #- xform/[a-z]/\*/
+
+hao:
+  code: hao_sy_flu
+  macros:
+    hao:
+      - { type: tip, name: ❖松烟连打配置中心 }
+      - { type: switch, name: hao_autocommit, states: [☐选重上屏, ☑自动上屏] }
+      - {
+          type: radio,
+          names:
+            [
+              hao_spelling.off,
+              hao_spelling.lv1,
+              hao_spelling.lv2,
+              hao_spelling.lv3,
+            ],
+          states: [☐☐☐注解, ☑☐☐注解, ☐☑☐注解, ☐☐☑注解],
+        }
+      - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
+      - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
+      - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
+      - { type: switch, name: simplification, states: [☐繁保持, ☑繁转简] }
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
+
+emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: none
+    inherit_comment: false
+
+key_binder:
+  bindings:
+    - { when: always, accept: "Control+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+J", toggle: simplification }
+    - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
+    - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
+    - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
+    - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
+    - { when: has_menu, accept: " ", send: _ }
+    - { when: has_menu, accept: Shift+Space, send: ' ' }
+
+punctuator:
+  import_preset: symbols
