@@ -30,7 +30,7 @@ local csv_path = "/Users/bennett/workspace/rime/py_wordscounter/words_input.csv"
 -- 判断文本是否包含至少一个汉字
 function is_valid_text(text)
     for _, c in utf8.codes(text) do
-        if c >= 0x4E00 and c <= 0x9FFF then
+        if c >= 0x3000 and c <= 0xFFFF then
             return true
         end
     end

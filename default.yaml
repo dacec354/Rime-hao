@@ -17,8 +17,8 @@ switcher:
     - full_shape
     - traditionalization
     - simplification
-    - lazy_clock
-    - preedit_lazy_clock
+    #- lazy_clock
+    #- preedit_lazy_clock
     - hao_spelling.off
     - hao_spelling.lv1
     - hao_spelling.lv2

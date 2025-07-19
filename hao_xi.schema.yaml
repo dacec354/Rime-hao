@@ -31,11 +31,11 @@ switches:
   - name: lazy_clock
     abbrev: [无, 時]
     states: [ 开启候选时间, 关闭候选时间 ]
-    #reset: 0
+    reset: 0
   - name: preedit_lazy_clock
     abbrev: [无, 時]
     states: [ 开启编辑区时间, 关闭编辑区时间 ]
-    #reset: 1
+    reset: 0
   - name: traditionalization
     states: [简保持, 简转繁]
     reset: 0
@@ -66,6 +66,7 @@ engine:
     - selector
     - navigator
     - express_editor
+    - lua_processor@*hao.hao_wordscounter
   segmentors:
     - ascii_segmentor
     - matcher
@@ -159,6 +160,17 @@ hao:
     hao:
       - { type: tip, name: ❖淅码配置中心 }
       - { type: switch, name: hao_postpone_fullcode, states: [☐原始排序, ☑全码后置] }
+      - {
+          type: radio,
+          names:
+            [
+              hao_spelling.off,
+              hao_spelling.lv1,
+              hao_spelling.lv2,
+              hao_spelling.lv3,
+            ],
+          states: [☐☐☐注解, ☑☐☐注解, ☐☑☐注解, ☐☐☑注解],
+        }
       - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
       - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
       - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }

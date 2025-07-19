@@ -9,7 +9,6 @@ schema:
   version: '20250609'
   author:
     - 作者 荒
-    - Rime方案 <https://shurufa.app>
     - 官方QQ群 1012245282
   description: |
     前缀·松烟(不上屏版)
@@ -18,7 +17,7 @@ __patch:
   switches/@0/reset: 0
   switches/@1/reset: 0
   switches/@2/reset: 0
-  switches/@3/reset: 1
+  switches/@3/reset: 0
   switches/@4/reset: 0
   switches/@5/reset: 0
   switches/@last/+:
@@ -55,40 +54,10 @@ translator:
 
 hao:
   code: hao_sy_flu
-  tags: [ abc ]
-  #postpone_fullcode:
-  #  max_index: 4  # 最大后置位置，默认为 4
-  spelling:
-    schema: hao_sy_chaifen
-    cycle_key: "Shift+Control+C"
-    switch_key: "Control+c"
-    phrase: 0
-  birthday:
-    solar:
-      淅码: "0429,淅码诞生"
-      松烟: "0520,松烟诞生"
-    lunar:
-      春节: "0101,农历春节"
-  funckeys:
-    macro: [0x2f] # 當輸入串以 "/" 開頭時, 認爲是宏調用
   macros:
     hao:
-      - { type: tip, name: ❖松烟配置中心 }
+      - { type: tip, name: ❖松烟连打配置中心 }
       - { type: switch, name: hao_autocommit, states: [☐选重上屏, ☑自动上屏] }
-      - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
-      - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
-      - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
-      - { type: switch, name: simplification, states: [☐繁保持, ☑繁转简] }
-      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
-      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
-    date:
-      - { type: eval, name: ☀日期, expr: return os.date("%Y-%m-%d") }
-      - { type: eval, name: ⛅年月日, expr: return os.date("%Y年%m月%d日") }
-    time:
-      - { type: eval, name: ⌚时间, expr: return os.date("%H:%M:%S") }
-      - { type: eval, name: Ⓣ时间, expr: return os.date("%Y%m%d%H%M") }
-      - { type: eval, name: Ⓢ时间戳, expr: return tostring(os.time()) }
-    div:
       - {
           type: radio,
           names:
@@ -100,42 +69,12 @@ hao:
             ],
           states: [☐☐☐注解, ☑☐☐注解, ☐☑☐注解, ☐☐☑注解],
         }
-    trad:
-      - { type: switch, name: traditionalization, states: [☐不转换, ☑简转繁] }
-    simp:
-      - { type: switch, name: simplification, states: [☐不转换, ☑繁转简] }
-    full:
-      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
-    half:
-      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
-    punc:
-      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
-    dot:
-      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
-    lazy:
       - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
-    dist:
-      - type: eval
-        expr: >
-          return function(args)
-            return string.format("librime: [%s]", rime_api.get_rime_version())
-          end
-      - type: eval
-        expr: >
-          return function(args)
-            return string.format("distribution: [%s](%s/%s)",
-              rime_api.get_distribution_name(),
-              rime_api.get_distribution_code_name(),
-              rime_api.get_distribution_version())
-          end
-    uni:
-      - type: eval
-        hijack: true
-        expr: return require("hao.hao_core").unicode()
-    w:
-      - type: eval
-        hijack: true
-        expr: return require("hao.hao_core").unicode()
+      - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
+      - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
+      - { type: switch, name: simplification, states: [☐繁保持, ☑繁转简] }
+      - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
+      - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
 
 emoji_suggestion:
     opencc_config: emoji.json
