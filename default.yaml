@@ -18,6 +18,7 @@ switcher:
     - full_shape
     - traditionalization
     - simplification
+    - emoji_suggestion
     #- lazy_clock
     #- preedit_lazy_clock
     - hao_spelling.off

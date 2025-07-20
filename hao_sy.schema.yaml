@@ -20,7 +20,7 @@ switches:
   - name: hao_autocommit
     reset: 1
     abbrev: [松, 烟]
-    states: [☐选重上屏, ☑自动上屏]
+    states: [☐整句, ☑前缀]
   - options:
       - hao_spelling.off
       - hao_spelling.lv1
@@ -44,6 +44,10 @@ switches:
     states: [繁保持, 繁转简]
     #reset: 0
     # Control+Shift+J
+  - name: emoji_suggestion
+    #reset: 1
+    abbrev: [ "🈚️", "🈶️" ]
+    states: [☐emoji, ☑emoji]
   - name: ascii_mode
     states: [中文, 西文]
     reset: 0
@@ -77,18 +81,19 @@ engine:
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - lua_translator@*hao.hao_switch*tr@hao
     - punct_translator
     - lua_translator@*hao.hao_shijian
     - lua_translator@*hao.hao_number
     - history_translator@history
     - script_translator@hao_pinyin_lookup
     - table_translator@hao_stroke_lookup
-    - table_translator
+    - script_translator
     - lua_translator@*hao.hao_os*os_env_translator
-    - lua_translator@*hao.hao_switch*tr@hao
   filters:
     - simplifier@traditionalize
     - simplifier@simplify
+    - simplifier@emoji_suggestion
     - reverse_lookup_filter@reverse_lookup
     - lua_filter@*hao.hao_spelling*filter
     - lua_filter@*hao.hao_os*lazy_clock_filter
@@ -98,7 +103,7 @@ engine:
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/
   initials: zyxwvutsrqponmlkjihgfedcba;'/
-  delimiter: "`"
+  delimiter: []
   auto_select: true
   auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
   # max_code_length: 5
@@ -143,7 +148,7 @@ hao:
   macros:
     hao:
       - { type: tip, name: ❖松烟配置中心 }
-      - { type: switch, name: hao_autocommit, states: [☐选重上屏, ☑自动上屏] }
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
       - {
           type: radio,
           names:
@@ -159,6 +164,7 @@ hao:
       - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
       - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
       - { type: switch, name: simplification, states: [☐繁保持, ☑繁转简] }
+      - { type: switch, name: emoji_suggestion, states: [☐emoji, ☑emoji] }
       - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
       - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
     date:
@@ -169,7 +175,9 @@ hao:
       - { type: eval, name: Ⓣ时间, expr: return os.date("%Y%m%d%H%M") }
       - { type: eval, name: Ⓢ时间戳, expr: return tostring(os.time()) }
     auto:
-      - { type: switch, name: hao_autocommit, states: [☐选重上屏, ☑自动上屏] }
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
+    a:
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
     div:
       - {
           type: radio,
@@ -236,6 +244,12 @@ simplify:
   comment_format:
     - xform/^/〔/
     - xform/$/〕/
+
+emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: none
+    inherit_comment: false
 
 history:
   input: "'"

@@ -323,6 +323,7 @@ key_binder:
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
+    - {accept: "Control+d", send: Delete, when: composing}
 
 recognizer:
   import_preset: default
