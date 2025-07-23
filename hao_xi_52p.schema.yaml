@@ -5,10 +5,11 @@ __include: hao_xi.schema.yaml:/
 
 schema:
   schema_id: hao_xi_52p
-  name: 好码・淅码动态五二顶
+  name: 好码・淅码(动态五二顶)
   version: "0.1.0"
   author:
     - 深白
+    - 荒
   description: |
     五二顶：二简不打空格，四码打空格，一简分号上屏
     动态二重二简：二简的第二个候选是根据你使用的频率变化的，使用 ;+编码 这种方式输入的字能增加频率
@@ -68,6 +69,9 @@ translator:
   enable_sentence: false
   enable_user_dict: true
   enable_completion: false
+  disable_user_dict_for_patterns:
+    - '^.$'
+    - '^.{3,4}$'
 
 key_binder:
   bindings:
@@ -76,26 +80,27 @@ key_binder:
       send_sequence: " "
     - match: "^[qwertyuiopasdfghjklzxcvbnm]{3}$"
       accept: ";"
-      send_sequence: "{Left}{space}{space}"
+      send_sequence: "{Home}{Right}{Right}{space}{space}"
     - match: "^[qwertyuiopasdfghjklzxcvbnm]{1, 2}$"
       accept: ";"
       send_sequence: "2"
     - match: "^[qwertyuiopasdfghjklzxcvbnm]{4}$"
       accept: ";"
-      send_sequence: "{Left}{space}2"
+      send_sequence: "{Home}{Right}{Right}{space}2"
     - match: "^[qwertyuiopasdfghjklzxcvbnm]{2}$"
       accept: "/"
       send_sequence: " "
     - match: "^[qwertyuiopasdfghjklzxcvbnm]{4}$"
       accept: "/"
-      send_sequence: "{Left}{Left}{space}{space}"
+      send_sequence: "{Home}{Right}{Right}{space}{space}"
     - { when: composing, accept: space, send: Escape }
     - { when: has_menu, accept: space, send: space }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    - { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
+    #- { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
-    - {accept: "Control+d", send: Delete, when: composing}
+    - { when: composing, accept: "Control+d", send: Delete }
+    - { when: composing, accept: "Control+k", send: "Shift+Delete" }

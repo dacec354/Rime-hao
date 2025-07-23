@@ -81106,7 +81106,7 @@ ktko	𬽦
 kroe	𬽧
 ksks	𬽨
 ixcq	韛
-kgck	𬽩
+kghg	𬽩
 kjef	𬽪
 kpfk	𬽫
 kfkc	𬽬
@@ -81175,8 +81175,8 @@ smef	𬾕
 kcll	倂
 kghf	𬾖
 kueu	𬾗
+kici	𬾘
 kjdj	偺
-sici	𬾘
 ksfu	𬾙
 kniz	𬾚
 kxcq	備
@@ -81219,7 +81219,7 @@ kzaa	𬾲
 kpfz	𬾳
 kkn	𬾴
 zzrl	𠕋
-kssp	𬾵
+sssp	𬾵
 eahp	冗
 ktib	𬾶
 kvkt	𬾷
@@ -81302,7 +81302,7 @@ ftpo	卿
 kczx	𬿪
 kvlt	𬿫
 ftpo	卿
-smrk	𬿬
+kmrk	𬿬
 kqjb	𬿭
 fdhs	卿
 kpmr	𬿮
@@ -81311,7 +81311,7 @@ kgwv	𬿰
 ohsp	𠨬
 kxpy	𬿱
 gyvo	灰
-skgo	𬿲
+kkgo	𬿲
 kluo	𬿳
 kdco	及
 kdud	𬿴
@@ -81324,7 +81324,7 @@ skwi	𠭣
 kdwa	𬿹
 ihtk	叫
 kevd	𬿺
-szil	𬿻
+kzil	𬿻
 ihsp	叱
 kfza	𬿼
 kfrr	𬿽
@@ -184617,7 +184617,7 @@ ktko	𬽦
 kroe	𬽧
 ksks	𬽨
 ixcq	韛
-kgck	𬽩
+kghg	𬽩
 kjef	𬽪
 kpfk	𬽫
 kfkc	𬽬
@@ -184686,8 +184686,8 @@ smef	𬾕
 kcll	倂
 kghf	𬾖
 kueu	𬾗
+kici	𬾘
 kjdj	偺
-sici	𬾘
 ksfu	𬾙
 kniz	𬾚
 kxcq	備
@@ -184730,7 +184730,7 @@ kzaa	𬾲
 kpfz	𬾳
 kkne	𬾴
 zzrl	𠕋
-kssp	𬾵
+sssp	𬾵
 eahp	冗
 ktib	𬾶
 kvkt	𬾷
@@ -184813,7 +184813,7 @@ ftpo	卿
 kczx	𬿪
 kvlt	𬿫
 ftpo	卿
-smrk	𬿬
+kmrk	𬿬
 kqjb	𬿭
 fdhs	卿
 kpmr	𬿮
@@ -184822,7 +184822,7 @@ kgwv	𬿰
 ohsp	𠨬
 kxpy	𬿱
 gyvo	灰
-skgo	𬿲
+kkgo	𬿲
 kluo	𬿳
 kdco	及
 kdud	𬿴
@@ -184835,7 +184835,7 @@ skwi	𠭣
 kdwa	𬿹
 ihtk	叫
 kevd	𬿺
-szil	𬿻
+kzil	𬿻
 ihsp	叱
 kfza	𬿼
 kfrr	𬿽

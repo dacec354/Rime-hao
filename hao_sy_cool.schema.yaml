@@ -2,28 +2,25 @@
 # encoding: utf-8
 
 schema:
-  schema_id: hao_xi
-  name: '好码・淅码(双乱四定)'
-  version: '20250425'
+  schema_id: hao_sy_cool
+  name: '好码・简松(前缀码单简爽)'
+  version: 'alpha'
   author:
     - 作者 荒
     - 官方QQ群 1012245282
   description: |
-    四定，双乱
+    前缀码·松烟(全码纯单)
     "`键 反查：拼音+笔画(hspnz)"
   dependencies:
     - hao_pinyin
     - hao_stroke
-    - hao_xi_chaifen
+    - hao_sy_chaifen
 
 switches:
-  - name: hao_postpone_fullcode
+  - name: hao_autocommit
     reset: 1
-    abbrev: [原, 后]
-    states: [ ＝原始排序, ↓全码后置 ]
-  - name: hao_embeded_cands
-    states: [ 普通, 嵌入 ]
-    #reset: 1
+    abbrev: [松, 烟]
+    states: [☐整句, ☑前缀]
   - options:
       - hao_spelling.off
       - hao_spelling.lv1
@@ -31,24 +28,16 @@ switches:
       - hao_spelling.lv3
     states: [无注解, 一重注解, 二重注解, 多重注解]
     #reset: 0
-  - name: lazy_clock
-    abbrev: [无, 時]
-    states: [ 关闭候选时间, 开启候选时间 ]
-    reset: 0
-  - name: preedit_lazy_clock
-    abbrev: [无, 時]
-    states: [ 关闭编辑区时间, 开启编辑区时间 ]
-    reset: 0
   - name: traditionalization
     states: [简保持, 简转繁]
-    reset: 0
+    #reset: 0
     # Control+Shift+F
   - name: simplification
     states: [繁保持, 繁转简]
-    reset: 0
+    #reset: 0
     # Control+Shift+J
   - name: ascii_mode
-    states: [中文, 英文]
+    states: [中文, 西文]
     reset: 0
   - name: full_shape
     states: ["半角", "全角"]
@@ -63,13 +52,13 @@ engine:
     - ascii_composer
     - recognizer
     - lua_processor@*hao.hao_spelling*processor
+    - lua_processor@*hao.hao_autocommit
     - key_binder
     - speller
     - punctuator
     - selector
     - navigator
     - express_editor
-    - lua_processor@*hao.hao_wordscounter
   segmentors:
     - ascii_segmentor
     - matcher
@@ -80,75 +69,63 @@ engine:
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - lua_translator@*hao.hao_switch*tr@hao
     - punct_translator
     - lua_translator@*hao.hao_shijian
     - lua_translator@*hao.hao_number
     - history_translator@history
     - script_translator@hao_pinyin_lookup
     - table_translator@hao_stroke_lookup
-    - table_translator@fixed # 固定字頻
-    - table_translator
-    - table_translator@zaoci  # 用户造詞
+    - script_translator
     - lua_translator@*hao.hao_os*os_env_translator
-    - lua_translator@*hao.hao_switch*tr@hao
   filters:
     - simplifier@traditionalize
     - simplifier@simplify
     - reverse_lookup_filter@reverse_lookup
     - lua_filter@*hao.hao_spelling*filter
-    - lua_filter@*hao.hao_postpone_fullcode
-    - lua_filter@*hao.hao_os*lazy_clock_filter
-    - lua_filter@*hao.hao_os*preedit_lazy_clock_filter
-    - lua_filter@*hao.hao_embeded_cands
     - uniquifier
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/
   initials: zyxwvutsrqponmlkjihgfedcba;'/
-  delimiter: "`"
-  max_code_length: 4
+  delimiter: []
   auto_select: true
-  auto_clear: max_length
-  auto_select_pattern: ^;\w+
+  auto_clear: auto
   algebra:
+    # 多根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3$4/
+    # 三根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3/
+    # 两根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2/
+    # 字根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1/
+    
+    - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
 
 translator:
-  dictionary: hao_xi
-  prism: hao_xi
+  dictionary: hao_sy_cool
+  prism: hao_sy_cool
   db_class: tabledb
-  enable_completion: false
-  enable_sentence: false
-  enable_user_dict: true
-  enable_encoder: true
-  encode_commit_history: false # 对连续上屏的词自动成词
-  max_phrase_length: 4 # 自动成词的最大词长
-  preedit_format: []
+  enable_completion: true
+  enable_sentence: true
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  initial_quality: 1000000
+  preedit_format:
+    #- xform/[a-z]/\※/
+    #- xform/[a-z]/·/
   comment_format:
     - "xform/^~/ /"
 
-zaoci:
-  __include: translator
-  initial_quality: 0
-  enable_sentence: true
-  enable_user_dict: true
-  prefix: "`"
-  tips: "〔用户造詞〕"
-  tag: zaoci
-
-# 固定词库词的权重，防止自动调频
-fixed:
-  __include: translator
-  enable_sentence: false
-  enable_user_dict: false
-  initial_quality: 1000000
-
 hao:
-  code: hao_xi
+  code: hao_sy_cool
   tags: [ abc ]
-  postpone_fullcode:
-    max_index: 4  # 最大后置位置，默认为 4
+  #postpone_fullcode:
+  #  max_index: 4  # 最大后置位置，默认为 4
   spelling:
-    schema: hao_xi_chaifen
+    schema: hao_sy_chaifen
     cycle_key: "Shift+Control+C"
     switch_key: "Control+c"
     phrase: 0
@@ -162,9 +139,8 @@ hao:
     macro: [0x2f] # 當輸入串以 "/" 開頭時, 認爲是宏調用
   macros:
     hao:
-      - { type: tip, name: ❖淅码配置中心 }
-      - { type: switch, name: hao_postpone_fullcode, states: [☐原始排序, ☑全码后置] }
-      - { type: switch, name: hao_embeded_cands, states: [☐嵌入, ☑嵌入] }
+      - { type: tip, name: ❖简松配置中心 }
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
       - {
           type: radio,
           names:
@@ -187,6 +163,10 @@ hao:
       - { type: eval, name: ⌚时间, expr: return os.date("%H:%M:%S") }
       - { type: eval, name: Ⓣ时间, expr: return os.date("%Y%m%d%H%M") }
       - { type: eval, name: Ⓢ时间戳, expr: return tostring(os.time()) }
+    auto:
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
+    a:
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
     div:
       - {
           type: radio,
@@ -211,12 +191,6 @@ hao:
       - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
     dot:
       - { type: switch, name: ascii_punct, states: [☐中文标点, ☑英文标点] }
-    auto:
-      - { type: switch, name: auto_commit, states: [☐关闭自动上屏, ☑开启自动上屏] }
-    commit:
-      - { type: switch, name: auto_commit, states: [☐关闭自动上屏, ☑开启自动上屏] }
-    lazy:
-      - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
     dist:
       - type: eval
         expr: >
@@ -265,7 +239,7 @@ history:
 
 reverse_lookup:
   tag: reverse_lookup
-  dictionary: haoxi
+  dictionary: hao_sy_cool
   prefix: "`"    # 反查引导符「`」
   # suffix:   # 反查关闭符，暂不定义
   tips: 【反查：拼音+笔画(hspnz)】
@@ -317,18 +291,16 @@ punctuator:
 
 key_binder:
   bindings:
-    - { when: composing, accept: space, send: Escape }
-    - { when: has_menu, accept: space, send: space }
+    - { when: always, accept: "Control+period", toggle: ascii_punct }
+    - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    - { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
     - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
     - { when: composing, accept: "Control+d", send: Delete }
     - { when: composing, accept: "Control+k", send: "Shift+Delete" }
-    - { when: always, accept: "Control+Shift+E", toggle: hao_embeded_cands }
 
 recognizer:
   import_preset: default
@@ -337,7 +309,6 @@ recognizer:
     reverse_lookup: "^`([a-z]+?)*$"
     hao_pinyin_lookup: "^`P([a-z]+'?)*$"
     hao_stroke_lookup: "^`B([a-z]+'?)*$"
-    zaoci: "^[a-z]*`[a-z`]*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
     hao_os: '^/env\w+'
     unicode: "^/(uni|w)(/[a-zA-Z0-9]*)*$"

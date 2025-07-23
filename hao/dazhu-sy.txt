@@ -737,6 +737,9 @@ cccfr	燃烧
 gdgjw	玻璃
 fl;	忐忑
 fllfu	忐忑
+ksksw	呼吸
+tvr	馄饨
+tvtlr	馄饨
 xx;	踌躇
 xmxco	踌躇
 dku	眼睛
@@ -781,9 +784,9 @@ ljw	陆离
 lkjsw	陆离
 kce	顑颔
 klcxe	顑颔
-smlo	鹦鹉
+sslo	鹦鹉
 sslqo	鹦鹉
-hscw	浩荡
+hmw	浩荡
 hmchw	浩荡
 hhe	滂沱
 hjhge	滂沱
@@ -82211,7 +82214,7 @@ jlfjr	𬽥
 jye	𬽦
 jfnr	𬽧
 jafu	𬽨
-jmsi	𬽩
+javmr	𬽩
 qasai	韛
 jvo	𬽪
 jydo	𬽫
@@ -82281,7 +82284,7 @@ adu	𬾕
 jfhle	𬾖
 jsllv	倂
 jjhfu	𬾗
-akskd	𬾘
+jkskd	𬾘
 jmfvo	偺
 jaljf	𬾙
 jasai	備
@@ -82325,7 +82328,7 @@ jdlsl	𬾲
 jklmv	𬾳
 djdzo	𠕋
 jjbhf	𬾴
-jaaxi	𬾵
+aaaxi	𬾵
 gklr	冗
 jckps	𬾶
 jjdne	𬾷
@@ -82407,7 +82410,7 @@ jfhsm	𬿩
 jsdyd	𬿪
 syfhe	卿
 jhndu	𬿫
-amzjg	𬿬
+jmzjg	𬿬
 syfhe	卿
 jpfhw	𬿭
 jhchf	𬿮
@@ -82417,7 +82420,7 @@ jgar	𬿰
 zkvke	𠨬
 jaxcm	𬿱
 akcme	灰
-apanr	𬿲
+jpanr	𬿲
 jdkfl	𬿳
 syw	及
 jmksj	𬿴
@@ -82430,7 +82433,7 @@ jjdjf	𬿸
 jdjlr	𬿹
 jgjsj	𬿺
 kdmsi	叫
-amkjf	𬿻
+jmkjf	𬿻
 jldtl	𬿼
 kdvke	叱
 jlksy	𬿽

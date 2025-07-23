@@ -3,7 +3,7 @@
 
 schema:
   schema_id: hao_pinyin
-  name: 好码·繁簡通·拼音
+  name: 好码·拼音(反查)【勿用】
   version: 20230418
   author:
     - 佛振 <chen.sst@gmail.com>

@@ -697,6 +697,9 @@ Ciallo～(∠・ω< )⌒★	calo	1
 玻璃	1
 忐忑	1
 忐忑	1
+呼吸	1
+馄饨	1
+馄饨	1
 踌躇	1
 踌躇	1
 眼睛	1
@@ -82171,7 +82174,7 @@ Ciallo～(∠・ω< )⌒★	calo	1
 𬽦	jye
 𬽧	jfnr
 𬽨	jafu
-𬽩	jmsi
+𬽩	javmr
 韛	qasai
 𬽪	jvo
 𬽫	jydo
@@ -82241,7 +82244,7 @@ Ciallo～(∠・ω< )⌒★	calo	1
 𬾖	jfhle
 倂	jsllv
 𬾗	jjhfu
-𬾘	akskd
+𬾘	jkskd
 偺	jmfvo
 𬾙	jaljf
 備	jasai
@@ -82285,7 +82288,7 @@ Ciallo～(∠・ω< )⌒★	calo	1
 𬾳	jklmv
 𠕋	djdzo
 𬾴	jjbhf
-𬾵	jaaxi
+𬾵	aaaxi
 冗	gklr
 𬾶	jckps
 𬾷	jjdne
@@ -82367,7 +82370,7 @@ Ciallo～(∠・ω< )⌒★	calo	1
 𬿪	jsdyd
 卿	syfhe
 𬿫	jhndu
-𬿬	amzjg
+𬿬	jmzjg
 卿	syfhe
 𬿭	jpfhw
 𬿮	jhchf
@@ -82377,7 +82380,7 @@ Ciallo～(∠・ω< )⌒★	calo	1
 𠨬	zkvke
 𬿱	jaxcm
 灰	akcme
-𬿲	apanr
+𬿲	jpanr
 𬿳	jdkfl
 及	syw
 𬿴	jmksj
@@ -82390,7 +82393,7 @@ Ciallo～(∠・ω< )⌒★	calo	1
 𬿹	jdjlr
 𬿺	jgjsj
 叫	kdmsi
-𬿻	amkjf
+𬿻	jmkjf
 𬿼	jldtl
 叱	kdvke
 𬿽	jlksy
