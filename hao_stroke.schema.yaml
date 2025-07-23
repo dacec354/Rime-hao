@@ -3,7 +3,7 @@
 
 schema:
   schema_id: hao_stroke
-  name: 好码笔画
+  name: 好码·笔画(反查)【勿用】
   version: "beta"
 
 switches:

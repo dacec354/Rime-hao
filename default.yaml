@@ -2,9 +2,11 @@
 config_version: 0.40
 
 schema_list:
-  - schema: hao_xi
-  - schema: hao_xi_52p
-  - schema: hao_sy
+  - schema: hao_xi        #淅码四定·常规
+  #- schema: hao_xi_52p    #淅码四定·五二顶
+  - schema: hao_sy_cool   #松烟前缀码·单简爽
+  #- schema: hao_sy        #松烟前缀码·全码纯单
+
 switcher:
   abbreviate_options: true
   caption: "〔方案選單〕"
@@ -19,6 +21,8 @@ switcher:
     - full_shape
     - traditionalization
     - simplification
+    - emoji_suggestion
+    - hao_embeded_cands
     #- lazy_clock
     #- preedit_lazy_clock
     - hao_spelling.off
@@ -139,7 +143,7 @@ ascii_composer:
   good_old_caps_lock: true
   switch_key:
     Caps_Lock: clear
-    Control_L: noop
+    Control_L: clear
     Control_R: noop
     Eisu_toggle: clear
     Shift_L: noop

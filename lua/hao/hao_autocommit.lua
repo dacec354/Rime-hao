@@ -90,21 +90,73 @@ local function func(key_event, env)
         return kNoop
     end
     
-    -- 只接受字母键
+    -- 只接受字母和分号键
     if key_event:release() or key_event:alt() or key_event:ctrl() or key_event:shift() or key_event:caps() then
         return kNoop
     end
     
     local ch = key_event.keycode
-    if ch < ('a'):byte() or ch > ('z'):byte() then
-        return kNoop
-    end
-    
     local current_char = string.char(ch)
     local input = context.input
+
+    -- 1. 输入字母后接分号（;）或斜杠（/）时自动上屏
+    if (current_char == ';' or current_char == '/') and #input >= 1 then
+        local last_char = input:sub(-1)
+        if last_char:match("[a-z;]") then
+            context:push_input(current_char)
+            local composition = context.composition
+            if not composition or composition:empty() then
+                return kNoop
+            end
+            local segment = composition:back()
+            if not segment then
+                return kNoop
+            end
+            local first_candidate = segment:get_selected_candidate()
+            if not first_candidate then
+                return kNoop
+            end
+            auto_commit_with_counter(env, first_candidate.text)
+            context:clear()
+            return kAccepted
+        end
+    end
+
+    -- 2. 输入分号后再接qtypasdfghjklzxcvbnm任意一个字母时自动上屏
+    if current_char:match("[a-z]") and #input >= 1 then
+        local last_char = input:sub(-1)
+        local valid_letters = "qtypasdfghjklzxcvbnm"
+        if last_char == ';' and valid_letters:find(current_char, 1, true) then
+            context:push_input(current_char)
+            local composition = context.composition
+            if not composition or composition:empty() then
+                return kNoop
+            end
+            local segment = composition:back()
+            if not segment then
+                return kNoop
+            end
+            local first_candidate = segment:get_selected_candidate()
+            if not first_candidate then
+                return kNoop
+            end
+            auto_commit_with_counter(env, first_candidate.text)
+            context:clear()
+            return kAccepted
+        end
+    end
     
+    if current_char:match("[0-9]") then
+        return kNoop
+    end
+
     -- 检查是否是第五个编码
     if #input == 4 then
+        -- 如果第五码是数字/翻页等键，则作为选重/翻页功能，不自动上屏
+        if current_char:match("[0-9-= ]") then
+            return kNoop
+        end
+        
         -- 先让按键输入
         context:push_input(current_char)
         

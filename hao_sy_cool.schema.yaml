@@ -2,14 +2,14 @@
 # encoding: utf-8
 
 schema:
-  schema_id: hao_sy
-  name: '好码・松烟(前缀码全码纯单)'
-  version: '20250520'
+  schema_id: hao_sy_cool
+  name: '好码・简松(前缀码单简爽)'
+  version: 'alpha'
   author:
     - 作者 荒
     - 官方QQ群 1012245282
   description: |
-    前缀码·松烟
+    前缀码·松烟(全码纯单)
     "`键 反查：拼音+笔画(hspnz)"
   dependencies:
     - hao_pinyin
@@ -18,12 +18,9 @@ schema:
 
 switches:
   - name: hao_autocommit
-    reset: 0
+    reset: 1
     abbrev: [松, 烟]
-    states: [☐选重, ☑前缀]
-  - name: hao_embeded_cands
-    states: [ 普通, 嵌入 ]
-    #reset: 1
+    states: [☐整句, ☑前缀]
   - options:
       - hao_spelling.off
       - hao_spelling.lv1
@@ -79,15 +76,13 @@ engine:
     - history_translator@history
     - script_translator@hao_pinyin_lookup
     - table_translator@hao_stroke_lookup
-    - table_translator
+    - script_translator
     - lua_translator@*hao.hao_os*os_env_translator
   filters:
     - simplifier@traditionalize
     - simplifier@simplify
-    - simplifier@emoji_suggestion
     - reverse_lookup_filter@reverse_lookup
     - lua_filter@*hao.hao_spelling*filter
-    - lua_filter@*hao.hao_embeded_cands
     - uniquifier
 
 speller:
@@ -95,18 +90,25 @@ speller:
   initials: zyxwvutsrqponmlkjihgfedcba;'/
   delimiter: []
   auto_select: true
-  #auto_clear: auto  # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
-  # max_code_length: 5
-  # auto_select_pattern: ^;\w+|^\w+;
-  # algebra:
-  #   - xform/^([a-z]{1,5})[a-z]*$/$1/
+  auto_clear: auto
+  algebra:
+    # 多根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3$4/
+    # 三根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3/
+    # 两根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2/
+    # 字根字
+    - xform/^([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1/
+    
+    - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
 
 translator:
-  dictionary: hao_sy
-  prism: hao_sy
+  dictionary: hao_sy_cool
+  prism: hao_sy_cool
   db_class: tabledb
   enable_completion: true
-  enable_sentence: false
+  enable_sentence: true
   enable_user_dict: false
   enable_encoder: false
   encode_commit_history: false
@@ -118,7 +120,7 @@ translator:
     - "xform/^~/ /"
 
 hao:
-  code: hao_sy
+  code: hao_sy_cool
   tags: [ abc ]
   #postpone_fullcode:
   #  max_index: 4  # 最大后置位置，默认为 4
@@ -137,9 +139,8 @@ hao:
     macro: [0x2f] # 當輸入串以 "/" 開頭時, 認爲是宏調用
   macros:
     hao:
-      - { type: tip, name: ❖松烟配置中心 }
-      - { type: switch, name: hao_autocommit, states: [☐选重, ☑前缀] }
-      - { type: switch, name: hao_embeded_cands, states: [☐嵌入, ☑嵌入] }
+      - { type: tip, name: ❖简松配置中心 }
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
       - {
           type: radio,
           names:
@@ -163,9 +164,9 @@ hao:
       - { type: eval, name: Ⓣ时间, expr: return os.date("%Y%m%d%H%M") }
       - { type: eval, name: Ⓢ时间戳, expr: return tostring(os.time()) }
     auto:
-      - { type: switch, name: hao_autocommit, states: [☐选重, ☑前缀] }
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
     a:
-      - { type: switch, name: hao_autocommit, states: [☐选重, ☑前缀] }
+      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
     div:
       - {
           type: radio,
@@ -238,7 +239,7 @@ history:
 
 reverse_lookup:
   tag: reverse_lookup
-  dictionary: hao_sy
+  dictionary: hao_sy_cool
   prefix: "`"    # 反查引导符「`」
   # suffix:   # 反查关闭符，暂不定义
   tips: 【反查：拼音+笔画(hspnz)】
@@ -300,7 +301,6 @@ key_binder:
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
     - { when: composing, accept: "Control+d", send: Delete }
     - { when: composing, accept: "Control+k", send: "Shift+Delete" }
-    - { when: always, accept: "Control+Shift+E", toggle: hao_embeded_cands }
 
 recognizer:
   import_preset: default
