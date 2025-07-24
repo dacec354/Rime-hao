@@ -3,7 +3,7 @@
 
 schema:
   schema_id: hao_xi
-  name: '好码・淅码(双乱)'
+  name: '好码・淅码(双乱四定)'
   version: '20250425'
   author:
     - 作者 荒
@@ -21,6 +21,9 @@ switches:
     reset: 1
     abbrev: [原, 后]
     states: [ ＝原始排序, ↓全码后置 ]
+  - name: hao_embeded_cands
+    states: [ 普通, 嵌入 ]
+    #reset: 1
   - options:
       - hao_spelling.off
       - hao_spelling.lv1
@@ -96,6 +99,7 @@ engine:
     - lua_filter@*hao.hao_postpone_fullcode
     - lua_filter@*hao.hao_os*lazy_clock_filter
     - lua_filter@*hao.hao_os*preedit_lazy_clock_filter
+    - lua_filter@*hao.hao_embeded_cands
     - uniquifier
 
 speller:
@@ -160,6 +164,7 @@ hao:
     hao:
       - { type: tip, name: ❖淅码配置中心 }
       - { type: switch, name: hao_postpone_fullcode, states: [☐原始排序, ☑全码后置] }
+      - { type: switch, name: hao_embeded_cands, states: [☐嵌入, ☑嵌入] }
       - {
           type: radio,
           names:
@@ -171,8 +176,6 @@ hao:
             ],
           states: [☐☐☐注解, ☑☐☐注解, ☐☑☐注解, ☐☐☑注解],
         }
-      - { type: switch, name: lazy_clock, states: [☐候选时间, ☑候选时间] }
-      - { type: switch, name: preedit_lazy_clock, states: [☐编辑区时间, ☑编辑区时间] }
       - { type: switch, name: traditionalization, states: [☐简保持, ☑简转繁] }
       - { type: switch, name: simplification, states: [☐繁保持, ☑繁转简] }
       - { type: switch, name: full_shape, states: [☐半角, ☑全角] }
@@ -323,6 +326,9 @@ key_binder:
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
+    - { when: composing, accept: "Control+d", send: Delete }
+    - { when: composing, accept: "Control+k", send: "Shift+Delete" }
+    - { when: always, accept: "Control+Shift+E", toggle: hao_embeded_cands }
 
 recognizer:
   import_preset: default

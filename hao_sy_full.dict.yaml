@@ -1,0 +1,22 @@
+# encoding: utf-8
+#
+# 好码·松烟(前缀全码纯单)
+# 版本: alpha
+#
+---
+name: "hao_sy_full"
+version: "alpha"
+sort: by_weight
+import_tables:
+  # 以下是全息码表
+  - hao/hao.sy.fullinformation
+  # 以下是字根快打
+  - hao/hao.sy.roots
+  # 以下是快符
+  - hao/hao.fastsymbols
+columns:
+  - text
+  - code
+  - weight
+...
+
