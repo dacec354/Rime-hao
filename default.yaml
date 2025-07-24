@@ -143,7 +143,7 @@ ascii_composer:
   good_old_caps_lock: true
   switch_key:
     Caps_Lock: clear
-    Control_L: clear
+    Control_L: noop
     Control_R: noop
     Eisu_toggle: clear
     Shift_L: noop
