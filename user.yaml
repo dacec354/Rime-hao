@@ -3,6 +3,10 @@ var:
   option:
     cjk: true
     full_shape: false
+    hao_spelling.lv1: false
+    hao_spelling.lv2: false
+    hao_spelling.lv3: true
+    hao_spelling.off: false
     original: true
     traditionalization: false
     yuhao_charset_filter_common: false
