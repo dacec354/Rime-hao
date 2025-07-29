@@ -149,10 +149,10 @@ function filter.handle_candidate(text, shape_input, env)
     local prompt = ""
     local element = env.radicals_xingpang[text] or ""
     local code = encode(element, env.radical_shengjie)
-    local comment = code .. " " .. element
+    local comment = (code .. " " .. element):gsub("rj", "'")
     if shape_input:sub(1, 1) == "v" then
       partial_code = shape_input:sub(2, -2)
-      prompt = " [" .. partial_code .. "]"
+      prompt = (" [" .. partial_code .. "]"):gsub("rj", "'")
     end
     local match = partial_code == "" or code == partial_code
     return match, prompt, comment

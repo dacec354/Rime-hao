@@ -30,6 +30,7 @@ engine:
     - express_editor
     - lua_processor@*hao.hao_wordscounter
   translators:
+    - lua_translator@*hao.hao_switch*tr@hao
     - punct_translator
     - lua_translator@*hao.hao_shijian
     - lua_translator@*hao.hao_number
@@ -38,7 +39,6 @@ engine:
     - table_translator@hao_stroke_lookup
     - script_translator
     - lua_translator@*hao.hao_os*os_env_translator
-    - lua_translator@*hao.hao_switch*tr@hao
   filters:
     - simplifier@traditionalize
     - simplifier@simplify

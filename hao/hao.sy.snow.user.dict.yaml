@@ -1,0 +1,18 @@
+---
+name: hao.sy.snow.user
+version: '0.2'
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+冰雪拼音	GhwHsu KoAlr KsuJdoClr Sr	100
+冰雪四拼	GhwHsu KoAlr Ahe KsuJdoClr	100
+冰雪三拼	GhwHsu KoAlr Sme KsuJdoClr	100
+冰雪双拼	GhwHsu KoAlr BuBu KsuJdoClr	100
+冰雪一拼	GhwHsu KoAlr Le KsuJdoClr	100
+好码	GleQi FjeFye	100
+豹码	QeSliNr FjeFye	100
+淅码	HsuTlrKfo FjeFye	100
+松烟	TlrJdoBkr CmeZeYdi	100
+简松	PuQlrVo TlrJdoBkr	100
+雪凇	KoAlr GhwTlrJdoBkr	100

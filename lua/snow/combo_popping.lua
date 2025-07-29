@@ -29,7 +29,7 @@ function processor.func(key_event, env)
     return snow.kNoop
   end
   local incoming = utf8.char(key_event.keycode)
-  if rime_api.regex_match(input, "([bpmfdtnlgkhjqxzcsr][gh]?[iuv]?(a|ai|an|ang|ao|e|ei|en|eng|ou)?[flxh])+") then
+  if rime_api.regex_match(input, "([bpmfdtnlgkhzcsr]j?[iuv]?(a|ai|an|ang|ao|e|ei|en|eng|ou)?[wyxq])+") then
     if incoming == "u" then -- 在完整音节后面出现 u，表示追加
       env.active = false
       return snow.kAccepted
