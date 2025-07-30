@@ -1,0 +1,26 @@
+# encoding: utf-8
+#
+# 好码·雪凇
+# 版本: alpha
+#
+---
+name: "hao_sy_snow"
+version: "alpha"
+sort: by_weight
+import_tables:
+  # 以下是單字全息碼
+  - hao/hao.sy.fullinformation
+  # 以下是雪凇詞庫
+  - hao/hao.sy.snow.base
+  - hao/hao.sy.snow.correlation
+  - hao/hao.sy.snow.suggestion
+  - hao/hao.sy.snow.poetry
+  - hao/hao.sy.snow.place
+  - hao/hao.sy.snow.user
+
+columns:
+  - text
+  - code
+  - weight
+...
+
