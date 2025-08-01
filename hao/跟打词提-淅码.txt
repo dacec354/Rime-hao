@@ -29115,7 +29115,7 @@
 𠐨	kirm
 𠐩	karw
 𠐪	kwrq
-𠐫	kzsn
+𠐫	kzsl
 𠐬	kzvw
 𠐭	kwkd
 𠐮	kwoy
@@ -40674,7 +40674,7 @@
 𣅯	fkjf
 𣅰	fdpj
 𣅱	otef
-𣅲	pjef
+𣅲	ngje
 𣅳	jpx
 𣅴	jpbm
 𣅵	jngo
@@ -132624,7 +132624,7 @@
 𠐨	kirm
 𠐩	karw
 𠐪	kwrq
-𠐫	kzsn
+𠐫	kzsl
 𠐬	kzvw
 𠐭	kwkd
 𠐮	kwoy
@@ -144183,7 +144183,7 @@
 𣅯	fkjf
 𣅰	fdpj
 𣅱	otef
-𣅲	pjef
+𣅲	ngje
 𣅳	jpxi
 𣅴	jpbm
 𣅵	jngo

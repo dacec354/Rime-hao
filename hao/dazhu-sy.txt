@@ -40,19 +40,6 @@ m;	』
 ;m	』
 ae	，
 te	。
-dw	哈！
-calo	Ciallo～(∠・ω< )⌒★
-qw	哈？
-fq;	说：“
-hq;	道：“
-jq;	曰：“
-ag;	！”
-qg;	？”
-tg;	。”
-ssdu	℃
-fsdu	℉
-kdfe	吗？
-kdfw	呢？
 e	的
 u	是
 r	不
@@ -183,7 +170,7 @@ hse	海
 fki	教
 dkfe	眼
 jve	化
-bki	通
+bku	通
 klu	感
 vw	各
 kdse	别
@@ -327,7 +314,7 @@ fno	议
 akfi	存
 ksdr	击
 kamu	精
-bkki	台
+bki	台
 fdi	调
 str	杀
 zai	团
@@ -621,6 +608,20 @@ kdr	呗
 vdfr	晾
 hsw	汩
 alhnu	逯
+dw	哈！
+calo	Ciallo～(∠・ω< )⌒☆
+callo	Ciallo～(∠・ω< )⌒★
+qw	哈？
+fq;	说：“
+hq;	道：“
+jq;	曰：“
+ag;	！”
+qg;	？”
+tg;	。”
+ssdu	℃
+fsdu	℉
+kdfe	吗？
+kdfw	呢？
 hao	松烟
 ffu	说话
 xdr	这就
@@ -706,6 +707,7 @@ azr	韩国
 aji	暂停
 tau	纪录
 jhi	恐怖
+sdw	福州
 gju	发生
 dhi	睡觉
 kzi	撤回
@@ -728,6 +730,13 @@ xsw	外面
 fxe	许多
 jbe	功能
 vtw	空格
+agr	全球
+ppo	地区
+jlu	普遍
+pki	地震
+fdw	东西
+sdr	延长
+vso	怎么办
 mm;	尴尬
 mvmae	尴尬
 cc;	燃烧
@@ -859,7 +868,6 @@ aj;	有关
 hg;	情况
 qv;	问题
 dv;	同时
-fd;	东西
 pc;	笑死
 vg;	最好
 vp;	最坏
@@ -985,8 +993,6 @@ ht;	学校
 gp;	环境
 jm;	优秀
 xk;	承担
-gq;	女子
-zq;	男子
 my;	表达
 mn;	期望
 mt;	基本
@@ -1013,6 +1019,23 @@ gt;	始终
 jx;	道路
 jg;	道理
 dn;	勉强
+tf;	经验
+bp;	预算
+cp;	落地
+sp;	当地
+zf;	回应
+zv;	质疑
+lz;	遭遇
+pz;	地图
+hs;	消耗
+hk;	流年
+yp;	微笑
+vy;	空气
+sd;	北京
+fh;	上海
+fd;	广州
+zq;	厦门
+hp;	深圳
 njs;	为什么
 jjg;	你们好
 azh;	输入法
@@ -1023,12 +1046,14 @@ qqq;	钛镪钌
 ttt;	鈦鏹釕
 svc;	向日葵
 jmt;	公积金
+lhd;	互联网
 mnj;	特朗普
 fms;	马斯克
 jam;	俄罗斯
 caj;	乌克兰
 sym;	意大利
 mds;	墨西哥
+ylh;	太平洋
 kasu	别人
 kaju	只有
 vcao	以来
@@ -1103,6 +1128,8 @@ aafu	存在
 kkgr	数据
 psbo	却将
 akne	连接
+gqli	女子
+zqsi	男子
 jfju	上传词提 好拆
 jfji	上传词提 好
 jfjo	上传词提 松烟
@@ -30223,7 +30250,7 @@ jcadk	𠐧
 jkldu	𠐨
 jyfjz	𠐩
 jclhe	𠐪
-jpajt	𠐫
+jpajf	𠐫
 jmfar	𠐬
 jcdjf	𠐭
 jjsqi	𠐮
@@ -41782,7 +41809,7 @@ vsclr	𣅮
 lfvle	𣅯
 lfxvo	𣅰
 flfkw	𣅱
-ksvo	𣅲
+jsavo	𣅲
 vxydi	𣅳
 vxpsu	𣅴
 vhdu	𣅵

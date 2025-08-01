@@ -61,7 +61,7 @@ speller:
       accept: "[^ 2345789]"
       prefix: 2
   algebra:
-    - derive/^;(..).*$/$1
+    - derive/^;(..).*$/$1/
 
 translator:
   dictionary: hao_xi_52p

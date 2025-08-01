@@ -265,7 +265,7 @@ history:
 
 reverse_lookup:
   tag: reverse_lookup
-  dictionary: haoxi
+  dictionary: hao_xi
   prefix: "`"    # 反查引导符「`」
   # suffix:   # 反查关闭符，暂不定义
   tips: 【反查：拼音+笔画(hspnz)】
