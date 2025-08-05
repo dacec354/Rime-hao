@@ -85,6 +85,16 @@ engine:
     - lua_filter@*hao.hao_spelling*filter
     - uniquifier
 
+sy_cool_algebra:
+  # 多根字
+  - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3$4/
+  # 三根字
+  - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3/
+  # 两根字
+  - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2/
+  # 字根字
+  - xform/^([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1/
+
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/
   initials: zyxwvutsrqponmlkjihgfedcba;'/
@@ -92,16 +102,9 @@ speller:
   auto_select: true
   auto_clear: auto
   algebra:
-    # 多根字
-    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3$4/
-    # 三根字
-    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3/
-    # 两根字
-    - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2/
-    # 字根字
-    - xform/^([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1/
-    
-    - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
+    __include: /sy_cool_algebra
+    __append:
+      - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
 
 translator:
   dictionary: hao_sy_cool
@@ -248,6 +251,22 @@ reverse_lookup:
   extra_tags:
     - hao_pinyin_lookup
     - hao_stroke_lookup
+  comment_format:
+    __include: /sy_cool_algebra
+    __append:
+      # 多根字
+      - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z][^weruioA-Z ]?[weruio])/$1$2$3$4/
+      # 三根字
+      - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2$3/
+      # 两根字
+      - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2/
+      # 字根字
+      - xform/([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1/
+      
+      - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
+      - xform|/[a-z]{3,4}||
+      - xform/^([^ ]{5})[a-z]{1,2}/$1/
+      - xform/^ //
 
 hao_pinyin_lookup:
   tag: hao_pinyin_lookup

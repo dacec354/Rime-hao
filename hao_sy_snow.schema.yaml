@@ -274,7 +274,7 @@ reverse_lookup:
   dictionary: hao_sy_snow
   prefix: "`"    # 反查引导符「`」
   # suffix:   # 反查关闭符，暂不定义
-  tips: 【反查：拼音+笔画(hspnz)】
+  tips: 【反查：松烟+拼音+笔画(hspnz)】
   closing_tips: 【反查关闭】
   tags: [ hao_pinyin_lookup, hao_stroke_lookup, hao_sy_lookup ]
   extra_tags:
