@@ -2214,7 +2214,7 @@ local function translator(input, seg, env)
     local context = engine.context
 
     -- **日期候选项**
-    if (input == "/rq" or input == "orq") then
+    if (input == "/rq") then
         local num_year = os.date("%j/") .. IsLeap(os.date("%Y"))
         local date_variants = {
             {os.date("%Y-%m-%d"), num_year},
@@ -2230,7 +2230,7 @@ local function translator(input, seg, env)
         generate_candidates("date", seg, date_variants)
 
     -- **时间候选项**
-    elseif (input == "/sj" or input == "osj" or input == "ouj") then
+    elseif (input == "/sj") then
         local time_discrpt = GetLunarSichen(os.date("%H"), 1)
         local time_variants = {
             {os.date("%H:%M"), time_discrpt},
@@ -2240,14 +2240,14 @@ local function translator(input, seg, env)
         }
         generate_candidates("time", seg, time_variants)
     -- **农历候选项**
-    elseif (input == "/nl" or input == "onl") then
+    elseif (input == "/nl") then
         local lunar_variants = {
             {Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")), ""},
             {lunarJzl(os.date("%Y%m%d%H")), " "},
             {Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"), 1), ""}
         }
         generate_candidates("date", seg, lunar_variants)
-    elseif (input == "/xq" or input == "oxq") then
+    elseif (input == "/xq") then
         local now = os.date("*t")
         local _, weekno = iso_week_number(now.year, now.month, now.day)
         local num_weekday = "(第" .. weekno .. "周)"
@@ -2271,7 +2271,7 @@ local function translator(input, seg, env)
         generate_candidates("oww", seg, week_variants)
 
         -- **节气候选项**
-    elseif (input == "/jq" or input == "ojq") then
+    elseif (input == "/jq") then
         local jqs = GetNowTimeJq(os.date("%Y%m%d", os.time() - 3600 * 24 * 15))
         local jq_variants = {}
         for _, jq in ipairs(jqs) do
@@ -2280,7 +2280,7 @@ local function translator(input, seg, env)
         generate_candidates("ojq", seg, jq_variants)
 
     -- **时间戳**
-    elseif (input == "/tt" or input == "ott") then
+    elseif (input == "/tt") then
         local current_time = os.time()
         local timestamp_variants = {
             {string.format('%d', current_time), "(时间戳)"}
@@ -2300,7 +2300,7 @@ local function translator(input, seg, env)
             end
         end
     -- **日期+时间**
-    elseif (input == "/rs" or input == "ors") then
+    elseif (input == "/rs") then
         local current_time = os.time()
         local time_variants = {
             {os.date('%Y-%m-%d %H:%M:%S', current_time), "年-月-日 时:分:秒"},
@@ -2309,7 +2309,7 @@ local function translator(input, seg, env)
         }
         generate_candidates("time", seg, time_variants)
     -- **节日查询**
-    elseif (input == "/jr" or input == "ojr") then
+    elseif (input == "/jr") then
         local upcoming_holidays = get_upcoming_holidays()  -- 获取所有即将到来的节日
         local candidates = {}
         -- 格式化输出节日信息
@@ -2330,7 +2330,7 @@ local function translator(input, seg, env)
         generate_candidates("holiday_summary", seg, candidates)
     
     -- **生日提醒**
-    elseif (input == "/sr" or input == "osr") then  
+    elseif (input == "/sr") then  
         -- 从用户配置文件中读取生日设置
         local config = env.engine.schema.config
         local birthday_settings = {
@@ -2399,7 +2399,7 @@ local function translator(input, seg, env)
         generate_candidates("birthday_reminders", seg, candidates)
     
       -- 日历信息整合处理 `/day`
-    elseif (input == "/day" or input == "oday") then
+    elseif (input == "/day") then
         -- 获取当前时间
         local now = os.time()
         local year = tonumber(os.date("%Y", now))

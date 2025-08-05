@@ -19,7 +19,7 @@ import_tables:
   # 以下是字根快打
   - hao/hao.xi.roots
   # 以下是快符
-  - hao/hao.fastsymbols
+  - hao/hao.xi.fastsymbols
   # 以下是符號
   - hao/hao.symbols
 columns:

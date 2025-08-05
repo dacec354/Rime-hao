@@ -61,7 +61,7 @@ speller:
       accept: "[^ 2345789]"
       prefix: 2
   algebra:
-    - derive/^;(..).*$/$1
+    - derive/^;(..).*$/$1/
 
 translator:
   dictionary: hao_xi_52p
@@ -75,24 +75,55 @@ translator:
 
 key_binder:
   bindings:
-    - match: "^[qwertyuiopasdfghjklzxcvbnm]$"
-      accept: ";"
+    # 句末一、二码 + 「/」 → 首选字上屏（等效于空格）
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{1, 2}$"
+      accept: "/"
       send_sequence: " "
-    - match: "^[qwertyuiopasdfghjklzxcvbnm]{3}$"
-      accept: ";"
+    # 句末三码 + 「/」 → 二简字 + 一简字上屏
+    # 句末四码 + 「/」 → 二简字 + 二简字上屏
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
+      accept: "/"
       send_sequence: "{Home}{Right}{Right}{space}{space}"
-    - match: "^[qwertyuiopasdfghjklzxcvbnm]{1, 2}$"
+
+    # 一、二码 + 「；」 → 次选上屏
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{1, 2}$"
       accept: ";"
       send_sequence: "2"
-    - match: "^[qwertyuiopasdfghjklzxcvbnm]{4}$"
+    # 句末三码 + 「；」 → 二简字 + 一简二重（快符）上屏
+    # 句末四码 + 「；」 → 二简字 + 二简二重上屏
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: ";"
       send_sequence: "{Home}{Right}{Right}{space}2"
-    - match: "^[qwertyuiopasdfghjklzxcvbnm]{2}$"
-      accept: "/"
-      send_sequence: " "
-    - match: "^[qwertyuiopasdfghjklzxcvbnm]{4}$"
-      accept: "/"
-      send_sequence: "{Home}{Right}{Right}{space}{space}"
+
+    # 快符
+    - { match: "^;$", accept: "q", send_sequence: "q{space}" }
+    #- { match: "^;$", accept: "w", send_sequence: "w{space}" }
+    #- { match: "^;$", accept: "e", send_sequence: "e{space}" }
+    #- { match: "^;$", accept: "r", send_sequence: "r{space}" }
+    - { match: "^;$", accept: "t", send_sequence: "t{space}" }
+    - { match: "^;$", accept: "y", send_sequence: "y{space}" }
+    #- { match: "^;$", accept: "u", send_sequence: "u{space}" }
+    #- { match: "^;$", accept: "i", send_sequence: "i{space}" }
+    #- { match: "^;$", accept: "o", send_sequence: "o{space}" }
+    - { match: "^;$", accept: "p", send_sequence: "p{space}" }
+    - { match: "^;$", accept: "a", send_sequence: "a{space}" }
+    - { match: "^;$", accept: "s", send_sequence: "s{space}" }
+    - { match: "^;$", accept: "d", send_sequence: "d{space}" }
+    - { match: "^;$", accept: "f", send_sequence: "f{space}" }
+    - { match: "^;$", accept: "g", send_sequence: "g{space}" }
+    - { match: "^;$", accept: "h", send_sequence: "h{space}" }
+    - { match: "^;$", accept: "j", send_sequence: "j{space}" }
+    - { match: "^;$", accept: "k", send_sequence: "k{space}" }
+    - { match: "^;$", accept: "l", send_sequence: "l{space}" }
+    - { match: "^;$", accept: "z", send_sequence: "z{space}" }
+    - { match: "^;$", accept: "x", send_sequence: "x{space}" }
+    - { match: "^;$", accept: "c", send_sequence: "c{space}" }
+    - { match: "^;$", accept: "v", send_sequence: "v{space}" }
+    - { match: "^;$", accept: "b", send_sequence: "b{space}" }
+    - { match: "^;$", accept: "n", send_sequence: "n{space}" }
+    - { match: "^;$", accept: "m", send_sequence: "m{space}" }
+    
+
     - { when: composing, accept: space, send: Escape }
     - { when: has_menu, accept: space, send: space }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
