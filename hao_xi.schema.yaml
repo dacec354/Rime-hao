@@ -259,8 +259,8 @@ simplify:
     - xform/$/〕/
 
 history:
-  input: "'"
-  size: 3
+  input: "z"
+  size: 1
   initial_quality: 0
 
 reverse_lookup:
