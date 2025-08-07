@@ -72,7 +72,6 @@ Ciallo～(∠・ω< )⌒★	callo	1
 事实	lgi	1
 规则	jse	1
 必须	hfe	1
-容易	gvw	1
 即使	fjo	1
 偷懒	jhr	1
 默默	mmu	1
@@ -138,7 +137,8 @@ Ciallo～(∠・ω< )⌒★	callo	1
 地震	pki	1
 东西	fdw	1
 延长	sdr	1
-怎么办	vso	1
+重置	kae	1
+密码	gge	1
 
 #==== 联绵词 ====#
 尴尬	mm;	1
@@ -153,7 +153,7 @@ Ciallo～(∠・ω< )⌒★	callo	1
 馄饨	tvtlr	1
 踌躇	xx;	1
 踌躇	xmxco	1
-眼睛	dku	1
+眼睛	ddmu	1
 眼睛	dfdmu	1
 价值	jjae	1
 价值	jajae	1
@@ -162,13 +162,11 @@ Ciallo～(∠・ω< )⌒★	callo	1
 葡萄	cscsr	1
 继续	tti	1
 继续	tktai	1
-憧憬	hdhd;	1
+憧憬	hhvr	1
 憧憬	hjhvr	1
-荏苒	clcl;	1
 荏苒	cjcdu	1
 渐渐	hho	1
 渐渐	hahao	1
-灿烂	cmcm;	1
 灿烂	cmcje	0
 喷嚏	kku	1
 喷嚏	kakau	0
@@ -179,7 +177,7 @@ Ciallo～(∠・ω< )⌒★	callo	1
 蟑螂	ggw	1
 蟑螂	gjgnw	0
 饕餮	klcai	1
-凛冽	gge	1
+凛冽	ggce	1
 凛冽	gjgce	1
 葫芦	cci	1
 葫芦	cscli	1
@@ -195,16 +193,34 @@ Ciallo～(∠・ω< )⌒★	callo	1
 陆离	lkjsw	1
 顑颔	kce	1
 顑颔	klcxe	1
-鹦鹉	sslo	1
+鹦鹉	slqo	1
 鹦鹉	sslqo	1
-浩荡	hmw	1
 浩荡	hmchw	1
-滂沱	hhe	1
 滂沱	hjhge	1
 魑魅魍魉	kkko	1
 魑魅魍魉	kkkko	1
 
 #==== 高频简词 ====#
+越来越	a/	2
+对不起	b/	2
+来不及	c/	2
+的时候	d/	2
+说起来	f/	2
+无所谓	g/	2
+没关系	h/	2
+并不是	j/	2
+每个人	k/	2
+一部分	l/	2
+基本上	m/	2
+为什么	n/	2
+！松烟	p/	2
+！松烟	q/	2
+只不过	s/	2
+差不多	t/	2
+怎么办	v/	2
+！松烟	x/	2
+！松烟	y/	2
+！松烟	z/	2
 如果	gz;	1
 但是	jv;	1
 哪个	ka;	1
@@ -229,7 +245,7 @@ Ciallo～(∠・ω< )⌒★	callo	1
 应该	ff;	1
 当然	fc;	1
 可以	sv;	1
-我想	st;	1
+系统	st;	1
 想想	tt;	1
 天天	ll;	1
 等等	pp;	1
@@ -318,7 +334,7 @@ Ciallo～(∠・ω< )⌒★	callo	1
 复杂	kg;	1
 这种	xm;	1
 这是	xv;	1
-而是	gv;	1
+容易	gv;	1
 这些	xd;	1
 而已	gy;	1
 办法	sh;	1
@@ -443,8 +459,8 @@ Ciallo～(∠・ω< )⌒★	callo	1
 厦门	zq;	1
 深圳	hp;	1
 针对	qb;	1
-为什么	njs;	1
 你们好	jjg;	1
+大家好	ygg;	1
 输入法	azh;	1
 太强了	ynd;	1
 太强了	tql;	1
