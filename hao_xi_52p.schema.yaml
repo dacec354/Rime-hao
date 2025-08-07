@@ -12,7 +12,7 @@ schema:
     - 荒
   description: |
     五二顶：二简不打空格，四码打空格，一简分号上屏
-    动态二重二简：二简的第二个候选是根据你使用的频率变化的，使用 ;+编码 这种方式输入的字能增加频率
+    动态二重二简：二简的第二个候选是根据你使用的频率变化的，使用 「'+编码」 这种方式输入的字能增加频率
 
 engine:
   processors:
@@ -52,8 +52,8 @@ engine:
     - uniquifier
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
-  initials: zyxwvutsrqponmlkjihgfedcba;'/
+  alphabet: zyxwvutsrqponmlkjihgfedcba;' /
+  initials: zyxwvutsrqponmlkjihgfedcba;' /
   delimiter: " "
   max_code_length: 5
   popping:
@@ -61,7 +61,7 @@ speller:
       accept: "[^ 2345789]"
       prefix: 2
   algebra:
-    - derive/^;(..).*$/$1/
+    - derive/^'(..).*$/$1/
 
 translator:
   dictionary: hao_xi_52p
@@ -75,14 +75,14 @@ translator:
 
 key_binder:
   bindings:
-    # 句末一、二码 + 「/」 → 首选字上屏（等效于空格）
-    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{1, 2}$"
-      accept: "/"
-      send_sequence: " "
-    # 句末三码 + 「/」 → 二简字 + 一简字上屏
-    # 句末四码 + 「/」 → 二简字 + 二简字上屏
+    # 句末一、二码 + 「空格」 → 首选字上屏
+    #- match: "^[qwertyuiopasdfghjklzxcvbnm;]{1, 2}$"
+    #  accept: " "
+    #  send_sequence: " "
+    # 句末三码 + 「空格」 → 二简字 + 一简字上屏
+    # 句末四码 + 「空格」 → 二简字 + 二简字上屏
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
-      accept: "/"
+      accept: " "
       send_sequence: "{Home}{Right}{Right}{space}{space}"
 
     # 一、二码 + 「；」 → 次选上屏
@@ -94,6 +94,14 @@ key_binder:
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: ";"
       send_sequence: "{Home}{Right}{Right}{space}2"
+
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
+      accept: "4"
+      send_sequence: "{Home}{Right}{Right}2{space}"
+
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
+      accept: "7"
+      send_sequence: "{Home}{Right}{Right}22"
 
     # 快符
     - { match: "^;$", accept: "q", send_sequence: "q{space}" }
@@ -122,16 +130,21 @@ key_binder:
     - { match: "^;$", accept: "b", send_sequence: "b{space}" }
     - { match: "^;$", accept: "n", send_sequence: "n{space}" }
     - { match: "^;$", accept: "m", send_sequence: "m{space}" }
-    
 
     - { when: composing, accept: space, send: Escape }
     - { when: has_menu, accept: space, send: space }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    #- { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
+    - { when: has_menu, accept: "1", send: KP_1 }
+    - { when: has_menu, accept: "/", send: KP_1 }
     - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
     - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
     - { when: composing, accept: "Control+d", send: Delete }
     - { when: composing, accept: "Control+k", send: "Shift+Delete" }
+
+menu:
+  alternative_select_keys: "_2389"
+  alternative_select_labels: [ １, ２, ３, ８, ９ ]
+  page_size: 5
