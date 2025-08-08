@@ -13,7 +13,7 @@ import_tables:
   # 以下是字根快打
   - hao/hao.sy.roots
   # 以下是快符
-  - hao/hao.fastsymbols
+  - hao/hao.sy.fastsymbols
 columns:
   - text
   - code

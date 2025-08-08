@@ -313,6 +313,9 @@ punctuator:
     "}": "」"
     "/": "/"
     "|": "|"
+    "_": "——"
+    "|": "·"
+
   digit_separators: ",."
 
 key_binder:
