@@ -13,9 +13,10 @@ switcher:
   caption: "〔方案選單〕"
   fold_options: true
   hotkeys:
-    - "Control+grave"
-    - "Control+Shift+grave"
-    - F4
+    # - "Control+grave"
+    # - "Control+Shift+grave"
+    # - F4
+    - "Control+F8"
   option_list_separator: "／"
   save_options:
     - full_shape
