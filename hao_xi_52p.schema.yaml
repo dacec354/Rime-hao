@@ -94,11 +94,11 @@ key_binder:
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: ";"
       send_sequence: "{Home}{Right}{Right}{space}2"
-
+    # 次+首
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: "4"
       send_sequence: "{Home}{Right}{Right}2{space}"
-
+    # 次+次
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: "7"
       send_sequence: "{Home}{Right}{Right}22"
