@@ -1,0 +1,18 @@
+# encoding: utf-8
+#
+# 好码·松烟(玲珑词库)
+# 版本: alpha
+#
+---
+name: "hao_sy_linglong"
+version: "alpha"
+sort: by_weight
+import_tables:
+  # 以下是松烟_玲珑词库
+  - hao/hao.sy.linglong
+columns:
+  - text
+  - code
+  - weight
+...
+

@@ -1,0 +1,41 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: hao_sy_linglong
+  name: 好码·松烟(玲珑)【勿用】
+  version: 20250809
+  author:
+    - 作者 荒
+  description: |
+    辅助方案。
+    配合 table_translator@linglong 实现玲珑词库。
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba;'/
+  algebra:
+    - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
+
+translator:
+  dictionary: hao_sy_linglong
+  enable_user_dict: false

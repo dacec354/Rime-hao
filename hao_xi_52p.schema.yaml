@@ -3,6 +3,12 @@
 
 __include: hao_xi.schema.yaml:/
 
+__patch:
+  switches/@before 0:
+    name: super_tips
+    states: [ 提示关, 提示开 ]
+    reset: 1
+
 schema:
   schema_id: hao_xi_52p
   name: 好码・淅码(动态五二顶)
@@ -17,6 +23,7 @@ schema:
 engine:
   processors:
     - lua_processor@*hao.hao_switch*proc@hao
+    - lua_processor@*hao.hao_tips
     - ascii_composer
     - lua_processor@*lutai.key_binder
     - key_binder
@@ -73,7 +80,11 @@ translator:
     - '^.$'
     - '^.{3,4}$'
 
+hao:
+  code: hao_xi_52p
+
 key_binder:
+  tips_key: "period"
   bindings:
     # 句末一、二码 + 「空格」 → 首选字上屏
     #- match: "^[qwertyuiopasdfghjklzxcvbnm;]{1, 2}$"
@@ -131,8 +142,6 @@ key_binder:
     - { match: "^;$", accept: "n", send_sequence: "n{space}" }
     - { match: "^;$", accept: "m", send_sequence: "m{space}" }
 
-    - { when: composing, accept: space, send: Escape }
-    - { when: has_menu, accept: space, send: space }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
     - { when: has_menu, accept: "1", send: KP_1 }
@@ -143,6 +152,9 @@ key_binder:
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
     - { when: composing, accept: "Control+d", send: Delete }
     - { when: composing, accept: "Control+k", send: "Shift+Delete" }
+
+reverse_lookup:
+  dictionary: hao_xi_52p
 
 menu:
   alternative_select_keys: "_2389"

@@ -8,8 +8,8 @@ name: "hao_sy"
 version: "20250528"
 sort: by_weight
 import_tables:
-  # 以下是單字全碼
-  - hao/hao.sy.full
+  # 以下是松烟全息碼
+  - hao/hao.sy.fullinformation
   # 以下是字根快打
   - hao/hao.sy.roots
   # 以下是快符

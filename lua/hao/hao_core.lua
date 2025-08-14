@@ -8,8 +8,35 @@ Purpose: 好码方案的 RIME lua 提供核心函数
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 -------------------------------------
 ]]
+---@diagnostic disable: undefined-global
 
-local core = {}
+local core = {
+  kRejected = 0,
+  kAccepted = 1,
+  kNoop = 2,
+  kVoid = "kVoid",
+  kGuess = "kGuess",
+  kSelected = "kSelected",
+  kConfirmed = "kConfirmed",
+  kNull = "kNull",     -- 空節點
+  kScalar = "kScalar", -- 純數據節點
+  kList = "kList",     -- 列表節點
+  kMap = "kMap",       -- 字典節點
+  kShift = 0x1,
+  kLock = 0x2,
+  kControl = 0x4,
+  kAlt = 0x8,
+}
+
+--- 取出输入中当前正在翻译的一部分
+---@param context Context
+function core.current(context)
+  local segment = context.composition:toSegmentation():back()
+  if not segment then
+    return nil
+  end
+  return context.input:sub(segment.start + 1, segment._end)
+end
 
 -- 由translator記録輸入串, 傳遞給filter
 core.input_code = ''
@@ -79,5 +106,66 @@ function core.unicode()
     return utf8.char(code or space)
   end
 end
+
+-- x-release-please-start-version
+core.version = "10.1.0"
+-- x-release-please-end
+
+---按照优先顺序获取文件：用户目录 > 系统目录
+---@param filename string 相对路径
+---@retur string | nil
+function core.get_filename_with_fallback(filename)
+  local _path = filename:gsub("^/+", "") -- 去掉开头的斜杠
+
+  local user_path = rime_api.get_user_data_dir() .. '/' .. _path
+  if core.file_exists(user_path) then
+      return user_path
+  end
+
+  local shared_path = rime_api.get_shared_data_dir() .. '/' .. _path
+  if core.file_exists(shared_path) then
+      return shared_path
+  end
+
+  return nil
+end
+
+---判断文件是否存在
+function core.file_exists(filename)
+  local f = io.open(filename, "r")
+  if f ~= nil then
+      io.close(f)
+      return true
+  else
+      return false
+  end
+end
+
+---判断是否在命令模式
+---@param context Context | nil
+---@return boolean
+function core.is_function_mode_active(context)
+  if not context or not context.composition or context.composition:empty() then
+      return false
+  end
+
+  local seg = context.composition:back()
+  if not seg then return false end
+
+  return seg:has_tag("number") or  -- number_translator.lua 数字金额转换 R+数字
+      seg:has_tag("unicode") or    -- unicode.lua 输出 Unicode 字符 U+小写字母或数字
+      --seg:has_tag("punct") or      -- 标点符号 全角半角提示
+      seg:has_tag("calculator") or -- super_calculator.lua V键计算器
+      seg:has_tag("shijian") or    -- shijian.lua /rq /sr 等与时间日期相关功能
+      seg:has_tag("Ndate")         -- shijian.lua N日期功能
+end
+
+-- 全局内容
+---@alias PROCESS_RESULT ProcessResult
+core.RIME_PROCESS_RESULTS = {
+  kRejected = 0, -- 表示处理器明确拒绝了这个按键，停止处理链但不返回 true
+  kAccepted = 1, -- 表示处理器成功处理了这个按键，停止处理链并返回 true
+  kNoop = 2,     -- 表示处理器没有处理这个按键，继续传递给下一个处理器
+}
 
 return core

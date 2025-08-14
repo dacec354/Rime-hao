@@ -2,7 +2,7 @@
 ---
 name: "hao.sy.short"
 version: "20250528"
-sort: original
+sort: by_weight
 columns:
   - text
   - code
@@ -848,7 +848,6 @@ columns:
 废	fkgr	0.0099998658
 腰	cde	0.0099998657
 腿	cfu	0.0099998656
-玛	gfe	0.0099998655
 累	zho	0.0099998654
 燕	akke	0.0099998652
 朗	nfu	0.0099998651
@@ -1320,6 +1319,7 @@ columns:
 棒	tlmu	0.0099997748
 坠	lapu	0.0099997747
 匠	pgko	0.0099997745
+耍	gge	0.0099997744
 葡	clsw	0.0099997743
 寡	gkae	0.0099997742
 鸭	ysjo	0.0099997740

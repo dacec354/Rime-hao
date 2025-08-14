@@ -835,7 +835,6 @@
 废	fkgr
 腰	cde
 腿	cfu
-玛	gfe
 累	zho
 燕	akke
 朗	nfu
@@ -1307,6 +1306,7 @@
 棒	tlmu
 坠	lapu
 匠	pgko
+耍	gge
 葡	clsw
 寡	gkae
 鸭	ysjo
@@ -40982,7 +40982,7 @@ Ciallo～(∠・ω<	1
 㵫	hsqqv
 㵬	hscfp
 㵭	hsfvc
-㵮	hsynf
+㵮	hsynl
 㵯	hsalb
 㵰	hsjlj
 㵱	hsdsj
@@ -103608,7 +103608,7 @@ Ciallo～(∠・ω<	1
 𮋊	fmzhz
 𮋋	dlgzu
 𮋌	zgfle
-𮋍	akzbz
+𮋍	fkfhz
 𮋎	zqmw
 𮋏	ahlhz
 𮋐	gkljz
