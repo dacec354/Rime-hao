@@ -15,12 +15,13 @@ schema:
     - hao_pinyin
     - hao_stroke
     - hao_sy_chaifen
+    - hao_sy_linglong
 
 switches:
   - name: hao_autocommit
     reset: 1
     abbrev: [松, 烟]
-    states: [☐整句, ☑前缀]
+    states: [☐选重, ☑前缀]
   - options:
       - hao_spelling.off
       - hao_spelling.lv1
@@ -76,7 +77,8 @@ engine:
     - history_translator@history
     - script_translator@hao_pinyin_lookup
     - table_translator@hao_stroke_lookup
-    - script_translator
+    - table_translator
+    - table_translator@linglong
     - lua_translator@*hao.hao_os*os_env_translator
   filters:
     - simplifier@traditionalize
@@ -87,13 +89,15 @@ engine:
 
 sy_cool_algebra:
   # 多根字
-  - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3$4/
+  - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z][^weruioA-Z ]?[weruio])/$1$2$3$4/
   # 三根字
-  - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z])[^weruioA-Z]?[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2$3/
+  - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2$3/
   # 两根字
-  - xform/^([^WERUIOa-z][^weruioA-Z]?)[weruio]([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1$2/
+  - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2/
   # 字根字
-  - xform/^([^WERUIOa-z][^weruioA-Z]?[weruio])$/$1/
+  - xform/([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1/
+
+  #- xform/^([A-Z]{2,5})([weruio]?)$/\L$1$2/
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba;'/
@@ -102,16 +106,16 @@ speller:
   auto_select: true
   auto_clear: auto
   algebra:
-    __include: /sy_cool_algebra
-    __append:
-      - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
+    #__include: /sy_cool_algebra
+    #__append:
+    #  - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
 
 translator:
   dictionary: hao_sy_cool
   prism: hao_sy_cool
   db_class: tabledb
   enable_completion: true
-  enable_sentence: true
+  enable_sentence: false
   enable_user_dict: false
   enable_encoder: false
   encode_commit_history: false
@@ -121,6 +125,21 @@ translator:
     #- xform/[a-z]/·/
   comment_format:
     - "xform/^~/ /"
+
+linglong:
+  dictionary: hao_sy_linglong
+  prism: hao_sy_linglong
+  db_class: tabledb
+  enable_completion: true
+  enable_sentence: false
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: false
+  initial_quality: 1000
+  preedit_format: []
+  comment_format:
+    - "xform/^~/ /"
+    - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
 
 hao:
   code: hao_sy_cool
@@ -143,7 +162,7 @@ hao:
   macros:
     hao:
       - { type: tip, name: ❖简松配置中心 }
-      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
+      - { type: switch, name: hao_autocommit, states: [☐选重, ☑前缀] }
       - {
           type: radio,
           names:
@@ -167,9 +186,9 @@ hao:
       - { type: eval, name: Ⓣ时间, expr: return os.date("%Y%m%d%H%M") }
       - { type: eval, name: Ⓢ时间戳, expr: return tostring(os.time()) }
     auto:
-      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
+      - { type: switch, name: hao_autocommit, states: [☐选重, ☑前缀] }
     a:
-      - { type: switch, name: hao_autocommit, states: [☐整句, ☑前缀] }
+      - { type: switch, name: hao_autocommit, states: [☐选重, ☑前缀] }
     div:
       - {
           type: radio,
@@ -252,21 +271,21 @@ reverse_lookup:
     - hao_pinyin_lookup
     - hao_stroke_lookup
   comment_format:
-    __include: /sy_cool_algebra
-    __append:
-      # 多根字
-      - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z][^weruioA-Z ]?[weruio])/$1$2$3$4/
-      # 三根字
-      - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2$3/
-      # 两根字
-      - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2/
-      # 字根字
-      - xform/([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1/
-      
-      - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
-      - xform|/[a-z]{3,4}||
-      - xform/^([^ ]{5})[a-z]{1,2}/$1/
-      - xform/^ //
+    #__include: /sy_cool_algebra
+    #__append:
+    #  # 多根字
+    #  - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z][^weruioA-Z ]?[weruio])/$1$2$3$4/
+    #  # 三根字
+    #  - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ])[^weruioA-Z ]?[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2$3/
+    #  # 两根字
+    #  - xform/([^WERUIOa-z ][^weruioA-Z ]?)[weruio]([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1$2/
+    #  # 字根字
+    #  - xform/([^WERUIOa-z ][^weruioA-Z ]?[weruio])/$1/
+    #  
+    #  - xlit/ZYXVTSQPNMLKJHGFDCBA/zyxvtsqpnmlkjhgfdcba/
+    #  - xform|/[a-z]{3,4}||
+    #  - xform/^([^ ]{5})[a-z]{1,2}/$1/
+    #  - xform/^ //
 
 hao_pinyin_lookup:
   tag: hao_pinyin_lookup

@@ -12,8 +12,8 @@ import_tables:
   - hao/hao.sy.short
   # 以下是簡碼詞
   - hao/hao.sy.quicks
-  # 以下是全息码表
-  - hao/hao.sy.fullinformation
+  # 以下是全码表
+  - hao/hao.sy.full
   # 以下是字根快打
   - hao/hao.sy.roots
   # 以下是快符

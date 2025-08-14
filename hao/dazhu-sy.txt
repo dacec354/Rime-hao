@@ -875,7 +875,6 @@ hdci	恰
 fkgr	废
 cde	腰
 cfu	腿
-gfe	玛
 zho	累
 akke	燕
 nfu	朗
@@ -1347,6 +1346,7 @@ pcse	筋
 tlmu	棒
 lapu	坠
 pgko	匠
+gge	耍
 clsw	葡
 gkae	寡
 ysjo	鸭
@@ -16617,7 +16617,7 @@ pki	地震
 fdw	东西
 sdr	延长
 kae	重置
-gge	密码
+gfe	密码
 mm;	尴尬
 mvmae	尴尬
 cc;	燃烧
@@ -41022,7 +41022,7 @@ hstgd	㵪
 hsqqv	㵫
 hscfp	㵬
 hsfvc	㵭
-hsynf	㵮
+hsynl	㵮
 hsalb	㵯
 hsjlj	㵰
 hsdsj	㵱
@@ -103648,7 +103648,7 @@ dlmzu	𮋉
 fmzhz	𮋊
 dlgzu	𮋋
 zgfle	𮋌
-akzbz	𮋍
+fkfhz	𮋍
 zqmw	𮋎
 ahlhz	𮋏
 gkljz	𮋐
