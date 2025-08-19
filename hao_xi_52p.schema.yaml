@@ -17,7 +17,7 @@ schema:
     - 深白
     - 荒
   description: |
-    五二顶：二简不打空格，四码打空格，一简分号上屏
+    五二顶：二简不打空格，一简打空格上屏，三简、四码打「/」上屏
     动态二重二简：二简的第二个候选是根据你使用的频率变化的，使用 「'+编码」 这种方式输入的字能增加频率
 
 engine:
@@ -105,14 +105,19 @@ key_binder:
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: ";"
       send_sequence: "{Home}{Right}{Right}{space}2"
-    # 次+首
+    # 二简次选+二简首选
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: "4"
       send_sequence: "{Home}{Right}{Right}2{space}"
-    # 次+次
+    # 二简次选+二简次选
     - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
       accept: "7"
       send_sequence: "{Home}{Right}{Right}22"
+    
+    # 二简次选+三码或四码救急 「输掉」→「ytpd5j/」
+    - match: "^[qwertyuiopasdfghjklzxcvbnm;]{3, 4}$"
+      accept: "5"
+      send_sequence: "{Home}{Right}{Right}2"
 
     # 快符
     - { match: "^;$", accept: "q", send_sequence: "q{space}" }

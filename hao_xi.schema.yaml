@@ -265,7 +265,7 @@ simplify:
 
 history:
   input: "z"
-  size: 1
+  size: 3
   initial_quality: 0
 
 reverse_lookup:
@@ -317,7 +317,6 @@ punctuator:
     "{": "「"
     "}": "」"
     "/": "/"
-    "|": "|"
     "_": "——"
     "|": "·"
 
