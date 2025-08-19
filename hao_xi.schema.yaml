@@ -264,7 +264,7 @@ simplify:
     - xform/$/〕/
 
 history:
-  input: "'"
+  input: "z"
   size: 3
   initial_quality: 0
 
