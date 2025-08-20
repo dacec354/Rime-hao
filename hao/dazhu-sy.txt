@@ -1,27 +1,36 @@
 q;	：“
+q'	：‘
 t;	→
 y;	·
-p;	——
+y'	・
+p;	￥
+p'	¥
 a;	！
 s;	……
+s'	…
 d;	、
+d'	|
 f;	“
+f'	‘
 g;	”
+g'	’
 h;	「
 j;	」
 k;	？
-l;	￥
-z;	《
-x;	》
-c;	（
-v;	）
-b;	：
+l;	——
+l'	—
+x;	（
+c;	）
+v;	《
+v'	〈
+b;	》
+b'	〉
 n;	『
 m;	』
 ;q	：“
 ;t	→
 ;y	·
-;p	——
+;p	￥
 ;a	！
 ;s	……
 ;d	、
@@ -30,12 +39,11 @@ m;	』
 ;h	「
 ;j	」
 ;k	？
-;l	￥
-;z	《
-;x	》
-;c	（
-;v	）
-;b	：
+;l	——
+;x	（
+;c	）
+;v	《
+;b	》
 ;n	『
 ;m	』
 ae	，
@@ -71,7 +79,6 @@ bjo	对
 aw	会
 fhvo	得
 lfe	下
-lfr	下
 be	能
 ju	过
 lw	于
@@ -132,7 +139,6 @@ pi	等
 tldw	相
 kcjo	重
 ghi	头
-ghyi	头
 ldu	声
 hdju	性
 flu	应
@@ -218,7 +224,6 @@ mtu	期
 ghdr	资
 hsmu	清
 kdu	嗯
-kdzu	嗯
 tkr	统
 xxr	书
 jvji	市
@@ -346,7 +351,6 @@ tkw	级
 qkw	病
 zkar	质
 msr	称
-msfe	称
 hsji	江
 tkfr	绝
 hvi	敌
@@ -840,6 +844,7 @@ alko	暂
 fjju	碰
 vkve	皆
 flyi	尖
+dhi	享
 hbsu	聚
 cve	胆
 zkli	厅
@@ -1488,7 +1493,7 @@ cmge	烛
 fzw	谬
 ctw	膨
 gfr	珊
-lfvr	隙
+lfr	隙
 bkbu	垒
 glni	嫩
 ssw	韵
@@ -2113,6 +2118,7 @@ tkjo	纣
 dkpi	瞌
 vklu	窿
 face	诙
+kdzu	喟
 slsw	匍
 psse	坷
 tkti	缮
@@ -4050,7 +4056,6 @@ hqdr	雋
 klr	雫
 kjve	雰
 khtr	霂
-kllu	霊
 kmso	霨
 nflu	靬
 nfsw	靸
@@ -5204,6 +5209,7 @@ dhmu	稁
 msfo	稉
 msji	稖
 mszu	稛
+msfe	稢
 msdr	稤
 hamu	穈
 nmu	穌
@@ -8608,6 +8614,7 @@ hfve	𠛍
 tyve	𠛎
 bkde	𠛏
 mtve	𠛒
+lfvr	𠛝
 vlve	𠛣
 smne	𠛦
 skve	𠛨
@@ -8838,6 +8845,7 @@ skvw	𠶱
 yni	𠷏
 mlxo	𠷓
 xzi	𠷗
+zsmi	𠷱
 vmfi	𠷳
 lftr	𠷽
 yvsr	𠸗
@@ -9618,7 +9626,6 @@ vndw	𣆖
 vcki	𣆗
 vxxe	𣆚
 vpxu	𣆜
-vlli	𣆞
 vmxu	𣆠
 vfzi	𣆡
 vfpu	𣆮
@@ -9643,6 +9650,7 @@ vace	𣇪
 vzr	𣇫
 vvni	𣇬
 vfju	𣇭
+vlli	𣇯
 vmjo	𣇳
 alao	𣇶
 vcho	𣇷
@@ -10084,7 +10092,6 @@ hgku	𤕃
 hjvw	𤕄
 hadr	𤕆
 hjde	𤕉
-flxe	𤕋
 ssgi	𤕞
 ssju	𤕟
 ssgo	𤕠
@@ -10689,7 +10696,7 @@ pxku	𥬫
 pcve	𥬭
 patr	𥬲
 pdve	𥬳
-pflr	𥬷
+pfzr	𥬷
 pftr	𥬸
 pajo	𥬹
 pxpu	𥬻
@@ -12809,6 +12816,7 @@ lplu	𨹟
 lbgu	𨹡
 lmfr	𨹣
 lktr	𨹦
+lmw	𨹧
 lcji	𨹩
 ljkr	𨹪
 lkki	𨹭
@@ -13093,6 +13101,7 @@ kgyr	𩆣
 khtu	𩆤
 khto	𩆩
 kjzo	𩆫
+kllu	𩆮
 khvr	𩆯
 klju	𩆰
 kmaw	𩆲
@@ -14706,6 +14715,7 @@ kydi	𬰏
 kgjw	𬰓
 knae	𬰕
 mllo	𬰝
+qfzr	𬰬
 pjtr	𬱧
 anzw	𬲄
 ltho	𬲊
@@ -14900,6 +14910,7 @@ sczw	𭐣
 xkso	𭐸
 ydpr	𭑅
 jgpo	𭑌
+ghyi	𭑛
 hbge	𭒒
 qyse	𭓊
 qgse	𭓍
@@ -16296,6 +16307,7 @@ dmtw	𲲅
 dmyi	𲲉
 vsni	𲲘
 sjtr	𲴪
+pflr	𲵵
 plai	𲵷
 pbbr	𲵹
 ptfi	𲵼
@@ -16510,7 +16522,6 @@ kkw	看看
 kau	还有
 ffi	谢谢
 lmu	一种
-lmw	与其
 mkr	甚至
 fco	上来
 fce	既然
@@ -16538,7 +16549,6 @@ khe	哪怕
 kje	成功
 ssi	失败
 ado	有些
-jpr	过去
 sbo	面对
 yti	大概
 mku	选择
@@ -16589,7 +16599,6 @@ tau	纪录
 jhi	恐怖
 sdw	福州
 gju	发生
-dhi	睡觉
 kzi	撤回
 kjw	撤离
 hgw	游客
@@ -16695,7 +16704,7 @@ t/	差不多
 v/	怎么办
 x/	！松烟
 y/	！松烟
-z/	！松烟
+z/	*松烟
 gz;	如果
 jv;	但是
 ka;	哪个
@@ -25257,7 +25266,7 @@ psfzl	垝
 psgsf	垞
 psto	垟
 psynd	垯
-psflf	垰
+psfzf	垰
 psfal	垱
 psggl	垵
 pshqi	垺
@@ -25607,7 +25616,7 @@ kssjg	抶
 ksvi	拃
 glbks	拏
 ksflf	拤
-ksflf	挊
+ksfzf	挊
 ksgsf	挓
 kslsu	挜
 ksajf	挦
@@ -26890,7 +26899,7 @@ klfjr	雫
 kjvje	雰
 khtlr	霂
 kdu	霅
-kllsu	霊
+kzsu	霊
 khfkd	霑
 kcdyd	霙
 kcnhs	霡
@@ -27316,7 +27325,7 @@ pskti	𫭢
 psfll	𫭪
 pscgs	𫭼
 psjza	𫮃
-fjlly	𫯝
+fjzyd	𫯝
 glbjt	𫰛
 gljva	𫰡
 glchl	𫰰
@@ -29281,7 +29290,7 @@ mgadi	峜
 mgdlk	峝
 mgfzl	峞
 mgacu	峟
-mgflf	峠
+mgfzf	峠
 mgcvj	峢
 mgskf	峩
 mgtlw	峫
@@ -30705,7 +30714,7 @@ tlftl	桗
 tlsnw	桘
 tlbmd	桙
 tldxk	桚
-tlflf	桛
+tlfzf	桛
 tlxks	桝
 tlxlw	桞
 tlzfj	桟
@@ -35133,7 +35142,7 @@ ygo	袻
 ygkdi	袽
 ysco	袾
 yzydi	裀
-yflfj	裃
+yfzfj	裃
 ydyr	裄
 blyr	裊
 yztlr	裍
@@ -37299,7 +37308,7 @@ nflgg	鞉
 nflkd	鞊
 nffhe	鞎
 jtann	鞏
-nfflf	鞐
+nffzf	鞐
 nffso	鞕
 nfhgl	鞖
 jfmnf	鞗
@@ -46752,7 +46761,7 @@ spdjr	𠚂
 lkdjr	𠚃
 aadjr	𠚄
 jdbdj	𠚅
-djlfu	𠚆
+djakw	𠚆
 ldadj	𠚇
 fjdjr	𠚈
 msdjr	𠚉
@@ -46894,7 +46903,7 @@ fjfvj	𠜐
 jdklv	𠜑
 qnvje	𠜒
 lqcvj	𠜓
-fjllv	𠜔
+fjzjv	𠜔
 kcvvj	𠜕
 kcyvj	𠜕
 hjvje	𠜖
@@ -47605,7 +47614,7 @@ fjvnr	𠧓
 fjlmw	𠧔
 fjlmf	𠧕
 fjdau	𠧖
-fjllf	𠧗
+fjzfj	𠧗
 vhbu	𠧘
 vjkfj	𠧙
 fjlmn	𠧛
@@ -48244,7 +48253,7 @@ kdsnf	𠱖
 dhdzo	𠱗
 kdjgy	𠱘
 kdflf	𠱙
-kdflf	𠱚
+kdfzf	𠱚
 vjdjk	𠱛
 kdafq	𠱜
 kdbcu	𠱝
@@ -48646,7 +48655,7 @@ kddkd	𠷭
 kdmdk	𠷮
 kdmdk	𠷯
 kdsmw	𠷰
-llskd	𠷱
+zsmkd	𠷱
 kdakj	𠷲
 vmfkd	𠷳
 kdflm	𠷴
@@ -51598,7 +51607,7 @@ qvkcu	𡦇
 cjbqm	𡦈
 qgxo	𡦉
 fkqqq	𡦊
-qhklq	𡦋
+qhkzq	𡦋
 qlsvo	𡦌
 qxhe	𡦍
 qykai	𡦎
@@ -51968,7 +51977,7 @@ gkscb	𡫺
 gknns	𡫻
 gkjjp	𡫼
 gkscg	𡫽
-gkscc	𡫾
+gkcsa	𡫾
 gkgat	𡫿
 gkggg	𡬀
 gkfff	𡬁
@@ -57752,7 +57761,7 @@ vxxke	𣆚
 dhvo	𣆛
 vpxfu	𣆜
 vgo	𣆝
-vlldi	𣆞
+vzdi	𣆞
 dvvle	𣆟
 vmxbu	𣆠
 vfzlg	𣆡
@@ -60907,7 +60916,7 @@ hsjcb	𣷷
 hscfi	𣷸
 hssyh	𣷹
 hszbu	𣷺
-hsldl	𣷻
+hslds	𣷻
 hsffh	𣷼
 hsjab	𣷽
 hsqgm	𣷾
@@ -62774,7 +62783,7 @@ hghgl	𤕇
 haafu	𤕈
 hjdcm	𤕉
 hjdsy	𤕊
-flxxd	𤕋
+flsxd	𤕋
 hbdzh	𤕌
 hksak	𤕍
 jdsla	𤕎
@@ -66142,7 +66151,7 @@ aaadk	𥊃
 clasd	𥊄
 dkmzp	𥊅
 dkfld	𥊆
-qhkld	𥊇
+qhkzd	𥊇
 dkmvt	𥊈
 dkvck	𥊉
 dkaca	𥊊
@@ -68360,7 +68369,7 @@ pdvke	𥬳
 pto	𥬴
 pgo	𥬵
 pganw	𥬶
-pflfj	𥬷
+pfzfj	𥬷
 pftlr	𥬸
 pajdo	𥬹
 pjjdo	𥬺
@@ -76166,7 +76175,7 @@ dzlkv	𧧊
 dcvje	𧧋
 dflfl	𧧌
 ddhw	𧧍
-dflfj	𧧎
+dfzfj	𧧎
 glkdu	𧧏
 dkle	𧧐
 jszdu	𧧑
@@ -79938,7 +79947,7 @@ sgvgm	𨢎
 clcse	𨢏
 sjghf	𨢐
 sjacm	𨢑
-qhkls	𨢒
+qhkzs	𨢒
 sdhe	𨢓
 sypvo	𨢔
 slttl	𨢕
@@ -96972,7 +96981,7 @@ nfkhw	𬰨
 nfcsk	𬰩
 qljfi	𬰪
 akfqr	𬰫
-qflfj	𬰬
+qfzfj	𬰬
 qkjfi	𬰭
 qhpdi	𬰮
 qlxjf	𬰯
@@ -99080,7 +99089,7 @@ hbggl	𭒒
 tlxtg	𭒓
 glclk	𭒔
 kdhdg	𭒕
-glfld	𭒖
+glfzd	𭒖
 glmdi	𭒗
 kfdhg	𭒘
 glcxt	𭒙
@@ -99232,7 +99241,7 @@ pgljf	𭔪
 jtajf	𭔫
 msxjf	𭔬
 pskjf	𭔭
-fjllj	𭔮
+fjzfj	𭔮
 xkxjf	𭔯
 kqjfo	𭔰
 hgjfo	𭔱
@@ -99388,7 +99397,7 @@ mghpd	𭗆
 mglxj	𭗇
 mgfdk	𭗈
 mgkqh	𭗉
-mgfld	𭗊
+mgfzd	𭗊
 mgfhq	𭗋
 mghmt	𭗌
 mgsak	𭗍
@@ -99849,7 +99858,7 @@ kshhd	𭞓
 lshdj	𭞔
 vsshd	𭞕
 hdcfl	𭞖
-fjllh	𭞗
+fjzyh	𭞗
 vvyhd	𭞘
 hdvps	𭞙
 hdvma	𭞚
@@ -105372,7 +105381,7 @@ akdtt	𰆂
 fjzyd	𰆃
 fjvfz	𰆄
 fjklk	𰆅
-fjalj	𰆆
+fjazj	𰆆
 fjajy	𰆈
 fjfbh	𰆉
 xfu	𰆊
@@ -108988,7 +108997,7 @@ fjlkj	䶶
 fjllf	𱿱
 fjlln	𰺷
 fjllp	𱂣
-fjlls	𱵜
+fjzys	𱵜
 fjlmj	𱴶
 fjlsi	𰦩
 fjlsu	𰦴
@@ -109129,7 +109138,7 @@ fkvcv	𰟴
 fkvhv	𱻯
 fkvlx	𲄆
 fkvxx	𲃼
-fkxjl	𱻬
+fkmjl	𱻬
 fkkax	𱻫
 fkyjf	𱝊
 fkynp	𱝆
@@ -110671,7 +110680,7 @@ jfjyd	𱘳
 jfkdk	𱜰
 jfklx	𰢬
 jflfh	𱜯
-jflfu	𱎦
+jfzfu	𱎦
 jflkd	𰢭
 jflzs	𱜻
 jfmgd	𱜭
@@ -111677,7 +111686,7 @@ ksysu	𰓑
 ksyxu	𰸈
 kszff	𰔁
 kszhe	𱟱
-kszlj	𰓳
+kszzj	𰓳
 kszmg	𰓓
 kszmg	𱠊
 kszmk	𱠾

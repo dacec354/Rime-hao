@@ -31,7 +31,6 @@
 会	aw
 得	fhvo
 下	lfe
-下	lfr
 能	be
 过	ju
 于	lw
@@ -92,7 +91,6 @@
 相	tldw
 重	kcjo
 头	ghi
-头	ghyi
 声	ldu
 性	hdju
 应	flu
@@ -178,7 +176,6 @@
 资	ghdr
 清	hsmu
 嗯	kdu
-嗯	kdzu
 统	tkr
 书	xxr
 市	jvji
@@ -306,7 +303,6 @@
 病	qkw
 质	zkar
 称	msr
-称	msfe
 江	hsji
 绝	tkfr
 敌	hvi
@@ -800,6 +796,7 @@
 碰	fjju
 皆	vkve
 尖	flyi
+享	dhi
 聚	hbsu
 胆	cve
 厅	zkli
@@ -1448,7 +1445,7 @@
 谬	fzw
 膨	ctw
 珊	gfr
-隙	lfvr
+隙	lfr
 垒	bkbu
 嫩	glni
 韵	ssw
@@ -2073,6 +2070,7 @@
 瞌	dkpi
 窿	vklu
 诙	face
+喟	kdzu
 匍	slsw
 坷	psse
 缮	tkti
@@ -4010,7 +4008,6 @@
 雫	klr
 雰	kjve
 霂	khtr
-霊	kllu
 霨	kmso
 靬	nflu
 靸	nfsw
@@ -5164,6 +5161,7 @@
 稉	msfo
 稖	msji
 稛	mszu
+稢	msfe
 稤	msdr
 穈	hamu
 穌	nmu
@@ -8568,6 +8566,7 @@
 𠛎	tyve
 𠛏	bkde
 𠛒	mtve
+𠛝	lfvr
 𠛣	vlve
 𠛦	smne
 𠛨	skve
@@ -8798,6 +8797,7 @@
 𠷏	yni
 𠷓	mlxo
 𠷗	xzi
+𠷱	zsmi
 𠷳	vmfi
 𠷽	lftr
 𠸗	yvsr
@@ -9578,7 +9578,6 @@
 𣆗	vcki
 𣆚	vxxe
 𣆜	vpxu
-𣆞	vlli
 𣆠	vmxu
 𣆡	vfzi
 𣆮	vfpu
@@ -9603,6 +9602,7 @@
 𣇫	vzr
 𣇬	vvni
 𣇭	vfju
+𣇯	vlli
 𣇳	vmjo
 𣇶	alao
 𣇷	vcho
@@ -10044,7 +10044,6 @@
 𤕄	hjvw
 𤕆	hadr
 𤕉	hjde
-𤕋	flxe
 𤕞	ssgi
 𤕟	ssju
 𤕠	ssgo
@@ -10649,7 +10648,7 @@
 𥬭	pcve
 𥬲	patr
 𥬳	pdve
-𥬷	pflr
+𥬷	pfzr
 𥬸	pftr
 𥬹	pajo
 𥬻	pxpu
@@ -12769,6 +12768,7 @@
 𨹡	lbgu
 𨹣	lmfr
 𨹦	lktr
+𨹧	lmw
 𨹩	lcji
 𨹪	ljkr
 𨹭	lkki
@@ -13053,6 +13053,7 @@
 𩆤	khtu
 𩆩	khto
 𩆫	kjzo
+𩆮	kllu
 𩆯	khvr
 𩆰	klju
 𩆲	kmaw
@@ -14666,6 +14667,7 @@
 𬰓	kgjw
 𬰕	knae
 𬰝	mllo
+𬰬	qfzr
 𬱧	pjtr
 𬲄	anzw
 𬲊	ltho
@@ -14860,6 +14862,7 @@
 𭐸	xkso
 𭑅	ydpr
 𭑌	jgpo
+𭑛	ghyi
 𭒒	hbge
 𭓊	qyse
 𭓍	qgse
@@ -16256,6 +16259,7 @@
 𲲉	dmyi
 𲲘	vsni
 𲴪	sjtr
+𲵵	pflr
 𲵷	plai
 𲵹	pbbr
 𲵼	ptfi
@@ -16470,7 +16474,6 @@ Ciallo～(∠・ω<	300001
 还有	300001
 谢谢	300001
 一种	300001
-与其	300001
 甚至	300001
 上来	300001
 既然	300001
@@ -16498,7 +16501,6 @@ Ciallo～(∠・ω<	300001
 成功	300001
 失败	300001
 有些	300001
-过去	300001
 面对	300001
 大概	300001
 选择	300001
@@ -16549,7 +16551,6 @@ Ciallo～(∠・ω<	300001
 恐怖	300001
 福州	300001
 发生	300001
-睡觉	300001
 撤回	300001
 撤离	300001
 游客	300001
@@ -16655,7 +16656,7 @@ Ciallo～(∠・ω<	300001
 怎么办	300002
 ！松烟	300002
 ！松烟	300002
-！松烟	300002
+*松烟	300002
 如果	300001
 但是	300001
 哪个	300001
@@ -25217,7 +25218,7 @@ Ciallo～(∠・ω<	300001
 垞	psgsf
 垟	psto
 垯	psynd
-垰	psflf
+垰	psfzf
 垱	psfal
 垵	psggl
 垺	pshqi
@@ -25567,7 +25568,7 @@ Ciallo～(∠・ω<	300001
 拃	ksvi
 拏	glbks
 拤	ksflf
-挊	ksflf
+挊	ksfzf
 挓	ksgsf
 挜	kslsu
 挦	ksajf
@@ -26850,7 +26851,7 @@ Ciallo～(∠・ω<	300001
 雰	kjvje
 霂	khtlr
 霅	kdu
-霊	kllsu
+霊	kzsu
 霑	khfkd
 霙	kcdyd
 霡	kcnhs
@@ -27276,7 +27277,7 @@ Ciallo～(∠・ω<	300001
 𫭪	psfll
 𫭼	pscgs
 𫮃	psjza
-𫯝	fjlly
+𫯝	fjzyd
 𫰛	glbjt
 𫰡	gljva
 𫰰	glchl
@@ -29241,7 +29242,7 @@ Ciallo～(∠・ω<	300001
 峝	mgdlk
 峞	mgfzl
 峟	mgacu
-峠	mgflf
+峠	mgfzf
 峢	mgcvj
 峩	mgskf
 峫	mgtlw
@@ -30665,7 +30666,7 @@ Ciallo～(∠・ω<	300001
 桘	tlsnw
 桙	tlbmd
 桚	tldxk
-桛	tlflf
+桛	tlfzf
 桝	tlxks
 桞	tlxlw
 桟	tlzfj
@@ -35093,7 +35094,7 @@ Ciallo～(∠・ω<	300001
 袽	ygkdi
 袾	ysco
 裀	yzydi
-裃	yflfj
+裃	yfzfj
 裄	ydyr
 裊	blyr
 裍	yztlr
@@ -37259,7 +37260,7 @@ Ciallo～(∠・ω<	300001
 鞊	nflkd
 鞎	nffhe
 鞏	jtann
-鞐	nfflf
+鞐	nffzf
 鞕	nffso
 鞖	nfhgl
 鞗	jfmnf
@@ -46712,7 +46713,7 @@ Ciallo～(∠・ω<	300001
 𠚃	lkdjr
 𠚄	aadjr
 𠚅	jdbdj
-𠚆	djlfu
+𠚆	djakw
 𠚇	ldadj
 𠚈	fjdjr
 𠚉	msdjr
@@ -46854,7 +46855,7 @@ Ciallo～(∠・ω<	300001
 𠜑	jdklv
 𠜒	qnvje
 𠜓	lqcvj
-𠜔	fjllv
+𠜔	fjzjv
 𠜕	kcvvj
 𠜕	kcyvj
 𠜖	hjvje
@@ -47565,7 +47566,7 @@ Ciallo～(∠・ω<	300001
 𠧔	fjlmw
 𠧕	fjlmf
 𠧖	fjdau
-𠧗	fjllf
+𠧗	fjzfj
 𠧘	vhbu
 𠧙	vjkfj
 𠧛	fjlmn
@@ -48204,7 +48205,7 @@ Ciallo～(∠・ω<	300001
 𠱗	dhdzo
 𠱘	kdjgy
 𠱙	kdflf
-𠱚	kdflf
+𠱚	kdfzf
 𠱛	vjdjk
 𠱜	kdafq
 𠱝	kdbcu
@@ -48606,7 +48607,7 @@ Ciallo～(∠・ω<	300001
 𠷮	kdmdk
 𠷯	kdmdk
 𠷰	kdsmw
-𠷱	llskd
+𠷱	zsmkd
 𠷲	kdakj
 𠷳	vmfkd
 𠷴	kdflm
@@ -51558,7 +51559,7 @@ Ciallo～(∠・ω<	300001
 𡦈	cjbqm
 𡦉	qgxo
 𡦊	fkqqq
-𡦋	qhklq
+𡦋	qhkzq
 𡦌	qlsvo
 𡦍	qxhe
 𡦎	qykai
@@ -51928,7 +51929,7 @@ Ciallo～(∠・ω<	300001
 𡫻	gknns
 𡫼	gkjjp
 𡫽	gkscg
-𡫾	gkscc
+𡫾	gkcsa
 𡫿	gkgat
 𡬀	gkggg
 𡬁	gkfff
@@ -57712,7 +57713,7 @@ Ciallo～(∠・ω<	300001
 𣆛	dhvo
 𣆜	vpxfu
 𣆝	vgo
-𣆞	vlldi
+𣆞	vzdi
 𣆟	dvvle
 𣆠	vmxbu
 𣆡	vfzlg
@@ -60867,7 +60868,7 @@ Ciallo～(∠・ω<	300001
 𣷸	hscfi
 𣷹	hssyh
 𣷺	hszbu
-𣷻	hsldl
+𣷻	hslds
 𣷼	hsffh
 𣷽	hsjab
 𣷾	hsqgm
@@ -62734,7 +62735,7 @@ Ciallo～(∠・ω<	300001
 𤕈	haafu
 𤕉	hjdcm
 𤕊	hjdsy
-𤕋	flxxd
+𤕋	flsxd
 𤕌	hbdzh
 𤕍	hksak
 𤕎	jdsla
@@ -66102,7 +66103,7 @@ Ciallo～(∠・ω<	300001
 𥊄	clasd
 𥊅	dkmzp
 𥊆	dkfld
-𥊇	qhkld
+𥊇	qhkzd
 𥊈	dkmvt
 𥊉	dkvck
 𥊊	dkaca
@@ -68320,7 +68321,7 @@ Ciallo～(∠・ω<	300001
 𥬴	pto
 𥬵	pgo
 𥬶	pganw
-𥬷	pflfj
+𥬷	pfzfj
 𥬸	pftlr
 𥬹	pajdo
 𥬺	pjjdo
@@ -76126,7 +76127,7 @@ Ciallo～(∠・ω<	300001
 𧧋	dcvje
 𧧌	dflfl
 𧧍	ddhw
-𧧎	dflfj
+𧧎	dfzfj
 𧧏	glkdu
 𧧐	dkle
 𧧑	jszdu
@@ -79898,7 +79899,7 @@ Ciallo～(∠・ω<	300001
 𨢏	clcse
 𨢐	sjghf
 𨢑	sjacm
-𨢒	qhkls
+𨢒	qhkzs
 𨢓	sdhe
 𨢔	sypvo
 𨢕	slttl
@@ -96932,7 +96933,7 @@ Ciallo～(∠・ω<	300001
 𬰩	nfcsk
 𬰪	qljfi
 𬰫	akfqr
-𬰬	qflfj
+𬰬	qfzfj
 𬰭	qkjfi
 𬰮	qhpdi
 𬰯	qlxjf
@@ -99040,7 +99041,7 @@ Ciallo～(∠・ω<	300001
 𭒓	tlxtg
 𭒔	glclk
 𭒕	kdhdg
-𭒖	glfld
+𭒖	glfzd
 𭒗	glmdi
 𭒘	kfdhg
 𭒙	glcxt
@@ -99192,7 +99193,7 @@ Ciallo～(∠・ω<	300001
 𭔫	jtajf
 𭔬	msxjf
 𭔭	pskjf
-𭔮	fjllj
+𭔮	fjzfj
 𭔯	xkxjf
 𭔰	kqjfo
 𭔱	hgjfo
@@ -99348,7 +99349,7 @@ Ciallo～(∠・ω<	300001
 𭗇	mglxj
 𭗈	mgfdk
 𭗉	mgkqh
-𭗊	mgfld
+𭗊	mgfzd
 𭗋	mgfhq
 𭗌	mghmt
 𭗍	mgsak
@@ -99809,7 +99810,7 @@ Ciallo～(∠・ω<	300001
 𭞔	lshdj
 𭞕	vsshd
 𭞖	hdcfl
-𭞗	fjllh
+𭞗	fjzyh
 𭞘	vvyhd
 𭞙	hdvps
 𭞚	hdvma
@@ -105332,7 +105333,7 @@ Ciallo～(∠・ω<	300001
 𰆃	fjzyd
 𰆄	fjvfz
 𰆅	fjklk
-𰆆	fjalj
+𰆆	fjazj
 𰆈	fjajy
 𰆉	fjfbh
 𰆊	xfu
@@ -108948,7 +108949,7 @@ Ciallo～(∠・ω<	300001
 𱿱	fjllf
 𰺷	fjlln
 𱂣	fjllp
-𱵜	fjlls
+𱵜	fjzys
 𱴶	fjlmj
 𰦩	fjlsi
 𰦴	fjlsu
@@ -109089,7 +109090,7 @@ Ciallo～(∠・ω<	300001
 𱻯	fkvhv
 𲄆	fkvlx
 𲃼	fkvxx
-𱻬	fkxjl
+𱻬	fkmjl
 𱻫	fkkax
 𱝊	fkyjf
 𱝆	fkynp
@@ -110631,7 +110632,7 @@ Ciallo～(∠・ω<	300001
 𱜰	jfkdk
 𰢬	jfklx
 𱜯	jflfh
-𱎦	jflfu
+𱎦	jfzfu
 𰢭	jflkd
 𱜻	jflzs
 𱜭	jfmgd
@@ -111637,7 +111638,7 @@ Ciallo～(∠・ω<	300001
 𰸈	ksyxu
 𰔁	kszff
 𱟱	kszhe
-𰓳	kszlj
+𰓳	kszzj
 𰓓	kszmg
 𱠊	kszmg
 𱠾	kszmk

@@ -51,6 +51,7 @@ engine:
   processors:
     - lua_processor@*hao.hao_switch*proc@hao
     - ascii_composer
+    - lua_processor@*lutai.key_binder
     - recognizer
     - lua_processor@*hao.hao_spelling*processor
     - lua_processor@*hao.hao_autocommit
@@ -74,6 +75,7 @@ engine:
     - punct_translator
     - lua_translator@*hao.hao_shijian
     - lua_translator@*hao.hao_number
+    - history_translator@historyX
     - history_translator@history
     - script_translator@hao_pinyin_lookup
     - table_translator@hao_stroke_lookup
@@ -135,7 +137,7 @@ linglong:
   enable_user_dict: false
   enable_encoder: false
   encode_commit_history: false
-  initial_quality: 1000
+  initial_quality: 100000
   preedit_format: []
   comment_format:
     - "xform/^~/ /"
@@ -254,10 +256,15 @@ simplify:
     - xform/^/〔/
     - xform/$/〕/
 
-history:
-  input: "'"
-  size: 3
+historyX:
+  input: ";z"
+  size: 1
   initial_quality: 0
+
+history:
+  input: "z"
+  size: 5
+  initial_quality: 10000000
 
 reverse_lookup:
   tag: reverse_lookup
@@ -329,12 +336,13 @@ punctuator:
 
 key_binder:
   bindings:
+    - { match: "^z$", accept: ";", send_sequence: "{space}" }
     - { when: always, accept: "Control+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+period", toggle: ascii_punct }
     - { when: always, accept: "Control+Shift+J", toggle: simplification }
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
-    - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
-    - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
+    #- { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
+    #- { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
     - { when: composing, accept: "Control+d", send: Delete }

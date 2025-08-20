@@ -44,7 +44,6 @@ columns:
 会	aw	299964
 得	fhvo	299961
 下	lfe	299960	# 无理码
-下	lfr	299960
 能	be	299959
 过	ju	299958
 于	lw	299955
@@ -105,7 +104,6 @@ columns:
 相	tldw	299854
 重	kcjo	299852
 头	ghi	299850
-头	ghyi	299850
 声	ldu	299849
 性	hdju	299848
 应	flu	299847	# 无理码
@@ -191,7 +189,6 @@ columns:
 资	ghdr	299716
 清	hsmu	299714
 嗯	kdu	299712
-嗯	kdzu	299712
 统	tkr	299711
 书	xxr	299710
 市	jvji	299709
@@ -319,7 +316,6 @@ columns:
 病	qkw	299532
 质	zkar	299531
 称	msr	299530
-称	msfe	299530
 江	hsji	299527
 绝	tkfr	299526
 敌	hvi	299525
@@ -813,6 +809,7 @@ columns:
 碰	fjju	298727
 皆	vkve	298726
 尖	flyi	298725
+享	dhi	298722
 聚	hbsu	298721
 胆	cve	298720
 厅	zkli	298719
@@ -1461,7 +1458,7 @@ columns:
 谬	fzw	297449
 膨	ctw	297446
 珊	gfr	297445
-隙	lfvr	297443
+隙	lfr	297443
 垒	bkbu	297442
 嫩	glni	297441
 韵	ssw	297438
@@ -2086,6 +2083,7 @@ columns:
 瞌	dkpi	295899
 窿	vklu	295898
 诙	face	295897
+喟	kdzu	295896
 匍	slsw	295894
 坷	psse	295892
 缮	tkti	295888
@@ -4023,7 +4021,6 @@ columns:
 雫	klr	290145
 雰	kjve	290144
 霂	khtr	290143
-霊	kllu	290141
 霨	kmso	290137
 靬	nflu	290134
 靸	nfsw	290132
@@ -5177,6 +5174,7 @@ columns:
 稉	msfo	283957
 稖	msji	283950
 稛	mszu	283948
+稢	msfe	283943
 稤	msdr	283942
 穈	hamu	283918
 穌	nmu	283914
@@ -8581,6 +8579,7 @@ columns:
 𠛎	tyve	270210
 𠛏	bkde	270209
 𠛒	mtve	270206
+𠛝	lfvr	270195
 𠛣	vlve	270189
 𠛦	smne	270186
 𠛨	skve	270184
@@ -8811,6 +8810,7 @@ columns:
 𠷏	yni	268429
 𠷓	mlxo	268425
 𠷗	xzi	268421
+𠷱	zsmi	268396
 𠷳	vmfi	268394
 𠷽	lftr	268384
 𠸗	yvsr	268358
@@ -9591,7 +9591,6 @@ columns:
 𣆗	vcki	259304
 𣆚	vxxe	259301
 𣆜	vpxu	259299
-𣆞	vlli	259297
 𣆠	vmxu	259295
 𣆡	vfzi	259294
 𣆮	vfpu	259281
@@ -9616,6 +9615,7 @@ columns:
 𣇫	vzr	259220
 𣇬	vvni	259219
 𣇭	vfju	259218
+𣇯	vlli	259216
 𣇳	vmjo	259212
 𣇶	alao	259209
 𣇷	vcho	259208
@@ -10057,7 +10057,6 @@ columns:
 𤕄	hjvw	254282
 𤕆	hadr	254280
 𤕉	hjde	254277
-𤕋	flxe	254275
 𤕞	ssgi	254256
 𤕟	ssju	254255
 𤕠	ssgo	254254
@@ -10662,7 +10661,7 @@ columns:
 𥬭	pcve	248702
 𥬲	patr	248697
 𥬳	pdve	248696
-𥬷	pflr	248692
+𥬷	pfzr	248692
 𥬸	pftr	248691
 𥬹	pajo	248690
 𥬻	pxpu	248688
@@ -12782,6 +12781,7 @@ columns:
 𨹡	lbgu	235638
 𨹣	lmfr	235636
 𨹦	lktr	235633
+𨹧	lmw	235632
 𨹩	lcji	235630
 𨹪	ljkr	235629
 𨹭	lkki	235626
@@ -13066,6 +13066,7 @@ columns:
 𩆤	khtu	234805
 𩆩	khto	234800
 𩆫	kjzo	234798
+𩆮	kllu	234795
 𩆯	khvr	234794
 𩆰	klju	234793
 𩆲	kmaw	234791
@@ -14679,6 +14680,7 @@ columns:
 𬰓	kgjw	220113
 𬰕	knae	220111
 𬰝	mllo	220103
+𬰬	qfzr	220088
 𬱧	pjtr	220031
 𬲄	anzw	220002
 𬲊	ltho	219996
@@ -14873,6 +14875,7 @@ columns:
 𭐸	xkso	218075
 𭑅	ydpr	218062
 𭑌	jgpo	218055
+𭑛	ghyi	218040
 𭒒	hbge	217986
 𭓊	qyse	217930
 𭓍	qgse	217927
@@ -16269,6 +16272,7 @@ columns:
 𲲉	dmyi	197659
 𲲘	vsni	197644
 𲴪	sjtr	197498
+𲵵	pflr	197423
 𲵷	plai	197421
 𲵹	pbbr	197419
 𲵼	ptfi	197416
