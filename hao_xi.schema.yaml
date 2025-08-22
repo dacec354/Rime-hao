@@ -328,7 +328,8 @@ key_binder:
     - { when: always, accept: "Control+Shift+F", toggle: traditionalization }
     - { when: has_menu, accept: semicolon, send: KP_2 } # 分号次选
     # - { when: has_menu, accept: apostrophe, send: KP_3 } # 引号三选
-    - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
+    # - { when: has_menu, accept: Tab, send: KP_2 } # 製表符次选
+    - { when: has_menu, accept: "Control+Control_L", send: KP_2 } # 左Ctrl次选
     - { when: has_menu, accept: minus, send: Page_Up } # 減號上翻頁
     - { when: has_menu, accept: equal, send: Page_Down } # 等號下翻頁
     - { when: composing, accept: "Control+d", send: Delete }
