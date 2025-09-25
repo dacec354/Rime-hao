@@ -5,6 +5,10 @@ schema_list:
   - schema: hao_xi        #淅码四定·常规
   - schema: hao_xi_52p    #淅码四定·五二顶
   - schema: hao_sy_cool   #简松前缀码·单简爽
+  - schema: moran
+  - schema: moran_fixed
+  - schema: moran_sentence
+  - schema: moran_aux
   #- schema: hao_sy_snow   #雪凇顶功·词顶
   #- schema: hao_sy        #松烟前缀码·全码纯单
 

@@ -11,3 +11,5 @@ sync/
 /leosy.custom.yaml
 /leopard.txt
 /leoxi.txt
+# Rime dict file
+*.ocd2
