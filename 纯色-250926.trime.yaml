@@ -3775,7 +3775,7 @@ preset_keyboards:
       - {
           click: b,
           long_click: ":",
-          swipe_up: ":",
+          swipe_up: "：",
           swipe_down: cut,
           hint: "✄",
           key_symbol_offset_x: 0,
@@ -3784,7 +3784,7 @@ preset_keyboards:
       - {
           click: n,
           long_click: ";",
-          swipe_up: ";",
+          swipe_up: "；",
           __include: local_colors/cl4r3,
         }
       - {
