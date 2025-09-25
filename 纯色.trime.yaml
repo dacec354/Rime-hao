@@ -3339,7 +3339,7 @@ preset_keyboards:
        # 第一行
       - {click: q, long_click: '1', swipe_up: '1', __include: local_colors/cl2l5}
       - {click: w, long_click: '2', swipe_up: '2', __include: local_colors/cl2l4}
-      - {click: e, long_click: '3', swipe_up: '3', key_symbol_offset_y: -4, __include: local_colors/cl2l3}
+      - {click: e, long_click: '3', swipe_up: '3', __include: local_colors/cl2l3}
       - {click: r, long_click: '4', swipe_up: '4', swipe_down: '$', hint: '$', __include: local_colors/cl2l2}
       - {click: t, long_click: '5', swipe_up: '5', swipe_down: '%', hint: '%', __include: local_colors/cl2l1}
       - {click: y, long_click: '6', swipe_up: '6', swipe_down: '^', hint: '^', __include: local_colors/cl2r1}
