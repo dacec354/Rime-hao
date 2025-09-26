@@ -3079,7 +3079,7 @@ preset_keys:
   Return:
     {
       label: "enter_labels",
-      preview: "enter",
+      preview: "Enter",
       repeatable: false,
       functional: true,
       send: Return,
@@ -3342,11 +3342,11 @@ preset_keys:
   Keyboard_letter:
     { label: "Abc", functional: true, send: Eisu_toggle, select: letter }
   Keyboard_number:
-    { label: "ϟ12", functional: true, send: Eisu_toggle, select: number }
+    { label: "123", functional: true, send: Eisu_toggle, select: number }
   Keyboard_edit:
     { label: "◂I▸", functional: true, send: Eisu_toggle, select: edit }
   Keyboard_symbols:
-    { label: "符号", functional: true, send: Eisu_toggle, select: symbols }
+    { label: "符", functional: true, send: Eisu_toggle, select: symbols }
   Keyboard_symbolsx:
     { label: "More", functional: true, send: Eisu_toggle, select: symbols }
   Keyboard_move:
@@ -3602,7 +3602,6 @@ preset_keyboards:
           click: e,
           long_click: "3",
           swipe_up: "3",
-          key_symbol_offset_y: -4,
           __include: local_colors/cl2l3,
         }
       - {
@@ -3775,16 +3774,15 @@ preset_keyboards:
       - {
           click: b,
           long_click: ":",
-          swipe_up: "：",
+          swipe_up: ":",
           swipe_down: cut,
           hint: "✄",
-          key_symbol_offset_x: 0,
           __include: local_colors/cl4r2,
         }
       - {
           click: n,
           long_click: ";",
-          swipe_up: "；",
+          swipe_up: ";",
           __include: local_colors/cl4r3,
         }
       - {
@@ -3807,13 +3805,12 @@ preset_keyboards:
 
       # 第四行
       - {
-          label: "123",
           click: Keyboard_number,
           key_symbol_offset_x: *so2,
           width: 15,
           __include: local_colors/csz,
         }
-      - { label: "符", click: Keyboard_symbols, __include: local_colors/cdh }
+      - { click: Keyboard_symbols, __include: local_colors/cdh }
       - {
           click: space,
           ascii: spacex,
